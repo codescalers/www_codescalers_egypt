@@ -1,0 +1,12 @@
+http://gig-codescalers:8347 {
+    bind 0.0.0.0
+    gzip
+    root www.codescalers.com
+    git {
+       repo git@git.aydo.com:static-websites/codescalers.git
+       interval 300
+       key ../keys/id_rsa
+       path ../
+       then ./hugo-init
+    }
+}

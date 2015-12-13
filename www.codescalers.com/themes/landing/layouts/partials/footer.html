@@ -1,0 +1,54 @@
+{{ range $element :=  $.Site.Pages }}
+{{ if eq .Section "home" }}
+{{ if eq .Title "footer_box" }}
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="quiq-links">
+          <h3 class="footer-header">{{.Params.links_title}}</h3>
+          <ul class="menu-footer">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="quiq-links">
+          <h3 class="footer-header">Contact us</h3>
+          <h3>{{.Params.contact_title}}</h3>
+          <p>{{.Params.contact_address}}</p>
+          <br>
+          <span><strong>Phone:</strong>{{.Params.contact_phone}}</span> <span><strong>Email:</strong>{{.Params.contact_email}}</span> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="quiq-links">
+          <h3 class="footer-header">For more information</h3>
+          <p class="footer-info">{{.Params.info}}</p>
+          <input class="footer-button" type="button" value="{{.Params.button_text}}" onclick="window.location='{{.Params.button_link}}';">
+
+        </div>
+      </div>
+    </div>
+    <div class="row copyright">
+      <div class="footer-side"></div>
+      <div class="col-md-6 nopadding copy-text">{{.Params.copyright}} </div>
+      <div class="col-md-6 links"> <span class="footer-shape"></span>
+        <ul>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a style="padding-right: 0" href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+{{end}}
+{{end}}
+{{end}}
