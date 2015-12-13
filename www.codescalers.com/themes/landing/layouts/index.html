@@ -1,17 +1,43 @@
 {{ partial "head.html" . }}
 	<body>
-			{{ partial "header.html" . }}
-			{{ partial "home_page/intro_slider.html" . }}
-			{{ partial "home_page/our_services.html" . }}			
-			{{ partial "home_page/about_racktivity.html" . }}
-			{{ partial "home_page/product.html" . }}
-			{{ partial "footer.html" . }}
+		{{ partial "header.html" . }}
+		{{ partial "home_page/intro_slider.html" . }}
+		{{ partial "home_page/our_services.html" . }}
+		{{ partial "footer.html" . }}
 	
-	<!-- Bootstrap core JavaScript
-    ================================================== --> 
-	<!-- Placed at the end of the document so the pages load faster --> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-	<script src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="/js/jquery-latest.js"></script>
+		<script type="text/javascript" src="/js/jquery.event.move.js"></script>
+		<script type="text/javascript" src="/js/responsive-slider.js"></script>
+		<script type="text/javascript" src="/js/general.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/adminmenu.js"></script>
+		<script type="text/javascript" src="/js/jquery.form.js"></script>
+		<script type="text/javascript">
+
+        $(function(){
+            $('.contact_form').ajaxForm({
+                clearForm: true,
+                beforeSubmit: function() {
+                    $('.contact_form').find('button').button('loading');
+                    $('.contact_form').find('.alert').hide();
+                },
+                success: function(data) {
+                    $('.contact_form').find('button').button('reset');
+                    if (data.result.substr(0, 7).toLowerCase() === 'success') {
+                        $('.contact_form').find('.alert').removeClass('alert-error').addClass('alert-success').text('Sent successfully.').show();
+                    } else {
+                        $('.contact_form').find('.alert').removeClass('alert-success').addClass('alert-error').text(data.result).show();
+                    }
+                },
+                error: function() {
+                    $('.contact_form').find('button').button('reset');
+                    $('.contact_form').find('.alert').removeClass('alert-success').addClass('alert-error').text('Failed to send. Please try again later.').show();
+                }
+            });
+        });
+        </script>
+        
 	</body>
 </html>
 

@@ -2,47 +2,35 @@
 {{ range $element :=  .Data.Pages }}
 {{ if eq .Section "home" }}
 {{ if eq .Title "our_services" }}
-<section id="services" class="services">
-  <div class="container ">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="css-shapes-preview">
-          <div class="services-header">
-            <h2 class="services-title">{{.Params.section_title}}</h2>
-            <p class="services-prag">{{.Params.section_disc}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="top-left">
-          <h4>{{.Params.service1_title}}</h4>
-          <p>{{.Params.service1_disc}}</p>
-          <div class="panel-shape"> <i class="fa fa-{{.Params.service1_icon}}"></i> </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="top-left">
-          <h4>{{.Params.service2_title}}</h4>
-          <p>{{.Params.service2_disc}}</p>
-          <div class="panel-shape"> <i class="fa fa-{{.Params.service2_icon}}"></i> </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="top-left">
-          <h4>{{.Params.service3_title}}</h4>
-          <p>{{.Params.service3_disc}}</p>
-          <div class="panel-shape"> <i class="fa fa-{{.Params.service3_icon}}"></i> </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="top-left">
-          <h4>{{.Params.service4_title}}</h4>
-          <p>{{.Params.service4_disc}}</p>
-          <div class="panel-shape"> <i class="fa fa-{{.Params.service4_icon}}"></i> </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-sm-4 col-md-4">
+<div class="thumbnail info-thumbnail-link color-black">
+<div class="caption">
+<h3><span class="fa fa-flag color-lead"></span> Our Vision</h3>
+                <p class="description">Our dream has been focused on building and operating the perfect datacenter &amp; cloud architecture. To make this dream reality, we have worked together with a great team of people and have created some unique technology and firmly believe that we can call ourselves the best cloud experts in the world. What makes us so different is that we think out of the box and try to create groundbreaking disruptive technologies. We hope to make IT as easy to use, reliable and scalable as electricity.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-md-4">
+<div class="thumbnail info-thumbnail-link background-lead-light">
+<div class="caption">
+<h3><span class="fa fa-group"></span> The Team</h3>
+                <p class="description">CodeScalers is run by A team of datacenter experts that has helped build over a dozen largescale data centers during the past two decades. The team has also developed cloud software companies, datacenter software as well as highend and mid market hosting companies. From that experience, we learnt that significant improvements for a cloud solution can only be achieved when the entire cloud ecosystem is looked at including Datacenter, Power Management, Physical infrastructure, Management Platform, User Interfaces.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-md-4">
+<div class="thumbnail info-thumbnail-link color-black">
+<div class="caption">
+<h3><span class="fa fa-cogs color-lead"></span> Cloud Computing</h3>
+                <p class="description">Around 2005, Amazon took the lead in the cloud computing industry with its S3 and EC2 services. Google (AppEngine) and Salesforce (Force.com) have also become prominent players in the sector. The ecosystem has segmented into Infrastructure as a Service (IAAS), Platform as a Service (PAAS) and Software as a Service (SAAS). Cloud computing is experiencing a growing popularity across all industry segments, with a lot of activity within the top layer. Incubaid has identified many opportunities for innovation in the IAAS layer.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 {{end}}
 {{end}}
