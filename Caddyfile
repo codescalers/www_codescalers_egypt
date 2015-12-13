@@ -3,7 +3,7 @@ http://gig-codescalers:8347 {
     gzip
     root www.codescalers.com
     git {
-       repo git@git.aydo.com:static-websites/codescalers.git
+       repo git@git.aydo.com:static-websites/www-codescalers.git
        interval 300
        key ../keys/id_rsa
        path ../
