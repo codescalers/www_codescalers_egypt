@@ -6,13 +6,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 aboutPic">
-        <p><img src="/images/about.jpg" alt="/www_codescalers/.files/img/about.jpg" style="clear:both;"></p>
+        <p><img src="{{.Params.pic}}" alt="" style="clear:both;"></p>
       </div>
       <div class="col-md-9">
         <div class="content">
-          <h1 class="title">About CodeScalers</h1>
-          <p>{{.Params.hello}}CodeScalers' mission is to develop promising technology for start-up companies in cloud computing and datacenters. Our customers are high tech startups that have found with CodeScalers a pool of talent that extends their R&amp;D organisations. Our offices are in Cairo and El Gouna.</p>
-          <p>CodeScalers contributes to the development of <a href="http://www.amplidata.com/">Amplidata</a>, <a href="http://www.awingu.com/">Awingu</a>, <a href="http://www.openvsolutions.com/">Open vSolutions</a>, <a href="http://www.racktivity.com/">Racktivity</a> and <a href="http://www.vscalers.com/">vScalers</a> products under outsourced development contracts, writing and testing systems as well as our marketing department. Our internationally oriented cooperation provides our brand teams with resources in an innovative and time zone friendly environment.</p>
+          <h1 class="title1">{{.Params.page_title}}</h1>
+          {{ .Content }}
         </div>
       </div>
     </div>
@@ -20,165 +19,36 @@
 </section>
 {{end}}
 {{ if eq .Title "Careers"}}
+<style type="text/css">
+ .navbar.navbar-default.navbar-fixed-top { position: relative;}
+ .panel-group .panel+.panel {
+   /* margin-top: 55px;*/
+}
+</style>
+
 <section>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="careerBox">
           <div class="col-md-9 careerP">
-            <h1 class="title">Careers</h1>
-            <p>We're on the look out for talented individuals to join our rapidly growing technical and management teams. Working on massive scale projects for the biggest tech and media companies, with some of the best developers in Egypt.</p>
+            <h1 class="title">{{.Params.page_title}}</h1>
+            <p>{{.Params.page_disc}}</p>
           </div>
           <div class="col-md-3 center">
-            <p><img src="/images/careers.jpg" alt="/www_codescalers/.files/img/careers.jpg" style="clear:both;"></p>
+            <p><img src="{{.Params.pic}}" alt="" style="clear:both;"></p>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-9 paddingR35">
-        <div class="panel-group" id="accordion">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="http://codescalers.com/www_codescalers/Careers#collapseFront"> Front end UI/UX Developer </a> </h4>
-            </div>
-            <div id="collapseFront" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>The Front end UI/UX Developer will work with the existing team on creating new cutting edge software systems through the whole software life cycles, starting from early research and prototyping using a variety of programming language and open-source frameworks.</p>
-                <p>The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures.</p>
-                <p>As the requirements of our products are of a very high level, requirements for the personnel are similar. Therefore he or she needs outstanding technical skills, understanding of systems used in the context of hosting providers and data centers as well as good communication skills.</p>
-                <p>Responsibilities:</p>
-                <ul>
-                  <li>Conduct technology research and experiment with various alternative tools and libraries</li>
-                  <li>Develop proof of concepts and system prototypes</li>
-                  <li>Design, develop and modify software components</li>
-                  <li>Develop and direct software system testing and validation procedures, programming, and documentation</li>
-                </ul>
-                <p>Requirements:</p>
-                <ul>
-                  <li>Bachelor or master degree in Computer science, Engineering or equivalent by experience</li>
-                  <li>3-5 years experience in software development relevant to the described job</li>
-                  <li>Profound knowledge of Javascript</li>
-                  <li>Profound knowledge of HTML5 and CSS3</li>
-                  <li>Experience with Javascript frameworks (Angularjs, Backbonejs etc ...)</li>
-                  <li>Experience with Javascript unit &amp; e2e testing (Jasmine, etc …)</li>
-                  <li>Experience with Javascript build and automation tools (Gruntjs, Bower, npm, etc ...)</li>
-                  <li>Experience with mobile first and responsive design</li>
-                  <li>Experience in building Single page Applications utilizing RESTful APIs</li>
-                  <li>Experience with SCM tools Git or Mercurial</li>
-                  <li>Experience in enterprise software development/design</li>
-                  <li>Familiarity with Linux operating system is a must, at least intermediate level experience</li>
-                  <li>Knowledge of Python, Nodejs is a plus</li>
-                  <li>Knowledge of Selenium is a plus</li>
-                  <li>Knowledge of deployment and configuration management tools (Saltstack, Ansible, Puppet, etc ...) is a plus</li>
-                  <li>Knowledge of Continuous Integration (Jenkins, Travis-ci, etc ...) is a plus</li>
-                  <li>Excellent analytical skills, strong object-oriented design skills</li>
-                  <li>Practical experience with Agile Development processes, specially SCRUM is a plus</li>
-                  <li>Open-source practitioner, contributions to open-source projects is a plus</li>
-                  <li>Target driven and result oriented</li>
-                  <li>Achieves high quality results through thoughtful analysis and planning</li>
-                  <li>Open for changes and continuous learning</li>
-                  <li>Good knowledge of spoken and written English</li>
-                  <li>Willing to travel abroad for training/deployments</li>
-                  <li>Team player, self motivated and passionate for technologies and innovation</li>
-                </ul>
-                <p>Feel free to apply with a cover letter and CV to <a href="mailto:careers@codescalers.com"> careers@codescalers.com </a></p>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="http://codescalers.com/www_codescalers/Careers#collapseTwo"> Software Solution Developer </a> </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>The Software Solution Developer will work with the existing team on creating new cutting edge software systems through the whole software life cycles, starting from early research and prototyping using a variety of programming language and open-source frameworks</p>
-                <p>The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures.</p>
-                <p>As the requirements of our products are of a very high level, requirements for the personnel are similar. Therefore he or she needs outstanding technical skills, understanding of systems used in the context of hosting providers and data centers as well as good communication skills.</p>
-                <p>Responsibilities:</p>
-                <ul>
-                  <li>Conduct technology research and experiment with various alternative tools and libraries</li>
-                  <li>Develop proof of concepts and system prototypes</li>
-                  <li>Design, develop and modify software components</li>
-                  <li>Develop and direct software system testing and validation procedures, programming, and documentation</li>
-                </ul>
-                <p>Requirements:</p>
-                <ul>
-                  <li>Bachelor or master degree in Computer science, Engineering or equivalent by experience</li>
-                  <li>3-5 years experience in software development relevant to the described job</li>
-                  <li>Profound knowledge of Python</li>
-                  <li>Knowledge of C++ or Java</li>
-                  <li>Experience with python web frameworks (Django, Flask, Gevent, etc ...)</li>
-                  <li>Deep understanding of database concepts is a must, hands on experience with PostgreSQL or MySQL is a plus</li>
-                  <li>Experience with Networking protocols (TCP/IP, UDP, XMPP, etc ...)</li>
-                  <li>Experience in enterprise software development/design</li>
-                  <li>Experience in RESTful Web Services design and implementation </li>
-                  <li>Experience with SCM tools Git or Mercurial</li>
-                  <li>Familiarity with design and implementation of Scalable, HA systems</li>
-                  <li>Familiarity with Linux operating system is a must, at least intermediate level experience</li>
-                  <li>Knowledge of Javascript, BackboneJs or Angularjs frameworks is a plus</li>
-                  <li>Knowledge of deployment and configuration management tools (Saltstack, Ansible, Puppet, etc ...) is a plus</li>
-                  <li>Knowledge of Continuous Integration (Jenkins, Travis-ci, etc ...) is a plus</li>
-                  <li>Knowledge of Openstack, AWS, Azure, GCE is a plus</li>
-                  <li>Excellent analytical skills, strong object-oriented design skills</li>
-                  <li>Practical experience with Agile Development processes, specially SCRUM is a plus</li>
-                  <li>Open-source practitioner, contributions to open-source projects is a plus</li>
-                  <li>Target driven and result oriented</li>
-                  <li>Achieves high quality results through thoughtful analysis and planning</li>
-                  <li>Open for changes and continuous learning</li>
-                  <li>Good knowledge of spoken and written English</li>
-                  <li>Willing to travel abroad for training/deployments</li>
-                  <li>Team player, self motivated and passionate for technologies and innovation</li>
-                </ul>
-                <p>Feel free to apply with a cover letter and CV to <a href="mailto:careers@codescalers.com"> careers@codescalers.com </a></p>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="http://codescalers.com/www_codescalers/Careers#collapseThree"> Software Test Engineer </a> </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>As a Software Test Engineer in our team you will work closely with development and program management to help determine the vision, scope, design, testability and requirements for our next generation of the product. You will own the test innovation and test tools strategy, planning, and scheduling necessary to deliver a high quality product, including product feature validation, performance and scalability testing, and customer scenario-focused testing.</p>
-                <p>Responsibilities:</p>
-                <ul>
-                  <li>Develop automated component and integration tests.</li>
-                  <li>Create scripts for and run big system tests.</li>
-                  <li>Update and expand existing tests.</li>
-                  <li>Verify product test coverage</li>
-                  <li>Expand and maintain the testing tool chain</li>
-                  <li>Works in the Quality Engineering Team and reports to the team lead.</li>
-                </ul>
-                <p>Requirements:</p>
-                <ul>
-                  <li>0-3 years experience in software development relevant to the described job</li>
-                  <li>Knowledge of C++ or Java</li>
-                  <li>Knowledge of Python and Python Libraries</li>
-                  <li>Excellent technical skills, attention to detail, debugging and problem solving skills</li>
-                  <li>Strong customer focus and passion for doing the right thing for the customer</li>
-                  <li>Proven track record as a strong Software Test Development Engineer in various aspects of testing</li>
-                  <li>Successful completion of a full product development lifecycle, having shipped at least two versions of a product</li>
-                  <li>Deep understanding of database concepts is a must, hands on experience with PostgreSQL or MySQL is a must, experience with Object Store concepts is a plus</li>
-                  <li>Deep Knowledge of storage systems concepts and technologies (NAS, SAN, RAID, EXT3, GFS, Hadoop, etc ...)</li>
-                  <li>Good knowledge of networking protocols (TCP/IP)</li>
-                  <li>Understanding of agile software development methodologies and test driven development</li>
-                  <li>Strong skills with Linux operating system is a must, at intermediate user/scripting level experience</li>
-                  <li>Open-source practitioner, contributions to open-source projects is a plus</li>
-                  <li>Good knowledge of spoken and written English</li>
-                  <li>Willing to travel to abroad for training/deployments every 3-6 months</li>
-                  <li>Team player, self motivated and passionate for technology and innovation</li>
-                </ul>
-                <p>Feel free to apply with a cover letter and CV to <a href="mailto:careers@codescalers.com"> careers@codescalers.com </a></p>
-              </div>
-            </div>
-          </div>
-        </div>
+        {{ .Content }}
       </div>
       <div class="col-md-3 c3u">
-        <h5 class="title">Codescalers on Facebook</h5>
-        <p>If you want to stay posted you can check our facebook page</p>
-        <div class="social1"> <a target="_blank" href="https://www.facebook.com/Codescalers"><img src="/images/social1.png"></a> </div>
+        <h5 class="title">{{.Params.social_title}}</h5>
+        <p>{{.Params.social_disc}}</p>
+        <div class="social1"> <a target="_blank" href="{{.Params.icon_link}}"><img src="{{.Params.icon_pic}}"></a> </div>
       </div>
     </div>
   </div>
@@ -189,71 +59,33 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="title">Contact us</h1>
+        <h1 class="title">{{.Params.page_title}}</h1>
         <div class="thumbnail info-thumbnail padding1 background-clouds color-black">
           <div class="caption background-white">
-            <h3>Dubai:</h3>
-            <p><span class="fa fa-home color-lead"></span>Dubai Silicon Oasis, Dubai, UAE, P.O. Box 6009</p>
-            <p><span class="fa fa-envelope color-lead"></span>info@codescalers.com</p>
-            <p><span class="fa fa-briefcase color-lead"></span>careers@codescalers.com</p>
+            <h3>{{.Params.address1_country}}</h3>
+            <p><span class="fa fa-home color-lead"></span>{{.Params.address1_disc}}</p>
+            <p><span class="fa fa-envelope color-lead"></span>{{.Params.address1_email1}}</p>
+            <p><span class="fa fa-briefcase color-lead"></span>{{.Params.address1_email2}}</p>
             <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7224.728221205021!2d55.3842084!3d25.1233781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x7b170a9aeabb253b!2sDubai+Silicon+Oasis!5e0!3m2!1sen!2seg!4v1427178182977"  style="border:0;width: 100%; height: 400px"></iframe>
+            <iframe src="{{.Params.address1_map}}"  style="border:0;width: 100%; height: 400px"></iframe>
             <hr>
-            <h3>Cairo:</h3>
-            <p><span class="fa fa-home color-lead"></span> 72 El Nozha Street, Heliopolis, Cairo, Egypt</p>
-            <p><span class="fa fa-envelope color-lead"></span>info@codescalers.com</p>
-            <p><span class="fa fa-briefcase color-lead"></span>careers@codescalers.com</p>
-            <p><span class="fa fa-phone-square color-lead"></span> +202 2417 4744</p>
-            <p><span class="fa fa-print color-lead"></span> +202 2417 4655</p>
+            <h3>{{.Params.address2_country}}</h3>
+            <p><span class="fa fa-home color-lead"></span> {{.Params.address2_disc}}</p>
+            <p><span class="fa fa-envelope color-lead"></span>{{.Params.address2_email1}}</p>
+            <p><span class="fa fa-briefcase color-lead"></span>{{.Params.address2_email2}}</p>
+            <p><span class="fa fa-phone-square color-lead"></span>{{.Params.address2_phone1}}</p>
+            <p><span class="fa fa-print color-lead"></span>{{.Params.address2_phone2}}</p>
             <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m8!1m3!1d1726.096385783119!2d31.341248!3d30.088665!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e6!4m0!4m3!3m2!1d30.088850599999997!2d31.3408296!5e0!3m2!1sen!2seg!4v1404743577327"  style="border:0;width: 100%; height: 400px"></iframe>
+            <iframe src="{{.Params.address2_map}}"  style="border:0;width: 100%; height: 400px"></iframe>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-offset-3 col-md-6">
-        <h2 class="title">Contact form</h2>
-        <form class="form-horizontal contact_form" method="get" action="http://codescalers.com/restmachine/system/emailsender/send">
-          <div class="alert" style="display: none"></div>
-          <input type="hidden" name="smtp_key" value="None">
-          <input type="hidden" name="receiver_email" value="contact@codescalers.com">
-          <input type="hidden" name="format" value="json">
-          <input type="hidden" name="subject" value="About CodeScalers.com">
-          <div style="display: none">
-            <input type="text" id="honeypot" name="honeypot">
-          </div>
-          <div class="form-group">
-            <label for="sender_name" class="col-md-2 control-label">Name</label>
-            <div class="col-md-10">
-              <input name="sender_name" required placeholder="Name" class="form-control input-lg" type="text">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="sender_email" class="col-md-2 control-label">Email</label>
-            <div class="col-md-10">
-              <input name="sender_email" required placeholder="Email" class="form-control input-lg" pattern="^[a-zA-Z0-9.!#$%&amp;&#39;*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$" type="email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="body" class="col-md-2 control-label">Content</label>
-            <div class="col-md-10">
-              <textarea name="body" required rows="5" class="form-control input-lg"></textarea>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-              <button class="btn btn-lead btn-lg" data-loading-text="Sending..." type="submit"> Send us an email </button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="row"> </div>
-    </div>
+    {{ .Content }}
   </div>
 </section>
 {{end}}
-{{ .Content }}
+
 
 {{ partial "footer.html" . }} 
 <script type="text/javascript" src="/js/jquery-latest.js"></script> 
