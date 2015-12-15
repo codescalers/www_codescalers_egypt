@@ -16,8 +16,8 @@ $(str2).children(".panel-collapse").addClass('in').removeClass('collapse').prev(
 
 
 
-var str=location.href.toLowerCase();
-    $('li.active').removeClass("active");
+var str = location.href.toLowerCase();
+  $('li.active').removeClass("active");
   $('.nav li a').filter(function() {return this.href.toLowerCase() == str; }).parents('li').addClass('active');
      
 
