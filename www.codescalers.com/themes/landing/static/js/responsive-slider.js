@@ -383,7 +383,7 @@
   };
   $.fn.responsiveSlider.defaults = {
     autoplay: false,
-    interval: 5000,
+    interval: 4000,
     touch: true,
     parallax: false,
     parallaxDistance: 1 / 10,
