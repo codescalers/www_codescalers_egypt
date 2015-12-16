@@ -147,7 +147,7 @@ background-repeat: repeat-x; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 25
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret { border-top-color: #ffffff; border-bottom-color: #ffffff; }
 .admin .navbar { min-height: 39px; }
 .admin .navbar { min-height: 39px; }
-#mainMenu + section { margin-top: 80px; }
+#mainMenu + section {}
 .aboutPic img { border: 3px solid #ecf0f1 }
 .responsive-slider-parallax .slides-container { background-image: url(../images/slide3.jpg)!important; background-position-y: -30px !important; background-size: 1500px auto !important; }
 .caption h3 { margin-top: 1px; }
@@ -174,4 +174,6 @@ footer .col-md-5 + .row { width: 100%; }
 html {position: relative;min-height: 100%;}
 body {margin-bottom: 407px;}
 footer { position: absolute !important; bottom: 0; width: 100%; }
+.navbar.navbar-default.navbar-fixed-top { position: relative;}
+.responsive-slider-parallax { margin-top: 0 !important;}
 

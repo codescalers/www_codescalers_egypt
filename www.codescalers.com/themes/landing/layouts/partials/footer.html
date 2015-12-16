@@ -19,7 +19,7 @@
       </div>
       <div class="col-md-5">
         <h3>Contact us</h3>
-        <form class="form-horizontal contact_form" method="get" action="http://codescalers.com/restmachine/system/emailsender/send">
+        <form class="form-horizontal contact_form" method="POST" name="contact_form" action="//formspree.io/nayer@codescalers.com">
           <div class="alert" style="display: none"></div>
           <input type="hidden" name="smtp_key" value="None">
           <input type="hidden" name="receiver_email" value="contact@codescalers.com">
@@ -37,7 +37,7 @@
           <div class="form-group">
             <label for="sender_email" class="col-lg-3 control-label">Email</label>
             <div class="col-lg-9">
-              <input name="sender_email" required placeholder="Email" class="form-control input-lg" pattern="^[a-zA-Z0-9.!#$%&amp;&#39;*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$" type="email">
+              <input name="sender_email" required placeholder="Email" class="form-control input-lg" type="email">
             </div>
           </div>
           <div class="form-group">

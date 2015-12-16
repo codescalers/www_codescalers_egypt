@@ -21,7 +21,12 @@ address2_map = "https://www.google.com/maps/embed?pb=!1m18!1m8!1m3!1d1726.096385
 <div class="row" id="test">
   <div class="col-md-offset-3 col-md-6">
     <h2 class="title">Contact form</h2>
-    <form class="form-horizontal contact_form" method="get" action="http://codescalers.com/restmachine/system/emailsender/send">
+
+
+
+
+
+    <form class="form-horizontal contact_form" method="POST" name="contact_form" action="//formspree.io/nayer@codescalers.com">
       <div class="alert" style="display: none"></div>
       <input type="hidden" name="smtp_key" value="None">
       <input type="hidden" name="receiver_email" value="contact@codescalers.com">
@@ -33,24 +38,24 @@ address2_map = "https://www.google.com/maps/embed?pb=!1m18!1m8!1m3!1d1726.096385
       <div class="form-group">
         <label for="sender_name" class="col-md-2 control-label">Name</label>
         <div class="col-md-10">
-          <input name="sender_name" required placeholder="Name" class="form-control input-lg" type="text">
+          <input name="name" required placeholder="Name" class="form-control input-lg" type="text">
         </div>
       </div>
       <div class="form-group">
         <label for="sender_email" class="col-md-2 control-label">Email</label>
         <div class="col-md-10">
-          <input name="sender_email" required placeholder="Email" class="form-control input-lg" pattern="^[a-zA-Z0-9.!#$%&amp;&#39;*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$" type="email">
+          <input name="_replyto" required placeholder="Email" class="form-control input-lg"  type="email">
         </div>
       </div>
       <div class="form-group">
         <label for="body" class="col-md-2 control-label">Content</label>
         <div class="col-md-10">
-          <textarea name="body" required rows="5" class="form-control input-lg"></textarea>
+          <textarea id="message" name="message" required rows="5" class="form-control input-lg"></textarea>
         </div>
       </div>
       <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-          <button class="btn btn-lead btn-lg" data-loading-text="Sending..." type="submit"> Send us an email </button>
+          <button type="submit" id="submit" name="submit" class="btn btn-lead btn-lg" data-loading-text="Sending..."> Send us an email </button>
         </div>
       </div>
     </form>

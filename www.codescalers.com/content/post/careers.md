@@ -14,7 +14,7 @@ icon_pic = "/images/social1.png"
 <div class="panel-group" id="accordion">
   <div id="panel1" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="http://codescalers.com/www_codescalers/Careers#collapseFront"> Front end UI/UX Developer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFront"> Front end UI/UX Developer </a> </h4>
     </div>
     <div id="collapseFront" class="panel-collapse collapse">
       <div class="panel-body">
@@ -62,7 +62,7 @@ icon_pic = "/images/social1.png"
   </div>
   <div id="panel2" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="http://codescalers.com/www_codescalers/Careers#collapseTwo"> Software Solution Developer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Software Solution Developer </a> </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
@@ -110,7 +110,7 @@ icon_pic = "/images/social1.png"
   </div>
   <div id="panel3" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="http://codescalers.com/www_codescalers/Careers#collapseThree"> Software Test Engineer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Software Test Engineer </a> </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
