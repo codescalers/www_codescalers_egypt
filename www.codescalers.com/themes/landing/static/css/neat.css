@@ -657,25 +657,7 @@ h3 {
   padding: 20px 0 0 0;
   vertical-align: top;
 }
-.navbar.scroll .nav.navbar-nav > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.navbar.scroll .nav.navbar-nav > li > a:hover {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.navbar.scroll .navbar-brand {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.navbar.scroll .navbar-brand img {
-  margin: -10px 10px -10px 0;
-  border: 0;
-  padding: 0;
-  vertical-align: top;
-  padding: 5px 0 0 0;
-}
+
 .breadcrumbs-container {
   margin-top: 80px;
 }
