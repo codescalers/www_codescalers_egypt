@@ -14,9 +14,9 @@ icon_pic = "/images/social1.png"
 <div class="panel-group" id="accordion">
   <div id="panel1" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#panel1"> Front end UI/UX Developer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFront"> Front end UI/UX Developer </a> </h4>
     </div>
-    <div id="panel1" class="panel-collapse collapse">
+    <div id="collapseFront" class="panel-collapse collapse">
       <div class="panel-body">
         <p>The Front end UI/UX Developer will work with the existing team on creating new cutting edge software systems through the whole software life cycles, starting from early research and prototyping using a variety of programming language and open-source frameworks.</p>
         <p>The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures.</p>
@@ -62,9 +62,9 @@ icon_pic = "/images/social1.png"
   </div>
   <div id="panel2" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#panel2"> Software Solution Developer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Software Solution Developer </a> </h4>
     </div>
-    <div id="panel2" class="panel-collapse collapse">
+    <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
         <p>The Software Solution Developer will work with the existing team on creating new cutting edge software systems through the whole software life cycles, starting from early research and prototyping using a variety of programming language and open-source frameworks</p>
         <p>The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures.</p>
@@ -110,9 +110,9 @@ icon_pic = "/images/social1.png"
   </div>
   <div id="panel3" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#panel3"> Software Test Engineer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Software Test Engineer </a> </h4>
     </div>
-    <div id="panel3" class="panel-collapse collapse">
+    <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
         <p>As a Software Test Engineer in our team you will work closely with development and program management to help determine the vision, scope, design, testability and requirements for our next generation of the product. You will own the test innovation and test tools strategy, planning, and scheduling necessary to deliver a high quality product, including product feature validation, performance and scalability testing, and customer scenario-focused testing.</p>
         <p>Responsibilities:</p>
