@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+    new Clipboard('.clipboard');
 
 $('.panel-collapse').on('show.bs.collapse',function(){
     $(this).prev('.panel-heading').addClass("active");

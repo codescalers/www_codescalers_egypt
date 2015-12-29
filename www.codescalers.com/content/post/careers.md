@@ -6,15 +6,16 @@ page_disc = "We're on the look out for talented individuals to join our rapidly 
 pic = "/images/careers.jpg"
 social_title = "Codescalers on Facebook"
 social_disc = "If you want to stay posted you can check our facebook page"
-icon_link = "https://www.facebook.com/Codescalers"
+icon = "https://www.facebook.com/Codescalers"
 icon_pic = "/images/social1.png"
 +++
+
 
 
 <div class="panel-group" id="accordion">
   <div id="panel1" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFront"> Front end UI/UX Developer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFront"> Front end UI/UX Developer </a> <i title="Copy this job to clipboard" class="clipboard fa fa-pencil-square-o"  data-clipboard-text="http://127.0.0.1:56809/careers/#panel1" ></i></h4>
     </div>
     <div id="collapseFront" class="panel-collapse collapse">
       <div class="panel-body">
@@ -62,7 +63,7 @@ icon_pic = "/images/social1.png"
   </div>
   <div id="panel2" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Software Solution Developer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Software Solution Developer </a> <i title="Copy this job to clipboard" class="clipboard fa fa-pencil-square-o"  data-clipboard-text="http://127.0.0.1:56809/careers/#panel2" ></i></h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
@@ -110,7 +111,7 @@ icon_pic = "/images/social1.png"
   </div>
   <div id="panel3" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Software Test Engineer </a> </h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Software Test Engineer </a> <i title="Copy this job to clipboard" class="clipboard fa fa-pencil-square-o"  data-clipboard-text="http://127.0.0.1:56809/careers/#panel3" ></i></h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">

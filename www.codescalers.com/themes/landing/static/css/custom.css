@@ -176,4 +176,6 @@ body {margin-bottom: 407px;}
 footer { position: absolute !important; bottom: 0; width: 100%; }
 .navbar.navbar-default.navbar-fixed-top { position: relative;}
 .responsive-slider-parallax { margin-top: 0 !important;}
-
+i.clipboard { position: absolute;right: 11px;top: 13px;z-index: 9;cursor: pointer; }
+.active i.clipboard {color: #FFF;}
+#accordion .panel-title { position: relative;}
