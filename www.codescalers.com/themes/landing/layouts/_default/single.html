@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 <body>
 {{ partial "header.html" . }}
-{{ if eq .Title "The Company"}}
+{{ if eq .Title "About us"}}
 <section>
   <div class="container">
     <div class="row">
@@ -10,7 +10,22 @@
       </div>
       <div class="col-md-9">
         <div class="content">
-          <h1 class="title1">{{.Params.page_title}}</h1>
+          <h1 class="title1">{{.Title}}</h1>
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{ if eq .Title "thanks"}}
+<section>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="content">
+
           {{ .Content }}
         </div>
       </div>
@@ -19,7 +34,6 @@
 </section>
 {{end}}
 {{ if eq .Title "Careers"}}
-
 <section>
   <div class="container">
     <div class="row">
@@ -79,8 +93,6 @@
   </div>
 </section>
 {{end}}
-
-
 {{ partial "footer.html" . }} 
 <script type="text/javascript" src="/js/jquery-latest.js"></script> 
 <script type="text/javascript" src="/js/jquery.event.move.js"></script> 

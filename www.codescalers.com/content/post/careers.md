@@ -6,10 +6,9 @@ page_disc = "We're on the look out for talented individuals to join our rapidly 
 pic = "/images/careers.jpg"
 social_title = "Codescalers on Facebook"
 social_disc = "If you want to stay posted you can check our facebook page"
-icon = "https://www.facebook.com/Codescalers"
+icon_link = "https://www.facebook.com/Codescalers"
 icon_pic = "/images/social1.png"
 +++
-
 <div class="panel-group" id="accordion">
   <div id="panel1" class="panel panel-default">
     <div class="panel-heading">
