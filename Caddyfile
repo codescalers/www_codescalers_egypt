@@ -6,7 +6,7 @@ http://gig-codescalers.aydo.com:8355 {
        repo git@git.aydo.com:static-websites/www-codescalers.git
        interval 300
        key ../keys/id_rsa
-       path ../
+       path ../..
        then hugo -s www.codescalers.com
     }
 }
