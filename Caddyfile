@@ -1,4 +1,4 @@
-http://gig-codescalers:8347 {
+http://gig-codescalers.aydo.com:8355 {
     bind 0.0.0.0
     gzip
     root www.codescalers.com
@@ -7,6 +7,6 @@ http://gig-codescalers:8347 {
        interval 300
        key ../keys/id_rsa
        path ../
-       then ./hugo-init
+       then hugo -s www.codescalers.com
     }
 }
