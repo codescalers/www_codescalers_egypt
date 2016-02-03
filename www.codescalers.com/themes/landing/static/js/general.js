@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$( ".clip" ).attr( "data-clipboard-text", "" + window.location.host + "/careers/#panel1" );
 	$( ".clip2" ).attr( "data-clipboard-text", "" + window.location.host + "/careers/#panel2" );
 	$( ".clip3" ).attr( "data-clipboard-text", "" + window.location.host + "/careers/#panel3" );
+	$( ".clip4" ).attr( "data-clipboard-text", "" + window.location.host + "/careers/#panel4" );
 
 	var clipboard = new Clipboard('.clipboard');
 	clipboard.on('success', function(e) {

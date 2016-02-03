@@ -10,54 +10,6 @@ icon_link = "https://www.facebook.com/Codescalers"
 icon_pic = "/images/social1.png"
 +++
 <div class="panel-group" id="accordion">
-  <div id="panel1" class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFront"> Front end UI/UX Developer </a> <i title="Copy this job url to clipboard" class="clipboard fa fa-clipboard clip"   ><span class="copied">Copied</span></i></h4>
-    </div>
-    <div id="collapseFront" class="panel-collapse collapse">
-      <div class="panel-body">
-        <p>The Front end UI/UX Developer will work with the existing team on creating new cutting edge software systems through the whole software life cycles, starting from early research and prototyping using a variety of programming language and open-source frameworks.</p>
-        <p>The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures.</p>
-        <p>As the requirements of our products are of a very high level, requirements for the personnel are similar. Therefore he or she needs outstanding technical skills, understanding of systems used in the context of hosting providers and data centers as well as good communication skills.</p>
-        <p>Responsibilities:</p>
-        <ul>
-          <li>Conduct technology research and experiment with various alternative tools and libraries</li>
-          <li>Develop proof of concepts and system prototypes</li>
-          <li>Design, develop and modify software components</li>
-          <li>Develop and direct software system testing and validation procedures, programming, and documentation</li>
-        </ul>
-        <p>Requirements:</p>
-        <ul>
-          <li>Bachelor or master degree in Computer science, Engineering or equivalent by experience</li>
-          <li>3-5 years experience in software development relevant to the described job</li>
-          <li>Profound knowledge of Javascript</li>
-          <li>Profound knowledge of HTML5 and CSS3</li>
-          <li>Experience with Javascript frameworks (Angularjs, Backbonejs etc ...)</li>
-          <li>Experience with Javascript unit &amp; e2e testing (Jasmine, etc …)</li>
-          <li>Experience with Javascript build and automation tools (Gruntjs, Bower, npm, etc ...)</li>
-          <li>Experience with mobile first and responsive design</li>
-          <li>Experience in building Single page Applications utilizing RESTful APIs</li>
-          <li>Experience with SCM tools Git or Mercurial</li>
-          <li>Experience in enterprise software development/design</li>
-          <li>Familiarity with Linux operating system is a must, at least intermediate level experience</li>
-          <li>Knowledge of Python, Nodejs is a plus</li>
-          <li>Knowledge of Selenium is a plus</li>
-          <li>Knowledge of deployment and configuration management tools (Saltstack, Ansible, Puppet, etc ...) is a plus</li>
-          <li>Knowledge of Continuous Integration (Jenkins, Travis-ci, etc ...) is a plus</li>
-          <li>Excellent analytical skills, strong object-oriented design skills</li>
-          <li>Practical experience with Agile Development processes, specially SCRUM is a plus</li>
-          <li>Open-source practitioner, contributions to open-source projects is a plus</li>
-          <li>Target driven and result oriented</li>
-          <li>Achieves high quality results through thoughtful analysis and planning</li>
-          <li>Open for changes and continuous learning</li>
-          <li>Good knowledge of spoken and written English</li>
-          <li>Willing to travel abroad for training/deployments</li>
-          <li>Team player, self motivated and passionate for technologies and innovation</li>
-        </ul>
-        <p>Feel free to apply with a cover letter and CV to <a href="mailto:careers@codescalers.com"> careers@codescalers.com </a></p>
-      </div>
-    </div>
-  </div>
   <div id="panel2" class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Software Solution Developer </a> <i title="Copy this job url to clipboard" class="clipboard fa fa-clipboard clip2"  ><span class="copied">Copied</span></i></h4>
@@ -145,4 +97,95 @@ icon_pic = "/images/social1.png"
       </div>
     </div>
   </div>
+  <div id="panel4" class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> Software Engineer </a> <i title="Copy this job url to clipboard" class="clipboard fa fa-clipboard clip4"  ><span class="copied">Copied</span></i></h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>The Software Engineer will work with the existing team on creating new cutting edge software systems using a variety of programming language and open-source frameworks
+        <br/>
+        The Software team is responsible for the software part of our productsand works in collaboration with our engineering team. The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures.
+        <br/>
+        As the requirements of our products are of a very high level, requirements for the personnel are similar. Therefore he or she needs outstanding technical skills, solid academic background and deep understanding of computer science concepts, algorithms and techniques.</p>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>Develop and modify software components.</li>
+          <li>Works closely with Software Solution Developers to implement new features and enhancements</li>
+          <li>Write software automated unit and integration test cases</li>
+          <li>Contribute to installation manuals for all products and upgrades, educating the world about our products and technologies</li>
+        </ul>
+        <p>Requirements:</p>
+        <ul>
+          <li>Up to 3 years experience in software development relevant to the described job</li>
+          <li>Knowledge of C++ or Java</li>
+          <li>Knowledge of Python</li>
+          <li>Achieves high quality results through thoughtful analysis and planning</li>
+          <li>Target driven and result oriented</li>
+          <li>Strong object-oriented skills, knowledge of GOF Design Patterns is a plus</li>
+          <li>Deep understanding of database concepts is a must, hands on experience with PostgreSQL or MySQL is a plus</li>
+          <li>Familiarity with Linux operating system is a must, at least user level experience</li>
+          <li>Knowledge of Javascript, Ajax frameworks or Flex is a plus</li>
+          <li>Open-source practitioner, contributions to open-source projects is a plus</li>
+          <li>Understanding of agile software development methodologies and test driven development</li>
+          <li>Strong skills with Linux operating system is a must, at intermediate user/scripting level experience</li>
+          <li>Open-source practitioner, contributions to open-source projects is a plus</li>
+          <li>Open for changes and continuous learning, can work under pressure.</li>
+          <li>Good knowledge of spoken and written English</li>
+          <li>Team player, self motivated and passionate about technologies and innovation</li>
+        </ul>
+        <p>Please send your CV to <a href="mailto:careers@codescalers.com"> careers@codescalers.com </a></p>
+      </div>
+    </div>
+  </div>
+   <div id="panel1" class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFront"> Front end UI/UX Developer </a> <i title="Copy this job url to clipboard" class="clipboard fa fa-clipboard clip"   ><span class="copied">Copied</span></i></h4>
+    </div>
+    <div id="collapseFront" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>The Front end UI/UX Developer will work with the existing team on creating new cutting edge software systems through the whole software life cycles, starting from early research and prototyping using a variety of programming language and open-source frameworks.</p>
+        <p>The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures.</p>
+        <p>As the requirements of our products are of a very high level, requirements for the personnel are similar. Therefore he or she needs outstanding technical skills, understanding of systems used in the context of hosting providers and data centers as well as good communication skills.</p>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>Conduct technology research and experiment with various alternative tools and libraries</li>
+          <li>Develop proof of concepts and system prototypes</li>
+          <li>Design, develop and modify software components</li>
+          <li>Develop and direct software system testing and validation procedures, programming, and documentation</li>
+        </ul>
+        <p>Requirements:</p>
+        <ul>
+          <li>Bachelor or master degree in Computer science, Engineering or equivalent by experience</li>
+          <li>3-5 years experience in software development relevant to the described job</li>
+          <li>Profound knowledge of Javascript</li>
+          <li>Profound knowledge of HTML5 and CSS3</li>
+          <li>Experience with Javascript frameworks (Angularjs, Backbonejs etc ...)</li>
+          <li>Experience with Javascript unit &amp; e2e testing (Jasmine, etc …)</li>
+          <li>Experience with Javascript build and automation tools (Gruntjs, Bower, npm, etc ...)</li>
+          <li>Experience with mobile first and responsive design</li>
+          <li>Experience in building Single page Applications utilizing RESTful APIs</li>
+          <li>Experience with SCM tools Git or Mercurial</li>
+          <li>Experience in enterprise software development/design</li>
+          <li>Familiarity with Linux operating system is a must, at least intermediate level experience</li>
+          <li>Knowledge of Python, Nodejs is a plus</li>
+          <li>Knowledge of Selenium is a plus</li>
+          <li>Knowledge of deployment and configuration management tools (Saltstack, Ansible, Puppet, etc ...) is a plus</li>
+          <li>Knowledge of Continuous Integration (Jenkins, Travis-ci, etc ...) is a plus</li>
+          <li>Excellent analytical skills, strong object-oriented design skills</li>
+          <li>Practical experience with Agile Development processes, specially SCRUM is a plus</li>
+          <li>Open-source practitioner, contributions to open-source projects is a plus</li>
+          <li>Target driven and result oriented</li>
+          <li>Achieves high quality results through thoughtful analysis and planning</li>
+          <li>Open for changes and continuous learning</li>
+          <li>Good knowledge of spoken and written English</li>
+          <li>Willing to travel abroad for training/deployments</li>
+          <li>Team player, self motivated and passionate for technologies and innovation</li>
+        </ul>
+        <p>Feel free to apply with a cover letter and CV to <a href="mailto:careers@codescalers.com"> careers@codescalers.com </a></p>
+      </div>
+    </div>
+  </div>
+
+
 </div>
