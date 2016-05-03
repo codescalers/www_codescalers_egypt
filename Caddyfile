@@ -1,4 +1,4 @@
-http://gig-codescalers.aydo.com:8031 {
+http://www.codescalers.com:8031, http://codescalers.com:8031 {
     bind 0.0.0.0
     gzip
     root www.codescalers.com/en
