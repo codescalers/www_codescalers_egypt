@@ -140,7 +140,7 @@ icon_pic = "/images/social1.png"
   </div>
    <div id="panel1" class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFront"> Front end UI/UX Developer </a> <i title="Copy this job url to clipboard" class="clipboard fa fa-clipboard clip"   ><span class="copied">Copied</span></i></h4>
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFront"> Front end UI/UX Developer </a> <i title="Copy this job url to clipboard" class="clipboard fa fa-clipboard clip5"   ><span class="copied">Copied</span></i></h4>
     </div>
     <div id="collapseFront" class="panel-collapse collapse">
       <div class="panel-body">
@@ -186,6 +186,50 @@ icon_pic = "/images/social1.png"
       </div>
     </div>
   </div>
+  <div id="panel5" class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseSystem"> System Engineer </a> <i title="Copy this job url to clipboard" class="clipboard fa fa-clipboard clip"   ><span class="copied">Copied</span></i></h4>
+    </div>
+    <div id="collapseSystem" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>The Engineering department is responsible for the development of our products in collaboration with our software development team. The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures. The projects and activities within the Engineering department are mainly driven by product management.</p>
+        <p>As the requirements of our products are of a very high level, requirements for the personnel are similar. Therefore he or she needs outstanding technical skills, understanding of systems used in the context of hosting providers and data centers as well as good communication skills.</p>
+        
+        <p>Responsibilities:</p>
+        <ul>
+<li>Develop new products in collaboration with the software developers
+</li>
+          <li>Compile, build and deploy custom-made integrated operating systems and environments</li>
+          <li>Test new products before handing them over to operations</li>
+          <li>Test installation procedures;</li>
+          <li>Provide installation manuals for all products and upgrades</li>
+          <li>Writes user documentation matching the provided solution</li>
+          <li>installing/​maintaining open source software (OpenVPN, Samba​, Apache, Vsftpd ...etc)</li>
+          <li>Responsible for the stability, reliability and efficiency of the systems.</li>
+        </ul>
+        <p>Profile:</p>
+        <ul>
+          <li>Bachelor degree in Computer science or equivalence by experience</li>
+          <li>Up to 3 years experience in systems engineering relevant to the described job.</li>
+          <li>Strong knowledge of Linux, familiarity with different distros is a plus</li>
+          <li>Understanding of virtualization technologies (Xen, VMWare,...), storage (NAS, SAN) and networking technologies (VLAN, L2 and L3 protocols, Firewalling, VPN, Monitoring...)</li>
+          <li>Profound understanding of internet technology (HTTP, FTP, SMTP,...)</li>
+          <li>Experience with scripting: python, bash</li>
+          <li>Team player</li>
+          <li>Knowledge of English (required)</li>
+          <li>Open for changes and continuous learning</li>
+          <li>Good knowledge of spoken and written English</li>
+          <li>Willing to travel abroad for training/deployments</li>
+          <li>Team player, self motivated and passionate for technologies and innovation</li>
+
+          
+        </ul>
+        <p>Feel free to apply with a cover letter and CV to <a href="mailto:careers@codescalers.com"> careers@codescalers.com </a></p>
+      </div>
+    </div>
+  </div>
+
+
 
 
 </div>
