@@ -4,8 +4,10 @@ $(document).ready(function(){
 	$( ".clip2" ).attr( "data-clipboard-text", "" + window.location.host + "/careers/#panel2" );
 	$( ".clip3" ).attr( "data-clipboard-text", "" + window.location.host + "/careers/#panel3" );
 	$( ".clip4" ).attr( "data-clipboard-text", "" + window.location.host + "/careers/#panel4" );
+    $( ".clip5" ).attr( "data-clipboard-text", "" + window.location.host + "/careers/#panel5" );
 
 	var clipboard = new Clipboard('.clipboard');
+
 	clipboard.on('success', function(e) {
 		$(e.trigger).children().show();
 		$('.copied').delay(500).fadeOut('slow');
