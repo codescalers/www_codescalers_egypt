@@ -206,6 +206,10 @@ icon_pic = "/images/social1.png"
           <li>Writes user documentation matching the provided solution</li>
           <li>installing/​maintaining open source software (OpenVPN, Samba​, Apache, Vsftpd ...etc)</li>
           <li>Responsible for the stability, reliability and efficiency of the systems.</li>
+          <li>Responsible for Production support for Linux systems used for website and public cloud infrastructures.</li>
+          <li>Support cloud base development and production.</li>
+          <li>Support systems serving Applications to international and domestic offices.</li>
+          <li>Support systems serving external applications and content to the internet.</li>
         </ul>
         <p>Profile:</p>
         <ul>
