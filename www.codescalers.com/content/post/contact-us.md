@@ -6,9 +6,7 @@ address1_country = "Dubai:"
 address1_disc = "Saif Desk Q1-07-045/B, sharjah - UAE, P.O. Box 514609"
 address1_email1 = "info@codescalers.com"
 address1_email2 = "careers@codescalers.com"
-address1_map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32379.8129197398!2d55.46177220113782!3d25.341418146089197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f5e36cfa2cc7%3A0x11f502f4edb88468!2sSaif+Zone+-+Sharjah+-+United+Arab+Emirates!5e0!3m2!1sen!2s!4v1496823869839"
-
-
+address1_map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.242368979064!2d55.495917051050874!3d25.329646832449583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f5fa143b07f9%3A0x2f291f3a2621ebc9!2sSAIF+Zone+Headquarter!5e0!3m2!1sen!2seg!4v1496825979436"
 
 address2_country = "Cairo:"
 address2_disc = "72 El Nozha Street, Heliopolis, Cairo, Egypt"
@@ -58,4 +56,3 @@ address2_map = "https://www.google.com/maps/embed?pb=!1m18!1m8!1m3!1d1726.096385
   </div>
   <div class="row"> </div>
 </div>
-
