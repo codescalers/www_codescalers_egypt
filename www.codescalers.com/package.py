@@ -3,12 +3,12 @@ from Jumpscale import j
 class Package(j.baseclasses.threebot_package):
     """
     to start need to run 
-    kosmos -p "j.tools.threebot_packages.get('codescalers_production',giturl='https://github.com/codescalers/www-codescalers',branch='master')"
+    kosmos -p "j.tools.threebot_packages.get('codescalers_production',giturl='https://github.com/codescalers/www-codescalers/tree/master/www.codescalers.com',branch='master')"
     kosmos -p "j.servers.threebot.default.start(web=True, ssl=False)"
     """
     def _init(self, **kwargs):
         self.branch = kwargs["package"].branch or "master"
-        self.codescalers = "https://github.com/codescalers/www-codescalers"
+        self.codescalers = "https://github.com/codescalers/www-codescalers/tree/master/www.codescalers.com"
 
     def prepare(self):
         """
