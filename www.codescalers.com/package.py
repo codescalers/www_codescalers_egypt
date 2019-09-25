@@ -15,6 +15,9 @@ class Package(j.baseclasses.threebot_package):
         called when the 3bot starts
         :return:
         """
+        if not j.sal.ubuntu.is_pkg_installed('hugo'):
+            print ('hugo not installed, installing it now ...')
+            j.sal.ubuntu.apt_install('hugo')
         server = self.openresty
         server.install(reset=True)
         server.configure()
@@ -31,12 +34,14 @@ class Package(j.baseclasses.threebot_package):
         website.path = path
         locations.configure()
         website.configure()
+        j.sal.process.execute("hugo -s {}".format(path))
 
     def start(self):
         """
         called when the 3bot starts
         :return:
         """
+        
         self.prepare()
     def stop(self):
         """
