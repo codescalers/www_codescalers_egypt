@@ -5,7 +5,7 @@ http://gig-codescalers.aydo.com:8031, http://www.gig-codescalers.aydo.com:8031 {
     git {
        repo git@github.com:codescalers/www-codescalers.git
        interval 300
-       branch master
+       branch development
        key ../keys/id_rsa
        path ../..
        then hugo -s www.codescalers.com
