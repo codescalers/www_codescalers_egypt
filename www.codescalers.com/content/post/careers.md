@@ -41,18 +41,17 @@ icon_pic = "/images/social1.png"
                         <li>Bachelor or master degree in Computer science, Engineering or equivalent by experience</li>
                         <li>3-5 years experience in software development relevant to the described job</li>
                         <li>Profound knowledge of Python</li>
-                        <li>Knowledge of C++ or Java</li>
                         <li>Experience with python web frameworks (Django, Flask, Gevent, etc ...)</li>
                         <li>Deep understanding of database concepts is a must, hands on experience with PostgreSQL or MySQL is
                             a plus</li>
-                        <li>Experience with Networking protocols (TCP/IP, UDP, XMPP, etc ...)</li>
+                        <li>Experience with Networking protocols (TCP/IP, UDP, etc ...)</li>
                         <li>Experience in enterprise software development/design</li>
                         <li>Experience in RESTful Web Services design and implementation
                         </li>
-                        <li>Experience with SCM tools Git or Mercurial</li>
+                        <li>Experience with SCM tools Git</li>
                         <li>Familiarity with design and implementation of Scalable, HA systems</li>
                         <li>Familiarity with Linux operating system is a must, at least intermediate level experience</li>
-                        <li>Knowledge of Javascript, BackboneJs or Angularjs frameworks is a plus</li>
+                        <li>Knowledge of Javascript</li>
                         <li>Knowledge of deployment and configuration management tools (Saltstack, Ansible, Puppet, etc ...)
                             is a plus</li>
                         <li>Knowledge of Continuous Integration (Jenkins, Travis-ci, etc ...) is a plus</li>
@@ -101,7 +100,6 @@ icon_pic = "/images/social1.png"
                     <p>Requirements:</p>
                     <ul>
                         <li>0-3 years experience in software development relevant to the described job</li>
-                        <li>Knowledge of C++ or Java</li>
                         <li>Knowledge of Python and Python Libraries</li>
                         <li>Excellent technical skills, attention to detail, debugging and problem solving skills</li>
                         <li>Strong customer focus and passion for doing the right thing for the customer</li>
@@ -157,7 +155,6 @@ icon_pic = "/images/social1.png"
                     <p>Requirements:</p>
                     <ul>
                         <li>Up to 3 years experience in software development relevant to the described job</li>
-                        <li>Knowledge of C++ or Java</li>
                         <li>Knowledge of Python</li>
                         <li>Achieves high quality results through thoughtful analysis and planning</li>
                         <li>Target driven and result oriented</li>
@@ -165,7 +162,7 @@ icon_pic = "/images/social1.png"
                         <li>Deep understanding of database concepts is a must, hands on experience with PostgreSQL or MySQL is
                             a plus</li>
                         <li>Familiarity with Linux operating system is a must, at least user level experience</li>
-                        <li>Knowledge of Javascript, Ajax frameworks or Flex is a plus</li>
+                        <li>Knowledge of Javascript, Ajax frameworks is a plus</li>
                         <li>Open-source practitioner, contributions to open-source projects is a plus</li>
                         <li>Understanding of agile software development methodologies and test driven development</li>
                         <li>Strong skills with Linux operating system is a must, at intermediate user/scripting level experience</li>
@@ -212,7 +209,7 @@ icon_pic = "/images/social1.png"
                         <li>3-5 years experience in software development relevant to the described job</li>
                         <li>Profound knowledge of Javascript</li>
                         <li>Profound knowledge of HTML5 and CSS3</li>
-                        <li>Experience with Javascript frameworks (Angularjs, Backbonejs etc ...)</li>
+                        <li>Experience with Javascript frameworks</li>
                         <li>Experience with Javascript unit &amp; e2e testing (Jasmine, etc …)</li>
                         <li>Experience with Javascript build and automation tools (Gruntjs, Bower, npm, etc ...)</li>
                         <li>Experience with mobile first and responsive design</li>

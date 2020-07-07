@@ -651,10 +651,10 @@ h3 {
   transition: padding 0.5s;
 }
 .navbar .navbar-brand img {
-  
+
   margin: -10px 10px -10px 0;
   border: 0;
-  padding: 20px 0 0 0;
+  padding: 12px 0 0 0;
   vertical-align: top;
 }
 
@@ -1268,7 +1268,7 @@ footer hr {
     border: 0;
     padding: 10px 0 0 0;
     vertical-align: top;
-  
+
     width: 155px;
 }
   .breadcrumbs-container,
@@ -1287,11 +1287,11 @@ footer hr {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+
 }
 @media (min-width: 1200px) {
-  
+
 }
