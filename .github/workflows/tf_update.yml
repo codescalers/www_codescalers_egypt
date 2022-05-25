@@ -1,0 +1,21 @@
+name: Codescalers_egypt
+on: 
+  push:
+    branch: [ master ]
+
+jobs:
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: pushing latest change on codescalers-egypt.com
+      uses: appleboy/ssh-action@master
+      with:
+        host: codescalers-egypt.com
+        username: root
+        key: ${{ secrets.TF_SECRET }}
+        port: 22
+        script: |
+          cd /opt/www_codescalers_egypt
+          git log -1
+          git pull
