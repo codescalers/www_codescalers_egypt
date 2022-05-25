@@ -1,0 +1,21 @@
+name: Codescalers_egypt
+on: 
+  push:
+    branch: [ development ]
+
+jobs:
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: pushing latest change on www3.threefold.io
+      uses: appleboy/ssh-action@master
+      with:
+        host: www2.codescalers-egypt.com
+        username: root
+        key: ${{ secrets.TF_SECRET }}
+        port: 22
+        script: |
+          cd /opt/www_codescalers_egypt
+          git log -1
+          git pull
