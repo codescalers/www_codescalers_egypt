@@ -1,17 +1,28 @@
 name: Codescalers_egypt
 on: 
   push:
+<<<<<<< HEAD
     branch: [ master ]
+=======
+    branch: [ development ]
+>>>>>>> development
 
 jobs:
   job_one:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
     - name: pushing latest change on codescalers-egypt.com
       uses: appleboy/ssh-action@master
       with:
         host: codescalers-egypt.com
+=======
+    - name: pushing latest change on www2.codescalers-egypt.com
+      uses: appleboy/ssh-action@master
+      with:
+        host: www2.codescalers-egypt.com
+>>>>>>> development
         username: root
         key: ${{ secrets.TF_SECRET }}
         port: 22
