@@ -1,7 +1,7 @@
 name: Codescalers_egypt
 on:
   push:
-    branch: [development]
+    branch: [ development ]
 
 jobs:
   job_one:
@@ -13,9 +13,9 @@ jobs:
       with:
         host: www2.codescalers-egypt.com
         username: root
-          key: ${{ secrets.TF_SECRET }}
-          port: 22
-          script: |
-            cd /opt/www_codescalers_egypt
-            git log -1
-            git pull
+        key: ${{ secrets.TF_SECRET }}
+        port: 22
+        script: |
+          cd /opt/www_codescalers_egypt
+          git log -1
+          git pull
