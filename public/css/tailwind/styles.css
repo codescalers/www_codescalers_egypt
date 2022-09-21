@@ -1,0 +1,23 @@
+h2 , p{
+    font-family: 'Outfit', sans-serif;
+}
+
+.blue{
+    color: #217DBB;
+}
+
+.white_blue{
+    color: #50ADEC;
+}
+
+.bg_blue {
+    background-color: #DDF4FF
+}
+
+.bg_blue_dark {
+    background-color: #217DBB
+}
+
+.dark_bg {
+    background-color: #414141;
+}
