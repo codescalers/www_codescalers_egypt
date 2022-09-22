@@ -22,13 +22,20 @@ let menu = document.getElementById('menu');
 menuBtn.addEventListener('click', function () {
     console.log('clicked')
     if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden')
-        menu.classList.add('block')
+        menu.classList.replace('hidden', 'block')
     } else {
-        menu.classList.add('hidden')
-        menu.classList.remove('block')
+        menu.classList.replace('block', 'hidden')
     }
+});
 
+let navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', function () {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        navbar.classList.replace('top-10', 'top-0');
+    } else {
+        navbar.classList.replace('top-0', 'top-10');
+    }
 });
 const items = [
     {
@@ -68,4 +75,4 @@ const options = {
     }
 };
 const carousel = new Carousel(items, options);
-// carousel.cycle()
+carousel.cycle()
