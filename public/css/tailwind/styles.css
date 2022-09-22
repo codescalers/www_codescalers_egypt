@@ -1,12 +1,13 @@
-h2 , p{
+h2,h1,
+p {
     font-family: 'Outfit', sans-serif;
 }
 
-.blue{
+.blue {
     color: #217DBB;
 }
 
-.white_blue{
+.white_blue {
     color: #50ADEC;
 }
 
@@ -20,4 +21,21 @@ h2 , p{
 
 .dark_bg {
     background-color: #414141;
+}
+
+.cs-blue,
+.cs-blue-50 {
+    background-color: #8ECFEF;
+}
+
+.cs-blue-50 {
+    opacity: .5;
+}
+
+.cs-blue-50:hover {
+    opacity: 1;
+}
+
+.mg-left {
+    left: 44%;
 }

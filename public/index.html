@@ -1,212 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CodeScalers</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/tailwind/styles.css" />
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico" />
-    <script src="js/main.js"></script>
-  </head>
-  <body class="antialiased bg-body text-body font-body">
-    <div class="mx-auto">
-      <nav
-        class="container flex flex-wrap items-center justify-between p-4 mx-auto"
-      >
-        <div class="flex flex-shrink-0 mr-6">
-          <a href="/">
-            <img src="img/logo-egypt.png" width="180" alt="" />
-          </a>
+
+<head>
+  <title>CodeScalers</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tailwind/styles.css" />
+  <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico" />
+</head>
+
+<body class="antialiased bg-body text-body font-body">
+  <nav class="bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <img class="block lg:hidden h-8 w-auto" src="img/logo-egypt.png" alt="CodeScalers-Egypt logo" />
+            <img class="hidden lg:block h-8 w-auto" src="img/logo-egypt.png" alt="CodeScalers-Egypt logo" />
+          </div>
         </div>
-        <div class="block lg:hidden">
-          <button
-            class="navbar-burger flex items-center py-2 px-3 text-indigo-500 rounded border border-indigo-500"
-          >
-            <svg
-              class="fill-current h-3 w-3"
-              viewbox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex">
+            <a href="/"
+              class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Home</a>
+            <a href="/about_us.html"
+              class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">About
+              Us</a>
+            <a href="/careers.html"
+              class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Careers</a>
+            <a href="/learn.html"
+              class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Learn</a>
+            <a href="/contact_us.html"
+              class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Contact
+              Us</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex sm:hidden">
+          <!-- Mobile menu button -->
+          <button id="menuBtn"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white transition duration-150 ease-in-out"
+            aria-label="Main menu" aria-expanded="false">
+            <!-- Icon when menu is closed. -->
+            <!--
+              Heroicon name: menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- Icon when menu is open. -->
+            <!--
+              Heroicon name: x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <div
-          class="navbar-menu hidden lg:flex lg:flex-grow lg:items-center w-full lg:w-auto"
-        >
-          <div class="lg:ml-auto">
-            <a
-              class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600 capitalize"
-              href="/"
-              contenteditable="false"
-              >Home</a
-            ><a
-              class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600 capitalize"
-              href="/about_us.html"
-              >about us</a
-            ><a
-              class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600"
-              href="/careers.html"
-              >Careers</a
-            ><a
-              class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600"
-              href="/learn.html"
-              >Learn</a
-            ><a
-              class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600 capitalize"
-              href="/contact_us.html"
-              >Contact us</a
-            >
-          </div>
-        </div>
-      </nav>
+      </div>
+    </div>
 
-      <!-- carousel section -->
-      <section class="py-8 lg:py-32 px-4 bg_blue">
-        <div
-          class="flex flex-wrap items-center text-center lg:text-left lg:max-w-7xl mx-auto"
-        >
-          <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
-            <h2 class="text-5xl mb-6 leading-none font-semibold font-heading">
+    <!--
+      Mobile menu, toggle classes based on menu state.
+  
+      Menu open: "block", Menu closed: "hidden"
+    -->
+    <div id="menu" class="hidden sm:hidden">
+      <div class="px-2 pt-2 pb-3">
+        <a href="/"
+          class="block px-3 py-2 rounded-md text-base font-medium blue focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Home</a>
+        <a href="/about_us.html"
+          class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">About
+          Us</a>
+        <a href="/careers.html"
+          class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Careers</a>
+        <a href="/learn.html"
+          class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Learn</a>
+        <a href="/contact_us.html"
+          class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Contact
+          Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mx-auto">
+    <!-- carousel section -->
+    <div id="indicators-carousel" class="relative" data-carousel="static" style="background-color: #DDF4FF">
+      <!-- Carousel wrapper -->
+      <div class="relative min-h-screen overflow-hidden rounded-lg ">
+        <!-- Item 1 -->
+        <div id="carousel-item-1"
+          class="bg_blue duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+          data-carousel-item="1">
+          <div
+            class="absolute w-full lg:w-1/2 max-w-xl my-16 md:my-5 px-2 font-semibold text-black text-center md:text-left -translate-x-1/2 -translate-y-1/2 top-1/4 left-0 md:left-40 sm:text-3xl dark:text-gray-800">
+            <h1 class="text-2xl md:text-6xl mb-6 leading-none text-gray-400 font-semibold font-heading">
               <span class="blue">Welcome To </span><br />CodeScalers Egypt
-            </h2>
-            <p class="text-gray-700 text-lg leading-relaxed">
+            </h1>
+            <p class="text-gray-700 text-xl max-w-md leading-relaxed">
               International Software Development Specialised in Cloud Computing
               Projects, We rechallenge existing technologies also we try to
               solve the root cause of issues and we have our own software
               automation tools
             </p>
-            <div class="my-8">
-              <button
-                class="bg-blue-500 hover:bg-blue-600 text-larg font-normal text-white capitalize py-2 mr-4 px-4 border border-blue-700 rounded"
-              >
-                Current Openings
-              </button>
-            </div>
           </div>
-          <div class="lg:w-1/2 px-2">
-            <img src="img/welcome_final-01-01.png" alt="" />
+          <div>
+            <img src="./img/welcome_final-01-01.png"
+              class="absolute block w-full md:w-2/3 h-auto p-16 -translate-x-1/2 -translate-y-1/2 top-0 right-0"
+              alt="...">
           </div>
         </div>
-      </section>
-
-      <!-- values section -->
-      <section class="py-12 px-4 dark_bg">
-        <div
-          class="flex flex-wrap items-center text-center lg:text-left lg:max-w-5xl mx-auto py-5"
-        >
-          <div class="lg:w-1/2 px-2">
-            <img class="mx-auto lg:w-96" src="img/our_value.png" alt="" />
-          </div>
-          <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
-            <h3
-              class="text-4xl white_blue mb-6 leading-tight font-semibold font-heading"
-            >
-              Our Values
-            </h3>
-            <p class="text-white leading-relaxed">
-              Integrity, What we say is what we do Open Culture, Respect and
-              accept everyone, makes us an integral environment Flexible, The
-              ability to adapt with the constant and quick changes Development,
-              Investing in people is most rewarding investment Ownership, What
-              we promise is what we deliver Home like, A comfortable and fun
-              workplace where you can be yourself.
+        <!-- Item 2 -->
+        <div id="carousel-item-2"
+          class="bg_blue duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+          data-carousel-item="2">
+          <div
+            class="absolute w-full lg:w-1/2 max-w-xl my-16 md:my-5 px-2 font-semibold text-black text-center md:text-left -translate-x-1/2 -translate-y-1/2 top-1/4 left-0 md:left-40 sm:text-3xl dark:text-gray-800">
+            <h1 class="text-2xl md:text-6xl mb-6 leading-none text-gray-400 font-semibold font-heading">
+              <span class="blue">Changing The Way</span><br />To Deliver IT
+            </h1>
+            <p class="text-gray-700 max-w-md text-xl leading-relaxed">
+              We rechallenge existing technologies and try to solve the root cause of issues and we have our own
+              software automation tools.
             </p>
           </div>
-        </div>
-
-        <div
-          class="flex flex-wrap items-center text-center lg:text-left lg:max-w-5xl mx-auto py-5"
-        >
-          <div class="lg:w-1/2 px-2 lg:order-2">
-            <img class="mx-auto lg:w-96" src="img/team_blue.png" alt="" />
+          <div>
+            <img src="./img/deliver_change-01-01.png"
+              class="absolute block w-full md:w-2/3 h-auto p-12 -translate-x-1/2 -translate-y-1/2 top-0 right-0">
           </div>
-          <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0 lg:order-1">
-            <h3
-              class="text-4xl white_blue mb-6 leading-tight font-semibold font-heading"
-            >
-              The Team
-            </h3>
-            <p class="text-white leading-relaxed">
-              CodeScalers Egypt has an amaizing integrated powerful team of
-              engineers and developers with diverse backgrounds and skills. We
-              know that our team is our most valuable asset, that’s why we make
-              sure to create the best environment possible and invest in them to
-              make sure they grow personally and technically. What makes us so
-              different is that we think out of the box and try to build
-              groundbreaking disruptive technologies. Our goal is to make IT as
-              easy to use, reliable and scalable as electricity.
+        </div>
+        <!-- Item 3 -->
+        <div id="carousel-item-3"
+          class="bg_blue duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+          data-carousel-item="3">
+          <div
+            class="absolute w-full lg:w-1/2 max-w-xl my-16 md:my-5 px-2 font-semibold text-black text-center md:text-left -translate-x-1/2 -translate-y-1/2 top-1/4 left-0 md:left-40 sm:text-3xl dark:text-gray-800">
+            <h1 class="text-2xl md:text-6xl mb-6 leading-none text-gray-400 font-semibold font-heading">
+              <span class="blue">Join us </span>
+            </h1>
+            <p class="text-gray-700 text-xl max-w-md leading-relaxed">
+              We are always looking for talented engineers System administrators and developers Working for
+              international customers
             </p>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-wrap items-center text-center lg:text-left lg:max-w-5xl mx-auto py-5"
-        >
-          <div class="lg:w-1/2 px-2">
-            <img class="mx-auto lg:w-96" src="img/our_value.png" alt="" />
-          </div>
-          <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
-            <h3
-              class="text-4xl white_blue mb-6 leading-tight font-semibold font-heading"
-            >
-              ThreeFold
-            </h3>
-            <p class="text-white leading-relaxed">
-              We are currently working with THREEFOLD to build an open-source
-              peer-to-peer Internet infrastructure that removes all forms of
-              centralization from the global IT systems. Where independent
-              people can connect Nodes (powered by a decentralized stateless and
-              lightweight OS designed to host anything that runs on Linux in a
-              decentralized way) to the ThreeFold Grid anywhere electricity and
-              network is present. And Together, they form a globally distributed
-              Internet infrastructure.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Opening section -->
-      <section class="py-12 px-4 text-center">
-        <div class="w-full max-w-2xl mx-auto">
-          <img class="mx-auto" src="img/carrers-03-01.png" width="500" alt="" />
-          <!-- <h2 class="text-5xl leading-tight font-semibold font-heading">
-            No paper plane can be made without paper
-          </h2>
-          <p class="mt-6 mb-8 text-gray-400 leading-relaxed">
-            Professional, dedicated, local. Dunder Mifflin is on its best patch
-            to change the way you think about paper. That’s us - people who sell
-            limitless paper in the paperless world.
-          </p> -->
-          <a href="/careers.html">
-            <button
-              class="bg-blue-500 hover:bg-blue-600 text-larg font-normal text-white capitalize py-2 px-4 border border-blue-700 rounded"
-            >
+            <button class="my-10 bg_blue_dark text-lg font-normal text-white capitalize py-2 px-4 border rounded">
               Current Openings
             </button>
-          </a>
+          </div>
+          <div>
+            <img src="./img/jobs-0١.png"
+              class="absolute block w-full md:w-2/3 h-auto p-12 -translate-x-1/2 -translate-y-1/2 top-0 right-0">
+          </div>
         </div>
-      </section>
-
-      <!-- footer section -->
-      <section class="bg_blue_dark overflow-hidden">
-        <div class="p-4 py-10">
-          <p class="text-base text-white text-center font-medium">
-            All rights reserved © 2022 CodeScalers Egypt
-          </p>
-        </div>
-      </section>
+      </div>
     </div>
-  </body>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 mg-left md:left-1/2">
+      <button id="carousel-indicator-1" type="button" class="w-3 h-3 rounded-full cs-blue dark:bg-gray-800"
+        aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button id="carousel-indicator-2" type="button"
+        class="w-3 h-3 rounded-full cs-blue-50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+        aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button id="carousel-indicator-3" type="button"
+        class="w-3 h-3 rounded-full cs-blue-50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+        aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+  </div>
+
+
+  <!-- values section -->
+  <section class="py-12 px-4 dark_bg">
+    <div class="flex flex-wrap items-center text-center lg:text-left lg:max-w-5xl mx-auto py-5">
+      <div class="lg:w-1/2 px-2">
+        <img class="mx-auto lg:w-96" src="img/our_value.png" alt="" />
+      </div>
+      <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
+        <h3 class="text-4xl white_blue mb-6 leading-tight font-semibold font-heading">
+          Our Values
+        </h3>
+        <p class="text-white leading-relaxed">
+          Integrity, What we say is what we do Open Culture, Respect and
+          accept everyone, makes us an integral environment Flexible, The
+          ability to adapt with the constant and quick changes Development,
+          Investing in people is most rewarding investment Ownership, What
+          we promise is what we deliver Home like, A comfortable and fun
+          workplace where you can be yourself.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center text-center lg:text-left lg:max-w-5xl mx-auto py-5">
+      <div class="lg:w-1/2 px-2 lg:order-2">
+        <img class="mx-auto lg:w-96" src="img/team_blue.png" alt="" />
+      </div>
+      <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0 lg:order-1">
+        <h3 class="text-4xl white_blue mb-6 leading-tight font-semibold font-heading">
+          The Team
+        </h3>
+        <p class="text-white leading-relaxed">
+          CodeScalers Egypt has an amaizing integrated powerful team of
+          engineers and developers with diverse backgrounds and skills. We
+          know that our team is our most valuable asset, that’s why we make
+          sure to create the best environment possible and invest in them to
+          make sure they grow personally and technically. What makes us so
+          different is that we think out of the box and try to build
+          groundbreaking disruptive technologies. Our goal is to make IT as
+          easy to use, reliable and scalable as electricity.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center text-center lg:text-left lg:max-w-5xl mx-auto py-5">
+      <div class="lg:w-1/2 px-2">
+        <img class="mx-auto lg:w-96" src="img/our_value.png" alt="" />
+      </div>
+      <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
+        <h3 class="text-4xl white_blue mb-6 leading-tight font-semibold font-heading">
+          ThreeFold
+        </h3>
+        <p class="text-white leading-relaxed">
+          We are currently working with THREEFOLD to build an open-source
+          peer-to-peer Internet infrastructure that removes all forms of
+          centralization from the global IT systems. Where independent
+          people can connect Nodes (powered by a decentralized stateless and
+          lightweight OS designed to host anything that runs on Linux in a
+          decentralized way) to the ThreeFold Grid anywhere electricity and
+          network is present. And Together, they form a globally distributed
+          Internet infrastructure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opening section -->
+  <section class="py-12 px-4 text-center">
+    <div class="w-full max-w-2xl mx-auto">
+      <img class="mx-auto" src="img/carrers-03-01.png" width="500" alt="" />
+      <!-- <h2 class="text-5xl leading-tight font-semibold font-heading">
+        No paper plane can be made without paper
+      </h2>
+      <p class="mt-6 mb-8 text-gray-400 leading-relaxed">
+        Professional, dedicated, local. Dunder Mifflin is on its best patch
+        to change the way you think about paper. That’s us - people who sell
+        limitless paper in the paperless world.
+      </p> -->
+      <a href="/careers.html">
+        <button class="bg_blue_dark text-lg font-normal text-white capitalize py-2 px-4 border rounded">
+          Current Openings
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="bg_blue_dark overflow-hidden">
+    <div class="p-4 py-10">
+      <p class="text-base text-white text-center font-medium">
+        All rights reserved © 2022 CodeScalers Egypt
+      </p>
+    </div>
+  </section>
+  </div>
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
