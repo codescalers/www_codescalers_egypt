@@ -54,7 +54,7 @@ const items = [
 
 const options = {
     activeItemPosition: 1,
-    interval: 5000,
+    interval: 8000,
     indicators: {
         activeClasses: 'bg-cs-blue dark:bg-gray-800',
         inactiveClasses: 'bg-cs-blue/50 dark:bg-gray-800/50 hover:bg-cs-blue dark:hover:bg-gray-800',
