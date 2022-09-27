@@ -1,32 +1,20 @@
 /**
  * Dropdown menu
  */
-document.addEventListener('DOMContentLoaded', function () {
-    const menus = document.querySelectorAll('.navbar-burger');
-    const dropdowns = document.querySelectorAll('.navbar-menu');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const menus = document.querySelectorAll('.navbar-burger');
+//     const dropdowns = document.querySelectorAll('.navbar-menu');
 
-    if (menus.length && dropdowns.length) {
-        for (var i = 0; i < menus.length; i++) {
-            menus[i].addEventListener('click', function () {
-                for (var j = 0; j < dropdowns.length; j++) {
-                    dropdowns[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
-});
-
-let menuBtn = document.getElementById('menuBtn');
-let menu = document.getElementById('menu');
-
-menuBtn.addEventListener('click', function () {
-    console.log('clicked')
-    if (menu.classList.contains('hidden')) {
-        menu.classList.replace('hidden', 'block')
-    } else {
-        menu.classList.replace('block', 'hidden')
-    }
-});
+//     if (menus.length && dropdowns.length) {
+//         for (var i = 0; i < menus.length; i++) {
+//             menus[i].addEventListener('click', function () {
+//                 for (var j = 0; j < dropdowns.length; j++) {
+//                     dropdowns[j].classList.toggle('hidden');
+//                 }
+//             });
+//         }
+//     }
+// });
 
 let navbar = document.getElementById('navbar');
 
@@ -37,6 +25,38 @@ window.addEventListener('scroll', function () {
         navbar.classList.replace('top-0', 'top-10');
     }
 });
+
+var copy = document.getElementById('copyLink');
+
+if (copy) {
+    copy.addEventListener('click', function () {
+        navigator.clipboard.writeText(document.URL);
+        outFunc();
+    });
+}
+
+function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied";
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = 1;
+    setInterval(function () {
+        tooltip.style.visibility = 'hidden';
+        tooltip.style.opacity = 0;
+    }, 2000);
+}
+
+let menuBtn = document.getElementById('menuBtn');
+let menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', function () {
+    if (menu.classList.contains('hidden')) {
+        menu.classList.replace('hidden', 'block')
+    } else {
+        menu.classList.replace('block', 'hidden')
+    }
+});
+
 const items = [
     {
         position: 0,
@@ -74,5 +94,7 @@ const options = {
         ]
     }
 };
-const carousel = new Carousel(items, options);
-carousel.cycle()
+if (items && options) {
+    const carousel = new Carousel(items, options);
+    // carousel.cycle()
+}
