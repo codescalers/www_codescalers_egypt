@@ -1,186 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>CodeScalers</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind/styles.css" />
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico" />
+    <script
+      type="text/javascript"
+      src="https://platform-api.sharethis.com/js/sharethis.js#property=6331c246516bac0012998572&product=sop"
+      async="async"
+    ></script>
+  </head>
 
-<head>
-  <title>CodeScalers</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/tailwind/styles.css" />
-  <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico" />
-  <script type='text/javascript'
-    src='https://platform-api.sharethis.com/js/sharethis.js#property=6331c246516bac0012998572&product=sop'
-    async='async'></script>
-
-</head>
-
-<body class="antialiased dark bg-gray-200 text-body font-body">
-  <nav id="navbar" class="bg-white sticky top-10 z-50 transition-all duration-300">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center">
-          <a href="/">
-            <div class="flex-shrink-0">
-              <img class="block lg:hidden h-8 w-auto" src="img/logo-egypt.png" alt="CodeScalers-Egypt logo" />
-              <img class="hidden lg:block h-8 w-auto" src="img/logo-egypt.png" alt="CodeScalers-Egypt logo" />
-            </div>
-          </a>
-        </div>
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex">
-            <a href="/"
-              class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Home</a>
-            <a href="/about_us.html"
-              class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">About
-              Us</a>
-            <a href="/careers.html"
-              class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Careers</a>
-            <a href="/learn.html"
-              class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Learn</a>
-            <a href="/contact_us.html"
-              class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Contact
-              Us</a>
+  <body class="antialiased dark bg-gray-200 text-body font-body">
+    <nav
+      id="navbar"
+      class="bg-white sticky top-10 z-50 transition-all duration-300"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="/">
+              <div class="flex-shrink-0">
+                <img
+                  class="block lg:hidden h-8 w-auto"
+                  src="img/logo-egypt.png"
+                  alt="CodeScalers-Egypt logo"
+                />
+                <img
+                  class="hidden lg:block h-8 w-auto"
+                  src="img/logo-egypt.png"
+                  alt="CodeScalers-Egypt logo"
+                />
+              </div>
+            </a>
           </div>
-        </div>
-        <div class="-mr-2 flex sm:hidden">
-          <!-- Mobile menu button -->
-          <button id="menuBtn"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white transition duration-150 ease-in-out"
-            aria-label="Main menu" aria-expanded="false">
-            <!-- Icon when menu is closed. -->
-            <!--
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex">
+              <a
+                href="/"
+                class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+                >Home</a
+              >
+              <a
+                href="/about_us.html"
+                class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+                >About Us</a
+              >
+              <a
+                href="/careers.html"
+                class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+                >Careers</a
+              >
+              <a
+                href="/learn.html"
+                class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+                >Learn</a
+              >
+              <a
+                href="/contact_us.html"
+                class="ml-4 px-3 py-2 rounded-md text-md font-medium leading-5 blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <div class="-mr-2 flex sm:hidden">
+            <!-- Mobile menu button -->
+            <button
+              id="menuBtn"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white transition duration-150 ease-in-out"
+              aria-label="Main menu"
+              aria-expanded="false"
+            >
+              <!-- Icon when menu is closed. -->
+              <!--
               Heroicon name: menu
   
               Menu open: "hidden", Menu closed: "block"
             -->
-            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <!-- Icon when menu is open. -->
-            <!--
+              <svg
+                class="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <!-- Icon when menu is open. -->
+              <!--
               Heroicon name: x
   
               Menu open: "block", Menu closed: "hidden"
             -->
-            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+              <svg
+                class="hidden h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!--
+      <!--
       Mobile menu, toggle classes based on menu state.
   
       Menu open: "block", Menu closed: "hidden"
     -->
-    <div id="menu" class="hidden sm:hidden">
-      <div class="px-2 pt-2 pb-3">
-        <a href="/"
-          class="block px-3 py-2 rounded-md text-base font-medium blue focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Home</a>
-        <a href="/about_us.html"
-          class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">About
-          Us</a>
-        <a href="/careers.html"
-          class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Careers</a>
-        <a href="/learn.html"
-          class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Learn</a>
-        <a href="/contact_us.html"
-          class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out">Contact
-          Us</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- content -->
-
-  <section class="py-16 md:py-24 bg-gray-200">
-    <div class="container px-4 mx-auto">
-      <div class=" md:max-w-5xl mx-auto mb-2">
-
-      </div>
-      <div class="md:max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2">
-
-          <div class="md:order-12 p-10">
-            <img src="img/software_engineer.png">
-          </div>
-          <div class="mb-10 mx-auto max-w-max overflow-hidden rounded-lg md:order-1">
-            <h2
-              class="text-3xl md:text-5xl mb-8 leading-tight text-center md:text-left blue font-bold tracking-tight">
-              Software Engineer</h2>
-            <p class="mb-8 pb-4 text-gray-700 text-lg md:text-xl font-normal">The Software Engineer will work with the existing team on creating new cutting edge software systems using a variety of programming language and open-source frameworks.<br>
-              The Software team is responsible for the software part of our productsand works in collaboration with our engineering team. The team is responsible for the perfect design of new products, seamless execution of upgrades, documentation and installation procedures.<br>
-              As the requirements of our products are of a very high level, requirements for the personnel are similar. Therefore he or she needs outstanding technical skills, solid academic background and deep understanding of computer science concepts, algorithms and techniques.
-            </p>
-          </div>
-
-
-        </div>
-        <h3 class="mb-4 text-2xl md:text-3xl blue font-semibold">Responsibilities:</h3>
-        <ul class="list-disc list-inside px-5 text-base md:text-lg mb-10 py-2 border-l-2 border-blue-500">
-          <li>Develop and modify software components.</li>
-          <li>Works closely with Software Solution Developers to implement new features and enhancements.</li>
-          <li>Write software automated unit and integration test cases.</li>
-          <li>Contribute to installation manuals for all products and upgrades, educating the world about our products and technologies.</li>
-        </ul>
-        <h3 class="mb-4 text-2xl md:text-3xl blue font-semibold">Requirements:</h3>
-        <ul class="list-disc list-inside px-5 text-base md:text-lg mb-10 py-2 border-l-2 border-blue-500">
-          <li>Up to 3 years experience in software development relevant to the described job.</li>
-          <li>Knowledge of Python.</li>
-          <li>Achieves high quality results through thoughtful analysis and planning.</li>
-          <li>Target driven and result oriented.</li>
-          <li>Strong object-oriented skills, knowledge of GOF Design Patterns is a plus.</li>
-          <li>Deep understanding of database concepts is a must, hands on experience with PostgreSQL or MySQL is a plus.</li>
-          <li>Familiarity with Linux operating system is a must, at least user level experience.</li>
-          <li>Knowledge of Javascript, Ajax frameworks is a plus.</li>
-          <li>Open-source practitioner, contributions to open-source projects is a plus.</li>
-          <li>Understanding of agile software development methodologies and test driven development.</li>
-          <li>Strong skills with Linux operating system is a must, at intermediate user/scripting level experience.</li>
-          <li>Open-source practitioner, contributions to open-source projects is a plus.</li>
-          <li>Open for changes and continuous learning, can work under pressure.</li>
-          <li>Good knowledge of spoken and written English.</li>
-          <li>Team player, self motivated and passionate about technologies and innovation.</li>
-        </ul>
-
-        <p class="mb-12 text-lg md:text-xl font-normal">Feel free to apply with a cover letter and CV to <a
-            class="font-bold blue" href="mailto:careers@codescalers.com">careers@codescalers.com</a></p>
-
-        <div class="flex items-center">
-          <a id="copyLink"
-            class="tooltip inline-flex mr-4 items-center justify-center py-2 px-4 blue hover:text-blue-800 bg-white hover:bg-coolGray-100 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200">
-            <span class="tooltiptext" id="myTooltip"></span>
-            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15 13.8333H5C4.33696 13.8333 3.70108 13.5699 3.23224 13.1011C2.76339 12.6323 2.5 11.9964 2.5 11.3333V4.66667C2.5 4.44565 2.41221 4.23369 2.25592 4.07741C2.09964 3.92113 1.88768 3.83333 1.66667 3.83333C1.44566 3.83333 1.23369 3.92113 1.07741 4.07741C0.921133 4.23369 0.833336 4.44565 0.833336 4.66667V11.3333C0.833336 12.4384 1.27232 13.4982 2.05372 14.2796C2.44063 14.6665 2.89996 14.9734 3.40549 15.1828C3.91101 15.3922 4.45283 15.5 5 15.5H15C15.221 15.5 15.433 15.4122 15.5893 15.2559C15.7455 15.0996 15.8333 14.8877 15.8333 14.6667C15.8333 14.4457 15.7455 14.2337 15.5893 14.0774C15.433 13.9211 15.221 13.8333 15 13.8333ZM19.1667 6.28333C19.158 6.20678 19.1412 6.13136 19.1167 6.05833V5.98333C19.0766 5.89765 19.0232 5.81889 18.9583 5.75V5.75L13.9583 0.75C13.8894 0.68518 13.8107 0.631734 13.725 0.591667H13.65L13.3833 0.5H6.66667C6.00363 0.5 5.36774 0.763392 4.8989 1.23223C4.43006 1.70107 4.16667 2.33696 4.16667 3V9.66667C4.16667 10.3297 4.43006 10.9656 4.8989 11.4344C5.36774 11.9033 6.00363 12.1667 6.66667 12.1667H16.6667C17.3297 12.1667 17.9656 11.9033 18.4344 11.4344C18.9033 10.9656 19.1667 10.3297 19.1667 9.66667V6.33333C19.1667 6.33333 19.1667 6.33333 19.1667 6.28333ZM14.1667 3.34167L16.325 5.5H15C14.779 5.5 14.567 5.4122 14.4107 5.25592C14.2545 5.09964 14.1667 4.88768 14.1667 4.66667V3.34167ZM17.5 9.66667C17.5 9.88768 17.4122 10.0996 17.2559 10.2559C17.0996 10.4122 16.8877 10.5 16.6667 10.5H6.66667C6.44565 10.5 6.23369 10.4122 6.07741 10.2559C5.92113 10.0996 5.83334 9.88768 5.83334 9.66667V3C5.83334 2.77899 5.92113 2.56702 6.07741 2.41074C6.23369 2.25446 6.44565 2.16667 6.66667 2.16667H12.5V4.66667C12.5 5.32971 12.7634 5.96559 13.2322 6.43443C13.7011 6.90327 14.337 7.16667 15 7.16667H17.5V9.66667Z"
-                fill="currentColor"></path>
-            </svg>
-            <span class="ml-2 text-sm text-coolGray-500 hover:text-coolGray-600 font-medium">Copy Link</span>
-          </a>
-          <div class="sharethis-inline-share-buttons"></div>
+      <div id="menu" class="hidden sm:hidden">
+        <div class="px-2 pt-2 pb-3">
+          <a
+            href="/"
+            class="block px-3 py-2 rounded-md text-base font-medium blue focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="/about_us.html"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+            >About Us</a
+          >
+          <a
+            href="/careers.html"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+            >Careers</a
+          >
+          <a
+            href="/learn.html"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+            >Learn</a
+          >
+          <a
+            href="/contact_us.html"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium blue blue hover:text-white hover:bg-blue-500 focus:outline-none focus:text-white focus:bg-blue-500 transition duration-150 ease-in-out"
+            >Contact Us</a
+          >
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- footer section -->
-  <section class="bg_blue_dark overflow-hidden">
-    <div class="p-4 py-10">
-      <p class="text-base text-white text-center font-medium">
-        All rights reserved © 2022 CodeScalers Egypt
-      </p>
-    </div>
-  </section>
-  </div>
-  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <!-- content -->
 
-  <script src="./js/main.js"></script>
-</body>
+    <section class="py-16 md:py-24 bg-gray-200">
+      <div class="container px-4 mx-auto">
+        <div class="md:max-w-5xl mx-auto mb-2"></div>
+        <div class="md:max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2">
+            <div class="md:order-12 p-10">
+              <img src="img/software_engineer.png" />
+            </div>
+            <div
+              class="mb-10 mx-auto max-w-max overflow-hidden rounded-lg md:order-1"
+            >
+              <h2
+                class="text-3xl md:text-5xl mb-8 leading-tight text-center md:text-left blue font-bold tracking-tight"
+              >
+                Software Engineer
+              </h2>
+              <p class="mb-8 pb-4 text-gray-700 text-lg md:text-xl font-normal">
+                The Software Engineer will work with the existing team on
+                creating new cutting edge software systems using a variety of
+                programming language and open-source frameworks.<br />
+                The Software team is responsible for the software part of our
+                productsand works in collaboration with our engineering team.
+                The team is responsible for the perfect design of new products,
+                seamless execution of upgrades, documentation and installation
+                procedures.<br />
+                As the requirements of our products are of a very high level,
+                requirements for the personnel are similar. Therefore he or she
+                needs outstanding technical skills, solid academic background
+                and deep understanding of computer science concepts, algorithms
+                and techniques.
+              </p>
+            </div>
+          </div>
+          <h3 class="mb-4 text-2xl md:text-3xl blue font-semibold">
+            Responsibilities:
+          </h3>
+          <ul
+            class="list-disc list-inside px-5 text-base md:text-lg mb-10 py-2 border-l-2 border-blue-500"
+          >
+            <li>Develop and modify software components.</li>
+            <li>
+              Works closely with Software Solution Developers to implement new
+              features and enhancements.
+            </li>
+            <li>Write software automated unit and integration test cases.</li>
+            <li>
+              Contribute to installation manuals for all products and upgrades,
+              educating the world about our products and technologies.
+            </li>
+          </ul>
+          <h3 class="mb-4 text-2xl md:text-3xl blue font-semibold">
+            Requirements:
+          </h3>
+          <ul
+            class="list-disc list-inside px-5 text-base md:text-lg mb-10 py-2 border-l-2 border-blue-500"
+          >
+            <li>
+              Up to 3 years experience in software development relevant to the
+              described job.
+            </li>
+            <li>Knowledge of Python.</li>
+            <li>
+              Achieves high quality results through thoughtful analysis and
+              planning.
+            </li>
+            <li>Target driven and result oriented.</li>
+            <li>
+              Strong object-oriented skills, knowledge of GOF Design Patterns is
+              a plus.
+            </li>
+            <li>
+              Deep understanding of database concepts is a must, hands on
+              experience with PostgreSQL or MySQL is a plus.
+            </li>
+            <li>
+              Familiarity with Linux operating system is a must, at least user
+              level experience.
+            </li>
+            <li>Knowledge of Javascript, Ajax frameworks is a plus.</li>
+            <li>
+              Open-source practitioner, contributions to open-source projects is
+              a plus.
+            </li>
+            <li>
+              Understanding of agile software development methodologies and test
+              driven development.
+            </li>
+            <li>
+              Strong skills with Linux operating system is a must, at
+              intermediate user/scripting level experience.
+            </li>
+            <li>
+              Open-source practitioner, contributions to open-source projects is
+              a plus.
+            </li>
+            <li>
+              Open for changes and continuous learning, can work under pressure.
+            </li>
+            <li>Good knowledge of spoken and written English.</li>
+            <li>
+              Team player, self motivated and passionate about technologies and
+              innovation.
+            </li>
+          </ul>
 
+          <div class="my-10">
+            <a
+              class="inline w-full py-3 px-5 leading-none text-center text-white bg-blue-500 hover:bg-blue-600 font-semibold rounded shadow"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeFLnNf4hHoNJuTCfKzrcL4f8o938J0yHDjnHuk1b9rSEOqoQ/viewform"
+              target="_blank"
+              >Apply For Software Engineer
+            </a>
+          </div>
+
+          <!-- <p class="mb-12 text-lg md:text-xl font-normal">Feel free to apply with a cover letter and CV to <a
+            class="font-bold blue" href="mailto:careers@codescalers.com">careers@codescalers.com</a></p> -->
+
+          <div class="flex items-center">
+            <a
+              id="copyLink"
+              class="tooltip inline-flex mr-4 items-center justify-center py-2 px-4 blue hover:text-blue-800 bg-white hover:bg-coolGray-100 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200"
+            >
+              <span class="tooltiptext" id="myTooltip"></span>
+              <svg
+                width="20"
+                height="16"
+                viewBox="0 0 20 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 13.8333H5C4.33696 13.8333 3.70108 13.5699 3.23224 13.1011C2.76339 12.6323 2.5 11.9964 2.5 11.3333V4.66667C2.5 4.44565 2.41221 4.23369 2.25592 4.07741C2.09964 3.92113 1.88768 3.83333 1.66667 3.83333C1.44566 3.83333 1.23369 3.92113 1.07741 4.07741C0.921133 4.23369 0.833336 4.44565 0.833336 4.66667V11.3333C0.833336 12.4384 1.27232 13.4982 2.05372 14.2796C2.44063 14.6665 2.89996 14.9734 3.40549 15.1828C3.91101 15.3922 4.45283 15.5 5 15.5H15C15.221 15.5 15.433 15.4122 15.5893 15.2559C15.7455 15.0996 15.8333 14.8877 15.8333 14.6667C15.8333 14.4457 15.7455 14.2337 15.5893 14.0774C15.433 13.9211 15.221 13.8333 15 13.8333ZM19.1667 6.28333C19.158 6.20678 19.1412 6.13136 19.1167 6.05833V5.98333C19.0766 5.89765 19.0232 5.81889 18.9583 5.75V5.75L13.9583 0.75C13.8894 0.68518 13.8107 0.631734 13.725 0.591667H13.65L13.3833 0.5H6.66667C6.00363 0.5 5.36774 0.763392 4.8989 1.23223C4.43006 1.70107 4.16667 2.33696 4.16667 3V9.66667C4.16667 10.3297 4.43006 10.9656 4.8989 11.4344C5.36774 11.9033 6.00363 12.1667 6.66667 12.1667H16.6667C17.3297 12.1667 17.9656 11.9033 18.4344 11.4344C18.9033 10.9656 19.1667 10.3297 19.1667 9.66667V6.33333C19.1667 6.33333 19.1667 6.33333 19.1667 6.28333ZM14.1667 3.34167L16.325 5.5H15C14.779 5.5 14.567 5.4122 14.4107 5.25592C14.2545 5.09964 14.1667 4.88768 14.1667 4.66667V3.34167ZM17.5 9.66667C17.5 9.88768 17.4122 10.0996 17.2559 10.2559C17.0996 10.4122 16.8877 10.5 16.6667 10.5H6.66667C6.44565 10.5 6.23369 10.4122 6.07741 10.2559C5.92113 10.0996 5.83334 9.88768 5.83334 9.66667V3C5.83334 2.77899 5.92113 2.56702 6.07741 2.41074C6.23369 2.25446 6.44565 2.16667 6.66667 2.16667H12.5V4.66667C12.5 5.32971 12.7634 5.96559 13.2322 6.43443C13.7011 6.90327 14.337 7.16667 15 7.16667H17.5V9.66667Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span
+                class="ml-2 text-sm text-coolGray-500 hover:text-coolGray-600 font-medium"
+                >Copy Link</span
+              >
+            </a>
+            <div class="sharethis-inline-share-buttons"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="bg_blue_dark overflow-hidden">
+      <div class="p-4 py-10">
+        <p class="text-base text-white text-center font-medium">
+          All rights reserved © 2022 CodeScalers Egypt
+        </p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
