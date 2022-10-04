@@ -1,21 +1,21 @@
 name: Codescalers_egypt
 on:
   push:
-    branch: [ new_codescalers ]
+    branch: [ development ]
 
 jobs:
   job_one:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: pushing latest change on www3.codescalers-egypt.com
+    - name: pushing latest change on www2.codescalers-egypt.com
       uses: appleboy/ssh-action@master
       with:
-        host: www3.codescalers-egypt.com
+        host: www2.codescalers-egypt.com
         username: webuser
         key: ${{ secrets.TF_SECRET }}
         port: 34022
         script: |
-          cd /home/webuser/websites/www3/www_codescalers_egypt/
+          cd /home/webuser/websites/www2/www_codescalers_egypt/
           git log -1
           git pull
