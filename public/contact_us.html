@@ -25,6 +25,8 @@
       src="https://platform-api.sharethis.com/js/sharethis.js#property=6331c246516bac0012998572&product=sop"
       async="async"
     ></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body class="antialiased bg_blue text-body font-body">
@@ -255,7 +257,33 @@
                   class="form-control input-lg form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 ></textarea>
               </div>
+              <!-- Recaptcha -->
+              <div
+              class="g-recaptcha"
+              data-sitekey="6LdPeHoiAAAAAJ7kQyUMngLe9Aev19acz5lXhyvZ"
+              data-callback="onRecaptchaSuccess"
+              data-expired-callback="onRecaptchaResponseExpiry"
+              data-error-callback="onRecaptchaError"
+              ></div>
 
+              <!-- Recaptcha Error -->
+              <div
+                id="recaptcha-form-error"
+                style="display: none"
+                class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md"
+              >
+                Please fill the recaptcha checkbox.
+              </div>
+
+              <!-- Recaptcha Success -->
+              <div
+                id="recaptcha-form-success"
+                style="display: none"
+                class="bg-green-200 rounded py-1 px-2 text-sm sm:text-md"
+              >
+                Recaptcha validated Successfully..!
+                <a href="/" class="px-2 text-slate-800">Retry</a>
+              </div>
               <button
                 type="submit"
                 class="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
