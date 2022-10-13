@@ -16,6 +16,14 @@
 //     }
 // });
 
+window.onload = function () {
+    var recaptcha = document.querySelector('.g-recaptcha');
+    recaptcha.required = true;
+    recaptcha.oninvalid = function (e) {
+        alert("Please complete the captcha");
+    }
+}
+
 let navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', function () {
