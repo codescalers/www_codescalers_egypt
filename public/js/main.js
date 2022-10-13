@@ -17,7 +17,7 @@
 // });
 
 window.onload = function () {
-    var recaptcha = document.querySelector('.g-recaptcha');
+    var recaptcha = document.forms["contact_form"]["g-recaptcha-response"];
     recaptcha.required = true;
     recaptcha.oninvalid = function (e) {
         alert("Please complete the captcha");
