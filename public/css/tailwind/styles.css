@@ -74,3 +74,15 @@ p {
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
+
+.gist .highlight{
+    font-size: 16px !important; 
+}
+
+.gist a{
+    color: #217DBB;
+}
+
+.gist a:hover{
+    color: #50ADEC;
+}
