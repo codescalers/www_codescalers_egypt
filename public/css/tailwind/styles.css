@@ -90,3 +90,7 @@ p {
 .academy{
     background-color: #227DB8;
 }
+
+.learn:hover{
+    color: #50ADEC;
+}
