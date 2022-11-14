@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2,
+h1,
+p {
+    font-family: 'Outfit', sans-serif;
+}
+
+.blue {
+    color: #217dbb;
+}
+
+.white_blue {
+    color: #50adec;
+}
+
+.bg_blue {
+    background-color: #ddf4ff;
+}
+
+.bg_blue_dark {
+    background-color: #217dbb;
+}
+
+.dark_bg {
+    background-color: #414141;
+}
+
+.cs-blue,
+.cs-blue-50 {
+    background-color: #8ecfef;
+}
+
+.cs-blue-50 {
+    opacity: 0.5;
+}
+
+.cs-blue-50:hover {
+    opacity: 1;
+}
+
+.mg-left {
+    left: 44%;
+}
+
+.tooltip {
+    position: relative;
+    display : inline-block;
+    cursor  : pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility      : hidden;
+    width           : 125px;
+    background-color: #555;
+    color           : #fff;
+    text-align      : center;
+    border-radius   : 6px;
+    padding         : 5px;
+    position        : absolute;
+    z-index         : 1;
+    bottom          : 135%;
+    left            : 60%;
+    margin-left     : -75px;
+    opacity         : 0;
+    transition      : opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content     : '';
+    position    : absolute;
+    top         : 100%;
+    left        : 50%;
+    margin-left : -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.list>ul {
+    list-style: disc !important;
+}
