@@ -86,3 +86,43 @@ p {
 .pagination a {
     margin-right: 10px;
 }
+
+
+/* Blog Post css */
+
+.post-content-text h2{
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgb(216 222 228);
+    margin-bottom: 16px;
+
+}
+
+.gridsome-highlight{
+    padding: 16px;
+    overflow: auto;
+    font-size: 75%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.gridsome-highlight p{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.post-content-text p{
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.post-content-text h3{
+    font-size: 1.25em;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    line-height: 1.25;
+}
+

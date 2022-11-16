@@ -3,11 +3,11 @@
     <div class="container sm:pxi-0 px-2 mx-auto overflow-x-hidden pt-20">
       <div class="pt-8">
         <section class="post-header container mx-auto px-0 mb-4 border-b">
-          <h1 class="text-5xl font-medium leading-none mt-0">
+          <h2 class="text-4xl font-medium leading-none mt-0">
             {{ $page.blog.title }}
-          </h1>
+          </h2>
           <div
-            class="text-2xl pt-4 pb-10 text-gray-700"
+            class="text-xl pt-4 pb-10 text-gray-700"
             v-html="$page.blog.excerpt"
           ></div>
         </section>
@@ -71,9 +71,9 @@
           </div>
         </section>
       </div>
-      <section class="post-image mx-auto w-full">
+      <!-- <section class="post-image mx-auto w-full">
         <g-image :src="$page.blog.image"></g-image>
-      </section>
+      </section> -->
 
       <div class="py-12">
         <section

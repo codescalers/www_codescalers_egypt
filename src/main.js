@@ -77,7 +77,7 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://fonts.gstatic.com'
   }, {
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'
+    href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap'
   }, {
     rel: 'icon',
     href: './favicon.ico'
