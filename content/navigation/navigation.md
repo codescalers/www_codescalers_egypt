@@ -9,8 +9,8 @@ navLinks:
   - name: Careers
     link: /careers
     
-  - name: Learn
-    link: /learn
+  - name: CS Academy
+    link: /cs-academy
 
   - name: Community
     link: /community

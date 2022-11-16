@@ -82,3 +82,7 @@ p {
 .list>ul {
     list-style: disc !important;
 }
+
+.pagination a {
+    margin-right: 10px;
+}
