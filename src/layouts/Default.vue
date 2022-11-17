@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content">
     <Navbar :navigation="$static.navigation" />
     <slot />
     <Footer />
@@ -31,3 +31,13 @@ export default {
   },
 };
 </script>
+
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+</style>
