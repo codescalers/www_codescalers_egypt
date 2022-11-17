@@ -2,7 +2,7 @@
   <Layout>
     <div class="dark-blue"></div>
     <div class="container-fluid pt-8">
-      <g-image class="img" src="../assets/images/academy2.jpg" alt="" />
+      <g-image class="img" src="../assets/images/academy-bg.png" alt="" />
     </div>
     <Blog
       :posts="$page.entries.edges"

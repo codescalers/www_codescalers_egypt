@@ -1,4 +1,4 @@
-<template >
+<template>
   <section class="py-12 px-4 dark_bg">
     <div class="lg:max-w-7xl mx-auto">
       <div
@@ -7,6 +7,7 @@
         class="
           flex flex-wrap
           items-center
+          justify-center
           text-center
           lg:text-left
           mx-auto

@@ -1,8 +1,8 @@
-<template >
-  <section class="py-12 px-4 text-center bg-white">
+<template>
+  <section class="pb-12 px-4 text-center bg-white">
     <div class="w-full max-w-2xl mx-auto">
       <g-image
-        class="mx-auto transform transition duration-500 hover:scale-110"
+        class="py-4 mx-auto transform transition duration-500 hover:scale-110"
         width="500"
         :src="item.img"
         alt=""
