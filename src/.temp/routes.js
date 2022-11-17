@@ -12,43 +12,27 @@ export default [
     component: c1
   },
   {
-    path: "/cs-academy/category/twin/",
+    path: "/cs-academy/post/introduction_to_python/",
+    component: c1
+  },
+  {
+    path: "/cs-academy/post/introduction_to_typescript/",
+    component: c1
+  },
+  {
+    path: "/cs-academy/category/All/",
     component: c2
   },
   {
-    path: "/cs-academy/post/big_datacenter_myth/",
-    component: c1
-  },
-  {
-    path: "/cs-academy/post/a_better_understanding_of_wealth/",
-    component: c1
-  },
-  {
-    path: "/cs-academy/post/a_different_approach_to_blockchain/",
-    component: c1
-  },
-  {
-    path: "/cs-academy/post/actually_you_are_the_product/",
-    component: c1
-  },
-  {
-    path: "/cs-academy/post/an_intro_to_the_threefold_grid/",
-    component: c1
-  },
-  {
-    path: "/cs-academy/category/farming/",
+    path: "/cs-academy/category/Go/",
     component: c2
   },
   {
-    path: "/cs-academy/category/foundation/",
+    path: "/cs-academy/category/Python/",
     component: c2
   },
   {
-    path: "/cs-academy/category/cloud/",
-    component: c2
-  },
-  {
-    path: "/cs-academy/category/aci/",
+    path: "/cs-academy/category/Typescript/",
     component: c2
   },
   {
