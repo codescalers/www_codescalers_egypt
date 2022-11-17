@@ -1,5 +1,9 @@
 <template>
   <Layout>
+    <div class="dark-blue"></div>
+    <div class="container-fluid pt-8">
+      <g-image class="img" src="../assets/images/academy2.jpg" alt="" />
+    </div>
     <Blog
       :posts="$page.entries.edges"
       :info="$page.entries.pageInfo"
@@ -59,3 +63,13 @@ export default {
   },
 };
 </script>
+<style scoped>
+.dark-blue {
+  background-color: #227db8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+</style>

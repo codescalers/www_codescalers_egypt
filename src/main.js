@@ -10,7 +10,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.htmlAttrs = { lang: 'en' }
 
-  head.bodyAttrs = { class: 'antialiased dark bg_blue text-body font-body' }
+  head.bodyAttrs = { class: 'antialiased dark relative bg_blue text-body font-body' }
   // Add a meta tag
   head.meta.push({
     name: 'viewport',
