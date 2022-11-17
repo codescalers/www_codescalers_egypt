@@ -2,11 +2,12 @@ const c1 = () => import(/* webpackChunkName: "page--src--templates--blog-post-vu
 const c2 = () => import(/* webpackChunkName: "page--src--templates--category-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/templates/Category.vue")
 const c3 = () => import(/* webpackChunkName: "page--src--pages--cs-academy-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/CSAcademy.vue")
 const c4 = () => import(/* webpackChunkName: "page--src--templates--search-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/templates/Search.vue")
-const c5 = () => import(/* webpackChunkName: "page--src--pages--careers-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Careers.vue")
-const c6 = () => import(/* webpackChunkName: "page--src--pages--community-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Community.vue")
-const c7 = () => import(/* webpackChunkName: "page--src--pages--about-us-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/AboutUs.vue")
-const c8 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/node_modules/gridsome/app/pages/404.vue")
-const c9 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Index.vue")
+const c5 = () => import(/* webpackChunkName: "page--src--pages--contact-us-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/ContactUs.vue")
+const c6 = () => import(/* webpackChunkName: "page--src--pages--careers-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Careers.vue")
+const c7 = () => import(/* webpackChunkName: "page--src--pages--community-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Community.vue")
+const c8 = () => import(/* webpackChunkName: "page--src--pages--about-us-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/AboutUs.vue")
+const c9 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/node_modules/gridsome/app/pages/404.vue")
+const c10 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Index.vue")
 
 export default [
   {
@@ -46,30 +47,34 @@ export default [
     component: c4
   },
   {
-    path: "/careers/",
+    path: "/contact-us/",
     component: c5
   },
   {
-    path: "/community/",
+    path: "/careers/",
     component: c6
   },
   {
-    path: "/about-us/",
+    path: "/community/",
     component: c7
+  },
+  {
+    path: "/about-us/",
+    component: c8
   },
   {
     name: "404",
     path: "/404/",
-    component: c8
+    component: c9
   },
   {
     name: "home",
     path: "/",
-    component: c9
+    component: c10
   },
   {
     name: "*",
     path: "*",
-    component: c8
+    component: c9
   }
 ]
