@@ -1,5 +1,6 @@
 <template>
   <layout>
+    
     <section class="py-12 bg-white">
       <div class="md:max-w-7xl mx-auto flex flex-wrap">
         <div class="md:w-1/3 w-full pr-10">
@@ -10,14 +11,14 @@
         </div>
 
         <div class="md:w-2/3 flex flex-wrap justify-center mx-auto">
-          <div v-if="searchResults.length > 0">
+          <div class="inline-flex" v-if="searchResults.length > 0">
             <PostCard
               v-for="(post, i) in searchResults"
               :key="i"
               :post="post.node"
             />
           </div>
-          <div v-else>
+          <div class="inline-flex" v-else>
             <h1 class="">No results</h1>
             <p>OOPS! Something went wrong here</p>
           </div>
