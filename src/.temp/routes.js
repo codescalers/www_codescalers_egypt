@@ -3,9 +3,10 @@ const c2 = () => import(/* webpackChunkName: "page--src--templates--category-vue
 const c3 = () => import(/* webpackChunkName: "page--src--pages--cs-academy-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/CSAcademy.vue")
 const c4 = () => import(/* webpackChunkName: "page--src--templates--search-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/templates/Search.vue")
 const c5 = () => import(/* webpackChunkName: "page--src--pages--careers-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Careers.vue")
-const c6 = () => import(/* webpackChunkName: "page--src--pages--about-us-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/AboutUs.vue")
-const c7 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/node_modules/gridsome/app/pages/404.vue")
-const c8 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Index.vue")
+const c6 = () => import(/* webpackChunkName: "page--src--pages--community-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Community.vue")
+const c7 = () => import(/* webpackChunkName: "page--src--pages--about-us-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/AboutUs.vue")
+const c8 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/node_modules/gridsome/app/pages/404.vue")
+const c9 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/media/samar/DATA/github/codescalers/www_codescalers_egypt/src/pages/Index.vue")
 
 export default [
   {
@@ -49,22 +50,26 @@ export default [
     component: c5
   },
   {
-    path: "/about-us/",
+    path: "/community/",
     component: c6
+  },
+  {
+    path: "/about-us/",
+    component: c7
   },
   {
     name: "404",
     path: "/404/",
-    component: c7
+    component: c8
   },
   {
     name: "home",
     path: "/",
-    component: c8
+    component: c9
   },
   {
     name: "*",
     path: "*",
-    component: c7
+    component: c8
   }
 ]
