@@ -38,6 +38,13 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Careers',
+                path: './content/page/**/careers/**/*.md',
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'Blog',
                 path: './content/page/cs-academy/**/*.md',
                 templates: {
@@ -60,6 +67,7 @@ module.exports = {
                     carousel: 'Carousel',
                     description: 'Description',
                     opening: 'Opening',
+                    careers: "Careers"
                 }
             }
         },
@@ -82,6 +90,10 @@ module.exports = {
         Blog: [{
             path: '/cs-academy/post/:id',
             component: '~/templates/BlogPost.vue'
+        }],
+        Careers: [{
+            path: '/careers/:id',
+            component: '~/templates/Career.vue'
         }],
     },
     transformers: {
