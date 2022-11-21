@@ -89,6 +89,13 @@ export default function (Vue, { router, head, isClient }) {
   // Add an external JavaScript before the closing </body> tag
   head.script.push({
     src: 'https://platform-api.sharethis.com/js/sharethis.js#property=6331c246516bac0012998572&product=sop',
-    type: 'text/javascript'
+    type: 'text/javascript',
+    body: true
+  })
+  head.script.push({
+    src: "https://www.google.com/recaptcha/api.js?",
+    body: true,
+    async: true,
+    defer: true
   })
 }
