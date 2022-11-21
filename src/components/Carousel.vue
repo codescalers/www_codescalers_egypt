@@ -29,6 +29,13 @@
               class="text-gray-700 text-xl max-w-lg leading-relaxed"
               v-html="item.content"
             ></div>
+            <g-link v-if="item.btn" :to="item.btn_link">
+              <button
+                class="my-10 bg_blue_dark text-lg font-normal text-white hover:bg-blue-600 capitalize py-2 px-4 border rounded"
+              >
+                {{ item.btn }}
+              </button>
+            </g-link>
           </div>
           <div>
             <g-image
