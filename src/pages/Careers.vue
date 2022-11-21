@@ -1,6 +1,7 @@
 <template>
   <layout>
     <!-- careers section -->
+    <div class="bg-blue"></div>
     <section class="py-8 px-4 bg_blue">
       <div
         class="flex flex-wrap items-center text-center lg:text-left lg:max-w-7xl mx-auto"
@@ -86,3 +87,13 @@ export default {
   },
 };
 </script>
+<style scoped>
+.bg-blue {
+  background-color: #ddf4ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+</style>

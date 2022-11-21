@@ -2,7 +2,7 @@
   <Layout>
     <div class="mx-auto">
       <!-- about section -->
-      <section class="py-12 lg:p-20 px-4 bg-gray-200">
+      <section class="py-12 lg:p-20 px-4">
         <div
           class="
             flex flex-wrap

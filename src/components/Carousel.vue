@@ -47,7 +47,7 @@
       <button
         v-for="(item, i) in items"
         :key="i"
-        @click="test(i)"
+        @click="setActive(i)"
         :id="`carousel-indicator-${i + 1}`"
         type="button"
         class="w-3 h-3 rounded-full cs-blue dark:bg-gray-800"
@@ -68,7 +68,7 @@ export default {
     };
   },
   methods: {
-    test(id) {
+    setActive(id) {
       this.active = id;
     },
   },

@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <div class="bg_blue"></div>
     <Carousel :items="this.$page.markdownPage.carousel" />
     <Description :sections="this.$page.markdownPage.description" />
     <Opening :item="this.$page.markdownPage.opening" />
@@ -49,4 +50,13 @@ export default {
   },
 };
 </script>
-
+<style scoped>
+.bg_blue {
+  background-color: #ddf4ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+</style>
