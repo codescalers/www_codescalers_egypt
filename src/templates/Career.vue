@@ -3,7 +3,19 @@
     <section class="py-16 md:py-24 bg-gray-200">
       <div class="container px-4 mx-auto">
         <div class="md:max-w-5xl mx-auto mb-2"></div>
-        <div class="md:max-w-6xl mx-auto" v-html="$page.careers.content"></div>
+        <div class="md:max-w-8">
+          <div class="grid md:grid-cols-2">
+            <div
+              class="md:order-12 p-10 mx-auto transform transition duration-500 hover:scale-110"
+            >
+              <g-image :src="$page.careers.img" class="w-3/4 mx-auto"/>
+            </div>
+            <div
+              class="mb-10 mx-auto max-w-max overflow-hidden rounded-lg md:order-1"
+              v-html="$page.careers.content"
+            ></div>
+          </div>
+        </div>
       </div>
     </section>
   </Layout>
