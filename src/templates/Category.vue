@@ -1,6 +1,10 @@
 <template>
   <Layout>
-    <section class="py-12 bg-white">
+    <div class="dark-blue"></div>
+    <div class="container-fluid pt-8">
+      <g-image class="img" src="../assets/images/academy-bg.png" alt="" />
+    </div>
+    <section class="py-12 bg-white h-screen">
       <div class="md:max-w-7xl mx-auto flex flex-wrap">
         <div class="md:w-1/3 w-full pr-10">
           <div class="py-2 px-6 my-4">
@@ -87,3 +91,13 @@ export default {
   },
 };
 </script>
+<style scoped>
+.dark-blue {
+  background-color: #227db8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+</style>

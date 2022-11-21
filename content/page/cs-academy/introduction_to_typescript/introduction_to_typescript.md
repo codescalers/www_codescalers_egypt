@@ -2,7 +2,7 @@
 id: introduction_to_typescript
 title: "Introduction To Python"
 tags: [threefold_grid,technology,peer_to_peer]
-category: [Typescript,All]
+category: [Typescript]
 image: ./typscript.png
 image_caption: typscript
 excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum dicta a magnam.

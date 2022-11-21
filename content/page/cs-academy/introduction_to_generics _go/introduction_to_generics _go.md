@@ -2,7 +2,7 @@
 id: introduction_to_generics _go
 title: Introduction To Generics In Go
 tags: [partner, peer_to_peer, update]
-category: [Go, All]
+category: [Go]
 image: ./go_logo.png
 image_caption: go logo
 excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum dicta a magnam.
