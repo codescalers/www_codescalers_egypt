@@ -19,3 +19,4 @@ jobs:
           cd /home/webuser/websites/www2/www_codescalers_egypt/
           git log -1
           git pull
+          gridsome build
