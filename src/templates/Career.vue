@@ -8,13 +8,14 @@
             <div
               class="md:order-12 p-10 mx-auto transform transition duration-500 hover:scale-110"
             >
-              <g-image :src="$page.careers.img" class="w-3/4 mx-auto"/>
+              <g-image :src="$page.careers.img" class="w-3/4 mx-auto" />
             </div>
             <div
               class="mb-10 mx-auto max-w-max overflow-hidden rounded-lg md:order-1"
               v-html="$page.careers.content"
             ></div>
           </div>
+          <JobActions />
         </div>
       </div>
     </section>
@@ -35,3 +36,12 @@
     }    
   }
 </page-query>
+
+<script>
+import JobActions from "../components/JobActions.vue";
+export default {
+  components: {
+    JobActions,
+  },
+};
+</script>

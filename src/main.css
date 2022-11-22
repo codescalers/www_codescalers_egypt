@@ -52,7 +52,7 @@ p {
 }
 
 .tooltip .tooltiptext {
-    visibility      : hidden;
+    display      : none;
     width           : 125px;
     background-color: #555;
     color           : #fff;

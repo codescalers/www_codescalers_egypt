@@ -90,6 +90,7 @@ export default function (Vue, { router, head, isClient }) {
   head.script.push({
     src: 'https://platform-api.sharethis.com/js/sharethis.js#property=6331c246516bac0012998572&product=sop',
     type: 'text/javascript',
+    async: true,
     body: true
   })
   head.script.push({
