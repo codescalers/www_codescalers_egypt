@@ -12,3 +12,9 @@ This is the project you get when you run `gridsome create new-project`.
 2. `cd my-gridsome-site` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
+
+### Adding at CS Academy page
+1. go to /content/page/cs-academy/
+2. create new folder with name of post or copy folder from old bost and rename it.
+3. add image to the post and update md data.
+
