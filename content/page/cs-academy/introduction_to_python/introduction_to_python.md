@@ -1,13 +1,15 @@
 ---
 id: introduction_to_python
 title: "Introduction To Python"
-tags: [threefold_grid,technology,peer_to_peer]
+tags: [python,programming]
 category: [Python]
 image: ./Python_logo.png
 image_caption: Python_logo
-excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum dicta a magnam.
+excerpt: general-purpose programming language.
 authors: [Ahmed_Thabet]
-created: 2021-07-19
+created:
 ---
 
-## introduction_to_python
+## Introduction to Python Coming Soon
+
+Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.

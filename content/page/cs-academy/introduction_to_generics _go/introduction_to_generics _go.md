@@ -1,18 +1,16 @@
 ---
 id: introduction_to_generics _go
 title: Introduction To Generics In Go
-tags: [partner, peer_to_peer, update]
+tags: [go, programming]
 category: [Go]
 image: ./go_logo.png
 image_caption: go logo
-excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum dicta a magnam.
+excerpt: Go is a statically typed, compiled programming language designed at Google by Robert Griesemer.
 authors: [Ahmed_Thabet]
 created: 2021-08-11
 ---
 
-
 ## Create a new project
-
 
 ```
 mkdir golanggenrics && cd golanggenerics
@@ -26,21 +24,20 @@ go: creating new go.mod: module codescalers/golanggenerics
 
 ```
 
-## Launch your editor 
+## Launch your editor
 
 open the project in your favorite IDE/editor
 
+## The problem
 
-
-## The problem 
 we will be addressing generics gently in go, describing what have been used in the go community and what became available since generics landed in golang
-
 
 ### printing a slice of ints
 
-What we want to do now is writing a simple function that only prints a slice of integers 
+What we want to do now is writing a simple function that only prints a slice of integers
 
 let's create a `main.go` file
+
 ```go
 package main
 
@@ -53,7 +50,7 @@ func printInts(ints []int) {
 }
 
 func main() {
-	
+
 	ints := []int{1, 2, 3, 4}
 	printInts(ints)
 }
@@ -67,6 +64,7 @@ value 2
 value 3
 value 4
 ```
+
 Very cool, so now we managed to write a function that prints the items in an int slice. What if we wanted to do the same for a slice of floats? We can write another function `printFloats` as follows
 
 ```go
@@ -95,9 +93,10 @@ func main() {
 
 }
 ```
+
 ``
 
-the output 
+the output
 
 ```
 printInts
@@ -113,7 +112,6 @@ value 4.21
 ```
 
 so now we can print slices of ints and slices of floats! we managed to do so by some code duplication, code still simple, and maintainable,.. etc
-
 
 Is there another way we can make it work using just one function, instead of defining a function per type? Well.. we can move to interfaces and type assertions as follows
 
@@ -141,10 +139,11 @@ func main() {
 }
 
 ```
-while this function now accepts the empty interface, we have embedded the code from `printInts` and `printFloats` into it and handled each type case 
 
+while this function now accepts the empty interface, we have embedded the code from `printInts` and `printFloats` into it and handled each type case
 
 the output will be
+
 ```go
 printAnything: ints
 value: 1
@@ -203,29 +202,27 @@ func main() {
 
 ```
 
-Here we removed the code duplication of the cases of `[]int` and `[]float` and now it even works for any slice e.g including strings and `float32` as well, but will  for any data type other than slices e.g `printAnything("hello")` will cause a panic.
-
+Here we removed the code duplication of the cases of `[]int` and `[]float` and now it even works for any slice e.g including strings and `float32` as well, but will for any data type other than slices e.g `printAnything("hello")` will cause a panic.
 
 Output
 
 ```text
 printAnything: ints
-value 1 
-value 2 
-value 3 
-value 4 
+value 1
+value 2
+value 3
+value 4
 printAnything: floats
-value 4.11 
-value 2.52 
-value 3.29 
-value 4 
+value 4.11
+value 2.52
+value 3.29
+value 4
 panic: what??
 ```
 
 Always remember you are sacrificing the typesafety when using the empty interface, and reflections always comes with an overhead.
 
-There're other solutions including code generation, but it can get quite hairy 
-
+There're other solutions including code generation, but it can get quite hairy
 
 ```go
 func printGeneric[T any](slice []T) {
@@ -234,11 +231,13 @@ func printGeneric[T any](slice []T) {
 	}
 }
 ```
+
 Here we defined a function `printGeneric` that takes a slice of type `T`, T is a type, that needs to be defined or your go project needs to know about, and here we immediately defined it after the function name between the brackets `[T any]`
 
 Hint:
 
-try removing the brackets and see go complaining with `undeclared name T`. Another way is defining T separately with 
+try removing the brackets and see go complaining with `undeclared name T`. Another way is defining T separately with
+
 ```go
 type T any
 func printGeneric(slice []T) {
@@ -247,9 +246,11 @@ func printGeneric(slice []T) {
 	}
 }
 ```
-However, for convenience we can define T immediately after the function name  to be `func printGeneric[T any](slice []T)`
 
-update your `main.go` to be 
+However, for convenience we can define T immediately after the function name to be `func printGeneric[T any](slice []T)`
+
+update your `main.go` to be
+
 ```go
 package main
 
@@ -258,8 +259,8 @@ func main() {
 	printGeneric([]float32{4.11, 2.52, 3.29, 4.0})
 }
 ```
-Now what happens if we decided to pass a string instead of the slice? (which was allowed in all of the previous versions)? the code won't compile
 
+Now what happens if we decided to pass a string instead of the slice? (which was allowed in all of the previous versions)? the code won't compile
 
 ## Building a Box
 
@@ -271,7 +272,7 @@ type IntBox struct {
 	obj int
 }
 
-  
+
 func (b IntBox) GetObject() int {
 	return b.obj
 }
@@ -294,6 +295,7 @@ func main() {
 ```
 
 Output
+
 ```
 {5}
 5
@@ -301,7 +303,8 @@ Output
 3.5
 ```
 
-Still too much manual work that can be exhausting if you needed to support more types, we can go back to use the empty interface 
+Still too much manual work that can be exhausting if you needed to support more types, we can go back to use the empty interface
+
 ```go
 package main
 
@@ -324,7 +327,9 @@ func main() {
 	fmt.Println(myboxHello.GetObject())
 }
 ```
-Output 
+
+Output
+
 ```
 {5}
 5
@@ -335,6 +340,7 @@ hello
 Now our Box supports ints, floats and by luck also strings, that wasn't really intended. How can generics help us improving our code? and maybe adding some more constraints to make it work for certain types? e.g having NumberBox that can work for `int32`, `int64`, `float32`, `float64` only?
 
 Let's do the GenericBox first and then do the constraints
+
 ```go
 
 type GenericBox[T any] struct {
@@ -357,9 +363,11 @@ func main() {
 }
 
 ```
+
 It helps a lot to reason about `GenericBox` as a type awaiting an argument to construct a new type. So for instance in the case of `GenericBox[int32]{obj:5}` as if `GenericBox` was a function that generates a new type `GenericBoxInt32` that can have more parameters to initialize
 
 Output
+
 ```
 {5}
 {3.2}
@@ -372,12 +380,13 @@ Let's add the constraints for numbers box only `NumberBox`
 type NumberBox[T Number] struct {
 	obj T
 }
-  
+
 func (nb NumberBox[T]) GetObject() T {
 	return gb.obj
 }
 ```
-but wait a second, where does that `Number` type come from?  `Number` is an interface that we can declare as follows
+
+but wait a second, where does that `Number` type come from? `Number` is an interface that we can declare as follows
 
 ```go
 type Number interface {
@@ -385,7 +394,7 @@ type Number interface {
 }
 ```
 
-Our main.go looks like this now 
+Our main.go looks like this now
 
 ```go
 package main
@@ -400,7 +409,7 @@ type NumberBox[T Number] struct {
 	obj T
 }
 
-  
+
 
 func (nb NumberBox[T]) GetObject() T {
 	return gb.obj
@@ -410,7 +419,7 @@ func main() {
 
 	nbox5 := NumberBox[int32]{obj: 5}
 	fmt.Println(nbox5)
-	
+
 	nbox3dot2 := NumberBox[float32]{obj: 3.2}
 	fmt.Println(nbox3dot2)
 
@@ -419,19 +428,23 @@ func main() {
 
 }
 ```
-So now we have a generic code for a Box that works on int32, float32, int64, float64 only, and if you try to make it work against `string`, you should see an error like 
+
+So now we have a generic code for a Box that works on int32, float32, int64, float64 only, and if you try to make it work against `string`, you should see an error like
+
 ```
 string does not implement Number
 ```
 
-
 Resources:
+
 - [generics tutorial](https://go.dev/doc/tutorial/generics)
 - [generics proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
 - [ardanlabs generics series](https://www.ardanlabs.com/blog/2020/07/generics-01-basic-syntax.html)
 
-Written by: 
+Written by:
+
 - Ahmed Thabet
 
 Reviewer:
+
 - Rawda Fawzy
