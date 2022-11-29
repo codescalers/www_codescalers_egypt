@@ -106,7 +106,32 @@ p {
     background-color: #f6f8fa;
     border-radius: 6px;
     margin-bottom: 16px;
+    position: relative;
 }
+
+.gridsome-highlight button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+    font-weight: 700;
+    background-color: #f6f8fa;
+    padding: 0 8px 1px;
+    font-size: 13px;
+    border-radius: 4px;
+    color: rgb(29, 28, 29);
+    height: 28px;
+    min-width: 56px;
+    transition: all 80ms linear;
+}
+
+.gridsome-highlight button:hover {
+    background: rgba(248,248,248,1);
+}
+    
 
 .gridsome-highlight p{
     margin-top: 0;

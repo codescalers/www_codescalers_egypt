@@ -77,14 +77,7 @@
 
       <div class="py-12">
         <section
-          class="
-            post-content
-            container
-            mx-auto
-            relative
-            font-serif
-            text-gray-700
-          "
+          class="post-content container mx-auto relative font-serif text-gray-700"
         >
           <div
             class="post-content-text text-xl"
@@ -97,19 +90,7 @@
             v-for="tag in $page.blog.tags"
             :key="tag.id"
             :to="tag.path"
-            class="
-              text-xs
-              bg-transparent
-              hover:text-blue-700
-              py-2
-              px-4
-              mr-2
-              border
-              hover:border-blue-500
-              border-gray-600
-              text-gray-700
-              rounded-full
-            "
+            class="text-xs bg-transparent hover:text-blue-700 py-2 px-4 mr-2 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
             >{{ tag.title.replace("_", " ") }}</g-link
           >
         </section>
@@ -164,6 +145,28 @@
     }    
   }
 </page-query>
+
+<script>
+export default {
+  mounted() {
+    let parent = document.querySelectorAll(".gridsome-highlight");
+    parent.forEach((el) => {
+      let button = document.createElement("button");
+      button.innerHTML = "Copy";
+      button.addEventListener("click", function (e) {
+        copy(e);
+        button.innerHTML = "Copied!";
+      });
+      el.append(button);
+    });
+
+    function copy(e) {
+      let text = e.target.previousElementSibling.firstChild;
+      navigator.clipboard.writeText(text.innerText);
+    }
+  },
+};
+</script>
 
 <style scoped>
 .post-card-excerpt,
