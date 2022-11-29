@@ -6,6 +6,7 @@ const postcssPlugins = [
 
 module.exports = {
     siteName: 'CodeScalers-Egypt',
+    icon: './src/favicon.png',
     plugins: [
         {
             use: '@gridsome/source-filesystem',
