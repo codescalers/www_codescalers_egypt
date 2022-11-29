@@ -1,5 +1,5 @@
 ---
-id: introduction_to_generics _go
+id: introduction_to_generics_go
 title: Introduction To Generics In Go
 tags: [go, programming]
 category: [Go]
