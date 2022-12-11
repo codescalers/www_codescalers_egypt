@@ -15,7 +15,7 @@ This is the project you get when you run `gridsome create new-project`.
 
 ### Adding at CS Academy page
 1. go to /content/page/cs-academy/
-2. create new folder with name of post or copy folder from old bost and rename it.
+2. create new folder with name of post or copy folder from old post and rename it.
 3. add image to the post and update md data.
 
 Staging https://www2.codescalers-egypt.com/
