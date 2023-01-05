@@ -5,7 +5,7 @@ tags: [go, programming]
 category: [Go]
 image: ./go_logo.png
 image_caption: go logo
-excerpt: A gentle inroduction to generic in golang.
+excerpt: A gentle inroduction to generics in golang.
 authors: ["Ahmed_Thabet &", " Rawda Fawzy"]
 created: 2023-01-05
 ---
