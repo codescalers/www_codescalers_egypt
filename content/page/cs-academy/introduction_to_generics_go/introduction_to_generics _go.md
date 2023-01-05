@@ -24,13 +24,13 @@ We will be addressing generics gently in go, describing what have been used in t
 
 ## Create a new project
 
-```
+```bash
 mkdir golanggenrics && cd golanggenerics
 ```
 
 ## Initialize the project
 
-```
+```bash
 golanggenerics ~> go mod init codescalers/golanggenerics
 go: creating new go.mod: module codescalers/golanggenerics
 
@@ -62,7 +62,7 @@ func main() {
 
 run it with `go run main.go` and the output should be something like
 
-```
+```text
 value 1
 value 2
 value 3
@@ -102,7 +102,7 @@ func main() {
 
 the output
 
-```
+```text
 printInts
 value 1
 value 2
@@ -183,7 +183,7 @@ func printAnything(aslice interface{}) {
 }
 ```
 
-One problem with our current code is we literally embedded the code of `printInts` and `printFloats`, we can do another improvment here by using reflection in golang
+One problem with our current code is we literally embedded the code of `printInts` and `printFloats`, we can do another improvement here by using reflection in golang
 
 ```go
 func printAnything(aslice interface{}) {
@@ -300,7 +300,7 @@ func main() {
 
 Output
 
-```
+```text
 {5}
 5
 {3.5}
@@ -334,7 +334,7 @@ func main() {
 
 Output
 
-```
+```text
 {5}
 5
 {hello}
@@ -372,7 +372,7 @@ It helps a lot to reason about `GenericBox` as a type awaiting an argument to co
 
 Output
 
-```
+```text
 {5}
 {3.2}
 {hello}
@@ -435,7 +435,7 @@ func main() {
 
 So now we have a generic code for a Box that works on int32, float32, int64, float64 only, and if you try to make it work against `string`, you should see an error like
 
-```
+```text
 string does not implement Number
 ```
 
