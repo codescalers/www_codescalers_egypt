@@ -48,15 +48,15 @@ package main
 import "fmt"
 
 func printInts(ints []int) {
- for _, v := range ints {
-  fmt.Printf("value %v\n", v)
- }
+	for _, v := range ints {
+		fmt.Printf("value %v\n", v)
+	}
 }
 
 func main() {
 
- ints := []int{1, 2, 3, 4}
- printInts(ints)
+	ints := []int{1, 2, 3, 4}
+	printInts(ints)
 }
 ```
 
@@ -77,23 +77,23 @@ package main
 import "fmt"
 
 func printInts(ints []int) {
- for _, v := range ints {
-  fmt.Printf("value %v\n", v)
- }
+	for _, v := range ints {
+		fmt.Printf("value %v\n", v)
+	}
 }
 func printFloats(floats []float32) {
- for _, v := range floats {
-  fmt.Printf("value %v\n", v)
- }
+	for _, v := range floats {
+		fmt.Printf("value %v\n", v)
+	}
 }
 
 func main() {
- fmt.Println("printInts")
- ints := []int{1, 2, 3, 4}
- printInts(ints)
- fmt.Println("printFloats")
- floats := []float32{1.4, 2.1, 3.6, 4.21}
- printFloats(floats)
+	fmt.Println("printInts")
+	ints := []int{1, 2, 3, 4}
+	printInts(ints)
+	fmt.Println("printFloats")
+	floats := []float32{1.4, 2.1, 3.6, 4.21}
+	printFloats(floats)
 
 }
 ```
@@ -121,24 +121,24 @@ Is there another way we can make it work using just one function, instead of def
 
 ```go
 func printAnything(aslice interface{}) {
- switch slice := aslice.(type) {
- case []int:
-  for _, v := range slice {
-   fmt.Printf("value: %v\n", v)
-  }
- case []float32:
-  for _, v := range slice {
-   fmt.Printf("value: %v\n", v)
-  }
- }
+	switch slice := aslice.(type) {
+	case []int:
+		for _, v := range slice {
+		fmt.Printf("value: %v\n", v)
+		}
+	case []float32:
+		for _, v := range slice {
+		fmt.Printf("value: %v\n", v)
+		}
+	}
 }
 func main() {
- ints := []int{1, 2, 3, 4}
- floats:= []float32{4.11, 2.52, 3.29, 4.0}
- fmt.Println("printAnything: ints")
- printAnything(ints)
- fmt.Println("printAnything: floats")
- printAnything(floats)
+	ints := []int{1, 2, 3, 4}
+	floats:= []float32{4.11, 2.52, 3.29, 4.0}
+	fmt.Println("printAnything: ints")
+	printAnything(ints)
+	fmt.Println("printAnything: floats")
+	printAnything(floats)
 
 }
 
@@ -168,18 +168,18 @@ Still one more problem though, we can pass other data types to `printAnything` f
 
 ```go
 func printAnything(aslice interface{}) {
- switch slice := aslice.(type) {
- case []int:
-  for _, v := range slice {
-   fmt.Printf("value: %v\n", v)
-  }
- case []float32:
-  for _, v := range slice {
-   fmt.Printf("value: %v\n", v)
-  }
- default:
-  panic("what??")
- }
+	switch slice := aslice.(type) {
+	case []int:
+		for _, v := range slice {
+		fmt.Printf("value: %v\n", v)
+		}
+	case []float32:
+		for _, v := range slice {
+		fmt.Printf("value: %v\n", v)
+		}
+	default:
+		panic("what??")
+	}
 }
 ```
 
@@ -187,21 +187,21 @@ One problem with our current code is we literally embedded the code of `printInt
 
 ```go
 func printAnything(aslice interface{}) {
- slice := reflect.ValueOf(aslice)
- if slice.Kind() != reflect.Slice {
-  panic("what??")
- }
- for i := 0; i < slice.Len(); i++ {
-  fmt.Printf("value %v \n", slice.Index(i).Interface())
- }
+ 	slice := reflect.ValueOf(aslice)
+	if slice.Kind() != reflect.Slice {
+		panic("what??")
+	}
+	for i := 0; i < slice.Len(); i++ {
+		fmt.Printf("value %v \n", slice.Index(i).Interface())
+	}
 }
 func main() {
- fmt.Println("printAnything: ints")
- printAnything([]int{1, 2, 3, 4})
- fmt.Println("printAnything: floats")
- printAnything([]float32{4.11, 2.52, 3.29, 4.0})
- fmt.Println("printAnything: string")
- printAnything("hello")
+	fmt.Println("printAnything: ints")
+	printAnything([]int{1, 2, 3, 4})
+	fmt.Println("printAnything: floats")
+	printAnything([]float32{4.11, 2.52, 3.29, 4.0})
+	fmt.Println("printAnything: string")
+	printAnything("hello")
 }
 
 ```
@@ -230,9 +230,9 @@ There're other solutions including code generation, but it can get quite hairy
 
 ```go
 func printGeneric[T any](slice []T) {
- for _, v := range slice {
-  fmt.Printf("value %v\n", v)
- }
+	for _, v := range slice {
+		fmt.Printf("value %v\n", v)
+	}
 }
 ```
 
@@ -245,9 +245,9 @@ try removing the brackets and see go complaining with `undeclared name T`. Anoth
 ```go
 type T any
 func printGeneric(slice []T) {
- for _, v := range slice {
-  fmt.Printf("value %v\n", v)
- }
+	for _, v := range slice {
+		fmt.Printf("value %v\n", v)
+	}
 }
 ```
 
@@ -258,9 +258,11 @@ update your `main.go` to be
 ```go
 package main
 
+import "fmt"
+
 func main() {
- printGeneric([]int{1, 2, 3, 4})
- printGeneric([]float32{4.11, 2.52, 3.29, 4.0})
+	printGeneric([]int{1, 2, 3, 4})
+	printGeneric([]float32{4.11, 2.52, 3.29, 4.0})
 }
 ```
 
@@ -273,28 +275,28 @@ Imagine that we want to create a new type representing a container that has just
 ```go
 
 type IntBox struct {
- obj int
+	obj int
 }
 
 
 func (b IntBox) GetObject() int {
- return b.obj
+	return b.obj
 }
 
 type FloatBox struct {
- obj float32
+	obj float32
 }
 
 func (b FloatBox) GetObject() float32 {
- return b.obj
+	return b.obj
 }
 func main() {
- mybox5 := IntBox{obj: 5}
- fmt.Println(mybox5)
- fmt.Println(mybox5.GetObject())
- mybox3dot5 := FloatBox{obj: 3.5}
- fmt.Println(mybox3dot5)
- fmt.Println(mybox3dot5.GetObject())
+	mybox5 := IntBox{obj: 5}
+	fmt.Println(mybox5)
+	fmt.Println(mybox5.GetObject())
+	mybox3dot5 := FloatBox{obj: 3.5}
+	fmt.Println(mybox3dot5)
+	fmt.Println(mybox3dot5.GetObject())
 }
 ```
 
@@ -315,20 +317,20 @@ package main
 import "fmt"
 
 type Box struct {
- obj interface{}
+	obj interface{}
 }
 
 func (b Box) GetObject() interface{} {
- return b.obj
+	return b.obj
 }
 
 func main() {
- mybox5 := Box{obj: 5}
- fmt.Println(mybox5)
- fmt.Println(mybox5.GetObject())
- myboxHello := Box{obj: "hello"}
- fmt.Println(myboxHello)
- fmt.Println(myboxHello.GetObject())
+	mybox5 := Box{obj: 5}
+	fmt.Println(mybox5)
+	fmt.Println(mybox5.GetObject())
+	myboxHello := Box{obj: "hello"}
+	fmt.Println(myboxHello)
+	fmt.Println(myboxHello.GetObject())
 }
 ```
 
@@ -348,22 +350,22 @@ Let's do the GenericBox first and then do the constraints
 ```go
 
 type GenericBox[T any] struct {
- obj T
+	obj T
 }
 
 func (gb GenericBox[T]) GetObject() T {
- return gb.obj
+	return gb.obj
 }
 
 func main() {
- mygbox5 := GenericBox[int32]{obj: 5}
- fmt.Println(mygbox5)
+	mygbox5 := GenericBox[int32]{obj: 5}
+	fmt.Println(mygbox5)
 
- mygbox3dot2 := GenericBox[float32]{obj: 3.2}
- fmt.Println(mygbox3dot2)
+	mygbox3dot2 := GenericBox[float32]{obj: 3.2}
+	fmt.Println(mygbox3dot2)
 
- mygboxstring := GenericBox[string]{obj: "hello"}
- fmt.Println(mygboxstring)
+	mygboxstring := GenericBox[string]{obj: "hello"}
+	fmt.Println(mygboxstring)
 }
 
 ```
@@ -382,11 +384,11 @@ Let's add the constraints for numbers box only `NumberBox`
 
 ```go
 type NumberBox[T Number] struct {
- obj T
+	obj T
 }
 
 func (nb NumberBox[T]) GetObject() T {
- return gb.obj
+	return nb.obj
 }
 ```
 
@@ -406,17 +408,17 @@ import "fmt"
 
 
 type Number interface {
- int32 | int64 | float32 | float64
+ 	int32 | int64 | float32 | float64
 }
 
 type NumberBox[T Number] struct {
- obj T
+	obj T
 }
 
 
 
 func (nb NumberBox[T]) GetObject() T {
- return gb.obj
+ return nb.obj
 }
 
 func main() {
@@ -433,22 +435,11 @@ func main() {
 }
 ```
 
-So now we have a generic code for a Box that works on int32, float32, int64, float64 only, and if you try to make it work against `string`, you should see an error like
+So now we have a generic code for a Box that works on int32, float32, int64, float64 only, and if you try to make it work against `string`, you should see an error like `string does not implement Number`
 
-```text
-string does not implement Number
-```
 
-Resources:
+## Resources:
 
 - [generics tutorial](https://go.dev/doc/tutorial/generics)
 - [generics proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
 - [ardanlabs generics series](https://www.ardanlabs.com/blog/2020/07/generics-01-basic-syntax.html)
-
-Written by:
-
-- Ahmed Thabet
-
-Reviewer:
-
-- Rawda Fawzy
