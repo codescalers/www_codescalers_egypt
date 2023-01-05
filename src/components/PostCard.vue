@@ -1,6 +1,6 @@
 <template>
   <div class="w-full md:w-1/3 p-2 mb-2 md:mb-0 text-center">
-    <div class="py-2 px-6 border my-4 rounded-md border-blue-400">
+    <div class="py-2 px-3 border my-4 rounded-md border-blue-400">
       <g-link class="learn" :to="post.path">
         <g-image
           :src="post.image"
@@ -26,7 +26,7 @@
             /> -->
           </div>
           <p
-            class="flex items-center"
+            class="flex items-center pr-1"
             v-for="author in post.authors"
             :key="author"
           >

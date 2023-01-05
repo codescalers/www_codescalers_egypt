@@ -2,16 +2,16 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 px-2 mx-auto overflow-x-hidden pt-20">
       <div class="pt-8">
-        <section class="post-header container mx-auto px-0 mb-4 border-b">
+        <section class="post-header container mx-auto px-0 border-b">
           <h2 class="text-4xl font-medium leading-none mt-0">
             {{ $page.blog.title }}
           </h2>
           <div
-            class="text-xl pt-4 pb-10 text-gray-700"
+            class="text-xl pt-4 pb-2 text-gray-700"
             v-html="$page.blog.excerpt"
           ></div>
         </section>
-        <section class="post-author-list mb-10 mx-0">
+        <section class="post-author-list mb-2 mx-0">
           <div class="flex items-center">
             <div class="flex justify-between items-center">
               <!-- <ul class="list-none flex author-list m-0" >
@@ -38,7 +38,7 @@
               </ul> -->
             </div>
 
-            <div class="pl-3 flex flex-col text-xs leading-none uppercase">
+            <div class="flex pb-4 flex-col text-xs leading-none uppercase">
               <p>
                 <span
                   v-for="(author, index) in $page.blog.authors"
@@ -75,7 +75,7 @@
         <g-image :src="$page.blog.image"></g-image>
       </section> -->
 
-      <div class="py-12">
+      <div class="py-4">
         <section
           class="post-content container mx-auto relative font-serif text-gray-700"
         >
@@ -153,7 +153,7 @@ export default {
     parent.forEach((el) => {
       let button = document.createElement("button");
       button.innerHTML = "Copy";
-      button.addEventListener("click", function (e) {
+      button.addEventListener("click", function(e) {
         copy(e);
         button.innerHTML = "Copied!";
       });

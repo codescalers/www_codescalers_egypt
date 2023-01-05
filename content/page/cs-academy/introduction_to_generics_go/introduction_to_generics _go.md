@@ -5,9 +5,9 @@ tags: [go, programming]
 category: [Go]
 image: ./go_logo.png
 image_caption: go logo
-excerpt: Go is a statically typed, compiled programming language designed at Google by Robert Griesemer.
-authors: [Ahmed_Thabet]
-created: 2021-08-11
+excerpt: A gentle inroduction to generic in golang.
+authors: ["Ahmed_Thabet &", " Rawda Fawzy"]
+created: 2023-01-05
 ---
 
 ## Create a new project
