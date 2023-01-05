@@ -49,7 +49,7 @@ import "fmt"
 
 func printInts(ints []int) {
  for _, v := range ints {
-  fmt.Printf("value %v\n", ints[v])
+  fmt.Printf("value %v\n", v)
  }
 }
 
@@ -78,7 +78,7 @@ import "fmt"
 
 func printInts(ints []int) {
  for _, v := range ints {
-  fmt.Printf("value %v\n", ints[v])
+  fmt.Printf("value %v\n", v)
  }
 }
 func printFloats(floats []float32) {
