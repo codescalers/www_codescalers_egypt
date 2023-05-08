@@ -27,7 +27,7 @@
               class="w-full mx-4 contact_form"
               method="POST"
               name="contact_form"
-              action="https://formspree.io/f/mknykkel"
+              action="//formspree.io/nayer@codescalers.com"
             >
               <div class="alert" style="display: none;"></div>
               <input type="hidden" name="_next" value="/thanks" />
@@ -81,15 +81,7 @@
                 ></textarea>
               </div>
               <!-- Recaptcha -->
-              <div
-                ref="recaptcha"
-                id="g-recaptcha"
-                class="g-recaptcha"
-                :data-sitekey="sitekey"
-                :data-callback="onRecaptchaSuccess"
-                :data-expired-callback="onRecaptchaResponseExpiry"
-                :data-error-callback="onRecaptchaError"
-              ></div>
+              <div id="recaptcha"></div>
 
               <!-- Recaptcha Error -->
               <div
@@ -179,40 +171,21 @@ export default {
   data() {
     return {
       sitekey: "6LeAPnoiAAAAABs17G2rCXwkr9mzYRbTy7hXVuUC",
-      widgetId: 0,
     };
   },
   methods: {
-    execute() {
-      window.grecaptcha.execute(this.widgetId);
-    },
-    reset() {
-      window.grecaptcha.reset(this.widgetId);
-    },
-    render() {
-      if (window.grecaptcha) {  
-        this.widgetId = window.grecaptcha.render("g-recaptcha", {
-          sitekey: this.sitekey,
-          size: "invisible",
-          callback: (response) => {
-            this.$emit("verify", response);
-            this.reset();
-          },
-        });
-      }
-    },
-    onRecaptchaSuccess(response) {
-      console.log("Success!");
-    },
-    onRecaptchaResponseExpiry() {
-      console.log("Expired");
-    },
-    onRecaptchaError() {
-      console.log("Error");
+    recaptchaCallback() {
+      console.log("recaptcha is ready"); // showing
+      grecaptcha.render("recaptcha", {
+        sitekey: this.sitekey,
+        callback() {
+          console.log("recaptcha callback");
+        },
+      });
     },
   },
   mounted() {
-    this.render();
+    this.recaptchaCallback();
   },
 };
 </script>
