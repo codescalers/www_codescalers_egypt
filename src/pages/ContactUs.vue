@@ -200,10 +200,12 @@ export default {
     },
   },
   mounted() {
+
     var script = document.createElement("script");
-    script.src = "https://www.google.com/recaptcha/api.js ";
+    script.src =
+    "https://www.google.com/recaptcha/api.js?onload=ReCaptchaLoaded";
     document.head.appendChild(script);
-    window.ReCaptchaLoaded = this.recaptchaCallback();
+    window.ReCaptchaLoaded = this.recaptchaCallback();  
   },
 };
 </script>
