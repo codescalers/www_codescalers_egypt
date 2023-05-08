@@ -27,7 +27,7 @@
               class="w-full mx-4 contact_form"
               method="POST"
               name="contact_form"
-              action="//formspree.io/nayer@codescalers.com"
+              action="https://formspree.io/f/mknykkel"
             >
               <div class="alert" style="display: none;"></div>
               <input type="hidden" name="_next" value="/thanks" />
@@ -81,7 +81,12 @@
                 ></textarea>
               </div>
               <!-- Recaptcha -->
-              <div id="recaptcha"></div>
+              <div
+                id="recaptcha"
+                :data-callback="onRecaptchaSuccess"
+                :data-expired-callback="onRecaptchaResponseExpiry"
+                :data-error-callback="onRecaptchaError"
+              ></div>
 
               <!-- Recaptcha Error -->
               <div
@@ -174,6 +179,15 @@ export default {
     };
   },
   methods: {
+    onRecaptchaSuccess(response) {
+      console.log("Success!");
+    },
+    onRecaptchaResponseExpiry() {
+      console.log("Expired");
+    },
+    onRecaptchaError() {
+      console.log("Error");
+    },
     recaptchaCallback() {
       console.log("recaptcha is ready"); // showing
       grecaptcha.render("recaptcha", {
