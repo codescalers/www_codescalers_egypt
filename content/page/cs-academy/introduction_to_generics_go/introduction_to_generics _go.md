@@ -5,32 +5,36 @@ tags: [go, programming]
 category: [Go]
 image: ./go_logo.png
 image_caption: go logo
-excerpt: Go is a statically typed, compiled programming language designed at Google by Robert Griesemer.
-authors: [Ahmed_Thabet]
-created: 2021-08-11
+excerpt: A gentle inroduction to generics in golang.
+authors: ["Ahmed_Thabet &", " Rawda Fawzy"]
+created: 2023-01-05
 ---
+
+
+
+## Introduction
+
+Generics are a way to write code that is independent of the specific types it uses. They allow you to write a single piece of code that can work with multiple types, rather than having to write separate code for each type. This can make your code more flexible, reusable, and maintainable.
+
+Generics in Go were a controversial topic because the language did not support them at all. Many developers believed that the lack of generics was a significant limitation of Go, and there were numerous debates and discussions about whether or not the language should support them. One of the main arguments against generics was that they would make the language more complex and harder to learn. Go is known for its simplicity and minimalism, and some people feared that adding generics would compromise these virtues.
+
+Others argued that generics were necessary for writing high-quality, reusable code, and that the lack of generics was a major drawback of Go. These developers believed that the benefits of generics outweighed any potential drawbacks, and that Go would be a better language with them.
+
+We will be addressing generics gently in go, describing what have been used in the go community and what became available since generics landed in golang
 
 ## Create a new project
 
-```
+```bash
 mkdir golanggenrics && cd golanggenerics
 ```
 
 ## Initialize the project
 
-```
+```bash
 golanggenerics ~> go mod init codescalers/golanggenerics
 go: creating new go.mod: module codescalers/golanggenerics
 
 ```
-
-## Launch your editor
-
-open the project in your favorite IDE/editor
-
-## The problem
-
-we will be addressing generics gently in go, describing what have been used in the go community and what became available since generics landed in golang
 
 ### printing a slice of ints
 
@@ -45,7 +49,7 @@ import "fmt"
 
 func printInts(ints []int) {
 	for _, v := range ints {
-		fmt.Printf("value %v\n", ints[v])
+		fmt.Printf("value %v\n", v)
 	}
 }
 
@@ -58,7 +62,7 @@ func main() {
 
 run it with `go run main.go` and the output should be something like
 
-```
+```text
 value 1
 value 2
 value 3
@@ -74,7 +78,7 @@ import "fmt"
 
 func printInts(ints []int) {
 	for _, v := range ints {
-		fmt.Printf("value %v\n", ints[v])
+		fmt.Printf("value %v\n", v)
 	}
 }
 func printFloats(floats []float32) {
@@ -98,7 +102,7 @@ func main() {
 
 the output
 
-```
+```text
 printInts
 value 1
 value 2
@@ -120,11 +124,11 @@ func printAnything(aslice interface{}) {
 	switch slice := aslice.(type) {
 	case []int:
 		for _, v := range slice {
-			fmt.Printf("value: %v\n", v)
+		fmt.Printf("value: %v\n", v)
 		}
 	case []float32:
 		for _, v := range slice {
-			fmt.Printf("value: %v\n", v)
+		fmt.Printf("value: %v\n", v)
 		}
 	}
 }
@@ -167,11 +171,11 @@ func printAnything(aslice interface{}) {
 	switch slice := aslice.(type) {
 	case []int:
 		for _, v := range slice {
-			fmt.Printf("value: %v\n", v)
+		fmt.Printf("value: %v\n", v)
 		}
 	case []float32:
 		for _, v := range slice {
-			fmt.Printf("value: %v\n", v)
+		fmt.Printf("value: %v\n", v)
 		}
 	default:
 		panic("what??")
@@ -179,11 +183,11 @@ func printAnything(aslice interface{}) {
 }
 ```
 
-One problem with our current code is we literally embedded the code of `printInts` and `printFloats`, we can do another improvment here by using reflection in golang
+One problem with our current code is we literally embedded the code of `printInts` and `printFloats`, we can do another improvement here by using reflection in golang
 
 ```go
 func printAnything(aslice interface{}) {
-	slice := reflect.ValueOf(aslice)
+ 	slice := reflect.ValueOf(aslice)
 	if slice.Kind() != reflect.Slice {
 		panic("what??")
 	}
@@ -254,6 +258,8 @@ update your `main.go` to be
 ```go
 package main
 
+import "fmt"
+
 func main() {
 	printGeneric([]int{1, 2, 3, 4})
 	printGeneric([]float32{4.11, 2.52, 3.29, 4.0})
@@ -296,7 +302,7 @@ func main() {
 
 Output
 
-```
+```text
 {5}
 5
 {3.5}
@@ -330,7 +336,7 @@ func main() {
 
 Output
 
-```
+```text
 {5}
 5
 {hello}
@@ -368,7 +374,7 @@ It helps a lot to reason about `GenericBox` as a type awaiting an argument to co
 
 Output
 
-```
+```text
 {5}
 {3.2}
 {hello}
@@ -382,7 +388,7 @@ type NumberBox[T Number] struct {
 }
 
 func (nb NumberBox[T]) GetObject() T {
-	return gb.obj
+	return nb.obj
 }
 ```
 
@@ -402,7 +408,7 @@ import "fmt"
 
 
 type Number interface {
-	int32 | int64 | float32 | float64
+ 	int32 | int64 | float32 | float64
 }
 
 type NumberBox[T Number] struct {
@@ -412,39 +418,28 @@ type NumberBox[T Number] struct {
 
 
 func (nb NumberBox[T]) GetObject() T {
-	return gb.obj
+ return nb.obj
 }
 
 func main() {
 
-	nbox5 := NumberBox[int32]{obj: 5}
-	fmt.Println(nbox5)
+ nbox5 := NumberBox[int32]{obj: 5}
+ fmt.Println(nbox5)
 
-	nbox3dot2 := NumberBox[float32]{obj: 3.2}
-	fmt.Println(nbox3dot2)
+ nbox3dot2 := NumberBox[float32]{obj: 3.2}
+ fmt.Println(nbox3dot2)
 
-	// nboxstring := NumberBox[string]{obj: "hello"}
-	// fmt.Println(nboxstring)
+ // nboxstring := NumberBox[string]{obj: "hello"}
+ // fmt.Println(nboxstring)
 
 }
 ```
 
-So now we have a generic code for a Box that works on int32, float32, int64, float64 only, and if you try to make it work against `string`, you should see an error like
+So now we have a generic code for a Box that works on int32, float32, int64, float64 only, and if you try to make it work against `string`, you should see an error like `string does not implement Number`
 
-```
-string does not implement Number
-```
 
-Resources:
+## Resources:
 
 - [generics tutorial](https://go.dev/doc/tutorial/generics)
 - [generics proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
 - [ardanlabs generics series](https://www.ardanlabs.com/blog/2020/07/generics-01-basic-syntax.html)
-
-Written by:
-
-- Ahmed Thabet
-
-Reviewer:
-
-- Rawda Fawzy
