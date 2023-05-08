@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content h-screen">
     <Navbar :navigation="$static.navigation" />
     <slot />
     <Footer />
@@ -39,5 +39,6 @@ html, body {
 }
 .content {
   min-height: 100%;
+
 }
 </style>

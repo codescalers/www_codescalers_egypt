@@ -82,6 +82,8 @@
               </div>
               <!-- Recaptcha -->
               <div
+                ref="recaptcha"
+                id="g-recaptcha"
                 class="g-recaptcha"
                 :data-sitekey="sitekey"
                 :data-callback="onRecaptchaSuccess"
@@ -177,9 +179,28 @@ export default {
   data() {
     return {
       sitekey: "6LeAPnoiAAAAABs17G2rCXwkr9mzYRbTy7hXVuUC",
+      widgetId: 0,
     };
   },
   methods: {
+    execute() {
+      window.grecaptcha.execute(this.widgetId);
+    },
+    reset() {
+      window.grecaptcha.reset(this.widgetId);
+    },
+    render() {
+      if (window.grecaptcha) {  
+        this.widgetId = window.grecaptcha.render("g-recaptcha", {
+          sitekey: this.sitekey,
+          size: "invisible",
+          callback: (response) => {
+            this.$emit("verify", response);
+            this.reset();
+          },
+        });
+      }
+    },
     onRecaptchaSuccess(response) {
       console.log("Success!");
     },
@@ -189,6 +210,9 @@ export default {
     onRecaptchaError() {
       console.log("Error");
     },
+  },
+  mounted() {
+    this.render();
   },
 };
 </script>
