@@ -83,6 +83,7 @@
               <!-- Recaptcha -->
               <div
                 id="recaptcha"
+                class="mb-5"
                 :data-callback="onRecaptchaSuccess"
                 :data-expired-callback="onRecaptchaResponseExpiry"
                 :data-error-callback="onRecaptchaError"
