@@ -2,7 +2,7 @@
   <section class="pb-12 px-4 text-center bg-white">
     <div class="w-full max-w-2xl mx-auto">
       <g-image
-        class="py-4 mx-auto transform transition duration-500 hover:scale-110"
+        class="my-4 mx-auto transform transition duration-500 hover:scale-110"
         width="500"
         :src="item.img"
         alt=""
@@ -17,18 +17,7 @@
       </p> -->
       <g-link
         :to="item.btn_link"
-        class="
-          bg_blue_dark
-          text-lg
-          font-normal
-          text-white
-          hover:bg-blue-600
-          capitalize
-          py-2
-          px-4
-          border
-          rounded
-        "
+        class="inline-block w-1/3 py-3 my-2 px-5 leading-none text-center text-white bg-blue-500 hover:bg-blue-600 font-semibold rounded shadow"
       >
         {{ item.btn }}
       </g-link>
