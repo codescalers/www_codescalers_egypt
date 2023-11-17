@@ -49,7 +49,7 @@
           </p> -->
       </div>
 
-      <div class="flex flex-wrap md:mx-28">
+      <div class="flex flex-wrap md:mx-28 justify-center">
         <!-- job1 -->
         <JobCard
           v-for="career in $page.allCareers.edges"
