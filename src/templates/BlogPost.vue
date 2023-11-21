@@ -1,6 +1,6 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container h-screen sm:pxi-0 px-2 mx-auto overflow-x-hidden pt-20">
+    <div class="container px-4 md:px-20 h-screen sm:pxi-0 mx-auto overflow-x-hidden pt-20">
       <div class="pt-8">
         <section class="post-header container mx-auto px-0 border-b">
           <h2 class="text-4xl font-medium leading-none mt-0">
