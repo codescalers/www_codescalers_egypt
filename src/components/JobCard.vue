@@ -1,13 +1,13 @@
 <template>
-  <div class="w-full md:w-1/4 p-4 mb-2 md:mb-0">
-    <div class="py-8 px-6 border my-4 rounded-md border-blue-400">
+  <div class="w-full md:w-1/3 p-4 mb-2 md:mb-0">
+    <div class="py-8 px-3 border text-center my-4 rounded-md border-blue-400">
       <g-image
         :src="career.img"
-        width="250"
+        
         class="mx-auto transform transition duration-500 hover:scale-110 pb-8"
       />
       <!-- <i class="fa-brands fa-ubuntu blue text-5xl pb-2"></i> -->
-      <h3 class="text-2xl blue mb-3 font-semibold font-heading">
+      <h3 class="md:text-lg lg:text-2xl blue mb-3 font-semibold font-heading">
         {{ career.title }}
       </h3>
       <div

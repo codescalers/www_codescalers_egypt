@@ -2,7 +2,7 @@
 id: senior_software_engineer
 img: ./senior_software_engineer.png
 title: Senior Software Engineer
-excerpt: The senior software engineer will design and develop cutting-edge, reliable distributed systems and quality validation systems. He will work with the existing team.
+excerpt: The senior software engineer will design and develop cutting-edge, reliable distributed systems and quality validation systems...
 details_btn: More Details
 details_btnLink:
 apply_btn: Apply
