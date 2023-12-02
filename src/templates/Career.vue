@@ -6,9 +6,9 @@
         <div class="md:max-w-8">
           <div class="">
             <div
-              class="md:order-12 mx-auto transform my-4 transition duration-500 hover:scale-105"
+              class="md:order-12 mx-auto transform my-4 transition duration-500 hover:scale-105 py-4"
             >
-              <g-image :src="$page.careers.img" class="mx-auto w-1/2" />
+              <g-image :src="$page.careers.img" class="mx-auto" />
             </div>
             <div
               class="markdown mb-10 mx-auto max-w-max overflow-hidden rounded-lg md:order-1"
