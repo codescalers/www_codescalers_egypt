@@ -8,7 +8,7 @@
       >
         <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
           <h1
-            class="text-6xl blue mb-6 leading-none font-semibold font-heading"
+            class="text-4xl md:text-6xl blue mb-6 leading-none font-semibold font-heading"
           >
             Careers
           </h1>
@@ -38,9 +38,11 @@
 
     <!-- job section -->
 
-    <section class="py-8 bg-white">
-      <div class="mx-auto text-center my-8">
-        <h2 class="text-5xl blue leading-tight mb-3 font-semibold font-heading">
+    <section class="py-4 bg-white">
+      <div class="flex flex-row mx-auto justify-center my-4">
+        <h2
+          class="text-3xl md:text-5xl blue text-cente leading-tight mb-2 font-semibold"
+        >
           Newest Job Listing
         </h2>
         <!-- <p class="text-gray-700 text-lg leading-relaxed">
@@ -49,7 +51,7 @@
           </p> -->
       </div>
 
-      <div class="flex flex-wrap md:mx-28 justify-center">
+      <div class="container mx-auto flex flex-wrap justify-center">
         <!-- job1 -->
         <JobCard
           v-for="career in $page.allCareers.edges"

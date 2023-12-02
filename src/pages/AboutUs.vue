@@ -59,7 +59,8 @@
         <div class="max-w-2xl mx-auto mb-8">
           <h2
             class="
-              text-5xl
+            text-3xl
+              md:text-5xl
               blue
               capitalize
               leading-tight
