@@ -30,13 +30,13 @@ extra:
 <!-- section 2 (logos) -->
 
 
-<!-- {% logo_slider() %}
+{% logo_slider() %}
 
 
 ## **logo**
 
 
-{% end %} -->
+{% end %}
 
 <!-- section 3 (Map) -->
 <div class="container mx-auto">

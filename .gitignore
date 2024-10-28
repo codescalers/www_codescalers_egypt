@@ -15,4 +15,7 @@ dist
 build*
 run*
 install*
+public
+static/css
+tailwindcss
 
