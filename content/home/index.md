@@ -9,13 +9,7 @@ extra:
  imgPath: home/autonomous.png
 ---
 
-
-
-
 <!-- section 1 (header) -->
-
-
-
 
 {% carousel() %}
 
@@ -24,82 +18,28 @@ extra:
 {% end %}
 
 
+<!-- section 2 (Our Values) -->
 
+<div style="background-color:#292929">
 
+<div class="container mx-auto text-white">
 
-<!-- section 2 (logos) -->
+{% row(style="margin semiNarrow") %}
 
-
-{% logo_slider() %}
-
-
-## **logo**
-
-
-{% end %}
-
-<!-- section 3 (Map) -->
-<div class="container mx-auto">
-
-
-{% grid_stats() %}
-
-
-#### <span class="blue">LIVE AND OPERATIONAL</span>
-
-
-## **Proven by a global community**
-
-
-With ThreeFold, individuals, organizations, communities, countries, and network states deploy their own<br>sovereign infrastructure. The ThreeFold Grid has been live and operational since 2017.
-
-**Version 3.14 is live on Mainnet**
-
-
-{% end %}
-
-
-</div>
-</div>
-
-
-<!-- section 4 (Host the cloud) -->
-
-
-<div style="background-color:#F6F6F6">
-<div class="container mx-auto">
-
-{% row( style="mtop center between ") %}
-
-#### <span class="blue">THREEFOLD DIFFERENCE</span>
-
-## **A ground-up approach**
-
-ThreeFold is not a protocol. We've developed foundational technology that runs directly on bare metal (the hardware). ThreeFold is likely the only active project with a truly scalable solution addressing the Internet and Cloud's core bottlenecks: data, cloud, and network.
-
-<br>
-
-<button class="blue_b">[Learn More](/technology)</button>
-
-{% end %}
-
-{% row(style="reverse margin") %}
-
-![Image](home_nodes.png#mx-auto)
+<h1 class="value leading-none text-white font-extrabold">Our<br>Values</h1>
 
 |||
 
-### **Unbreakable Data**
+<div class="leading-8 list">
 
-Data cannot be compromised and always remains private, owned by you. A scalable system, to the planetary level. Can be distributed and stored in ways which are at least 10x more efficient and orders of magnitude more secure and reliable.
+- **Integrity,** What we say is what we do.
+- **Open Culture,** Respect and accept everyone.
+- **Flexibility,** The ability to adapt with the constant and quick changes.
+- **Development,** Investing in people is our most rewarding investment.
+- **Ownership,** What we promise is what we deliver.
+- **Home,** A comfortable and fun environment where you can be yourself.
 
-### **Autonomous Cloud**
-
-Self-healing and self-driving cloud based on an efficient and secure operating system runs directly on the hardware. Can run any Web 2, Web 3, or AI workload at the edge of the Internet, with more scalability and reliability.
-
-### **P2P Network**
-
-End-to-end encrypted overlay network, always looking for the shortest possible path between participants. Logical Internet address securely linked to a private key. Unlimited scale and performance optimizations.
+</div>
 
 {% end %}
 
@@ -107,7 +47,9 @@ End-to-end encrypted overlay network, always looking for the shortest possible p
 </div>
 </div>
 
-<!-- section 9 (Ecosystem) -->
+
+
+<!-- section 3 (our services) -->
 
 
 <div class="container mx-auto">
@@ -115,31 +57,43 @@ End-to-end encrypted overlay network, always looking for the shortest possible p
 
 {% row( style="center mtop semiNarrow") %}
 
+<h1 class="blue font-bold">Our Services</h1>
 
-<h4 class="green_text">REAL-WORLD IMPACT</h4>
-
-
-## **Collaboration, Innovation, Evolution**
-
-ThreeFold’s technological infrastructure will empower many projects and initiatives across sectors. Here are two key projects.
+ <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #3399CC;">
 
 {% end %}
 
 
-{% row( style="semiNarrow mbottom") %}
+{% row( style="center semiNarrow mbottom") %}
+                          
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6" style="background-color:#292929; color:#fff">
 
-<div class="rounded_img border-2 rounded-lg shadow-lg">
+![Image](services.png#small#mx-auto)
 
-[![Image](freezone_anouncement.png)](/newsroom/freezone-anouncement/)
+<div class="mycard my-8">
 
-<div class="p-6 lg:p-3 mycard">
+<h3 class="text-xl font-medium text-white">Managed Services</h3>
 
-#### **OurWorld Free Zone**
+<p class="text-white text-sm font-medium">Our subcontracting services provide complete IT solutions, covering backend and frontend development management. We ensure smooth operations with proactive monitoring, quick issue resolution, and continuous improvements, so you can focus on your core business goals.
+      
+</div>
+</div>
 
-<br>
 
-<span class="text-md truncate ..." >ThreeFold is working with the Zanzibar Communication Corporation (ZICTIA), on behalf of the Zanzibar government, to create the world’s first 100% Digital Free Zone – accessible and affordable for all. The announcement was made August 2023, and progress has been ongoing behind the scenes since then. Updates expected Q4 2024.
-</span>
+
+|||
+
+
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" style="background-color:#1CBBE6; color:#fff">
+
+![Image](Hiring.png#small#mx-auto)
+
+<div class="mycard my-8">
+
+<h3 class="text-xl font-medium text-white">Resource Hiring and Assignment</h3>                                                              
+
+<p class="text-white text-sm font-medium">We provide tailored offshoring recruitment and staffing solutions, sourcing top talent for backend, frontend, and other technical roles. Our team ensures candidates meet your technical needs and fit your company culture.</p>
       
 </div>
 </div>
@@ -147,31 +101,34 @@ ThreeFold’s technological infrastructure will empower many projects and initia
 |||
 
 
-<div class="rounded_img border-2 rounded-lg shadow-lg">
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" style="background-color:#F3F3F3; color:#fff">
 
+![Image](delivering1.png#small#mx-auto)
 
-[![Image](sovereigndy.png)](/newsroom/duniayetulaunchdar/)
+<div class="mycard my-8">
 
+<h3 class="text-xl font-medium text-gray-700">Delivering customized solutions</h3>
 
-
-
-<div class="p-6 lg:p-3 mycard">
-
-
-#### **Tanzanian Sovereign Internet**
-
-<br>
-<span class="text-md truncate ..." >
-In January 2024, ThreeFold announced in collaboration with The ICT Commission of Tanzania and Holochain a collaboration to deploy sovereign Internet in Tanzania, along with the introduction of coding academies and innovation hubs. The Dunia Yetu cooperative is being set up and efforts will ramp up in 2025.
-
-</span>
-
+<p class="text-gray-700 text-sm font-medium">Our outsourcing project management services deliver customized solutions for backend, frontend, and operations projects. We handle planning, resource allocation, and execution to ensure on-time, high-quality results that align with your strategic goals.</p>
+      
 </div>
 </div>
 
 {% end %}
 
 </div>
+
+
+
+
+<!-- section 2 (logos) -->
+
+{% logo_slider() %}
+
+
+## **logo**
+
+{% end %}
 
 <!-- section 5 (INCA) -->
 
@@ -293,6 +250,15 @@ We are currently fundraising for the next stage of our project – major commerc
 <style>
 
 
+
+
+.list ul {
+list-style-type: disclosure-closed;
+}
+.value{
+font-size: 5rem
+}
+
 .card_h{
  height: 110px !important;
 }
@@ -315,15 +281,7 @@ We are currently fundraising for the next stage of our project – major commerc
 
    }
 
-
-
-
-
-
    @media (max-width: 480px) {
-
-
-
 
 .road_border{
   

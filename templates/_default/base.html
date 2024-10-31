@@ -5,10 +5,7 @@
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7PNMFH" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+
 
   <!-- Twitter universal website tag code -->
   <script>
@@ -27,9 +24,9 @@
     // from: https://stackoverflow.com/a/4425214
     var links = document.links;
     var internal_hosts = [
-        'www.threefold.io',
-        'threefold.io',
-        'www2.threefold.io',
+        'www.codescalers.com',
+        'codescalers.com',
+        'www2.codescalers.com',
         'localhost',
         '127.0.0.1'
     ]
@@ -42,7 +39,7 @@
   <!-- End Twitter universal website tag code -->
 
   {% include "partials/header.html" %}
-  <div id="content" class="px-4 lg:px-0 pt-12 overflow-hidden">
+  <div id="content" class="pt-12 overflow-hidden">
     {% block content %}{% endblock %}
   </div>
   <div class="px-4 md:px-8">
