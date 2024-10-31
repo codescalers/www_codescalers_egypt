@@ -176,7 +176,7 @@ extra:
 
 
 
-<!-- section 2 (logos) -->
+<!-- section 5 (logos) -->
 
 {% logo_slider() %}
 
@@ -186,37 +186,53 @@ extra:
 
 
 
+<!-- section 6 (join us) -->
+
+
+
+
+{% row( style="center margin" bgPath="/join_us_BG.png") %}
+
+<div class="container mx-auto join_section">
+
+<h1 class="text-white text-6xl font-bold">Join US</h1>
+
+ <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #fff;">
+
+<div class="text-white my-10 font-medium">
+
+We're on the look out for talented individuals to join our rapidly growing technical and management teams. Working on massive scale projects for the biggest tech and media companies, with some of the best developers in Egypt.
+
+</div>
+
+
+<button class="green">[Join Our Team](/careers)</button> 
+
+</div>
+
+{% end %}
+
 
 
 
 
 <style>
 
+.join_section h1{
+  font-size:4rem
+}
+
+.join_section p{
+  max-width:48rem;
+  margin:auto
+}
+
+
 .list ul {
 list-style-type: disclosure-closed;
 }
 .value{
 font-size: 5rem
-}
-
-.card_h{
- height: 110px !important;
-}
-
-.rounded_img img {
- border-radius: 8px;
-}
-
-.white-gray{
-  color: #9f9f9f;
-}
-
-
-.road_border{
-  
-     border-left: 1px solid #cbcbcb;
-
-
 }
 
 .lable {
@@ -234,7 +250,6 @@ font-size: 5rem
 .zoom {
   position: relative;
   overflow: hidden;
-  /* max-width: 300px; */
   z-index: 1;
 }
 .zoom::after {
@@ -248,28 +263,12 @@ font-size: 5rem
   opacity: 0;
   transition: .3s ease all;
 }
-img {transition: .3s ease all; width: 100%; object-fit:cover;}
+
+.zoom img {transition: .3s ease all; width: 100%; object-fit:cover;}
 .zoom:hover img {
   transform: scale(1.1);
 }
 
 .zoom:hover::after {opacity: 0.2;}
-
-   @media (max-width: 480px) {
-
-.road_border{
-  
-     border-left: 0px solid #cbcbcb;
-
-
-   }
-
-
-   }
-
-
-
-
-
 
  </style>
