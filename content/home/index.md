@@ -9,7 +9,7 @@ extra:
  imgPath: home/autonomous.png
 ---
 
-<!-- section 1 (header) -->
+<!-- section 1 (carousel) -->
 
 {% carousel() %}
 
@@ -48,12 +48,9 @@ extra:
 </div>
 
 
-
 <!-- section 3 (our services) -->
 
-
 <div class="container mx-auto">
-
 
 {% row( style="center mtop semiNarrow") %}
 
@@ -79,11 +76,7 @@ extra:
 </div>
 </div>
 
-
-
 |||
-
-
 
 <div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" style="background-color:#1CBBE6; color:#fff">
 
@@ -99,7 +92,6 @@ extra:
 </div>
 
 |||
-
 
 <div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" style="background-color:#F3F3F3; color:#fff">
 
@@ -120,126 +112,77 @@ extra:
 
 
 
+<!-- section 4 (Events) -->
+
+<div style="background-color:#292929">
+<div class="container mx-auto">
+
+
+{% row( style="center mtop semiNarrow") %}
+
+<h1 class="text-white font-bold">Our Events</h1>
+
+ <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #fff;">
+
+{% end %}
+
+
+{% row( style="center semiNarrow mbottom") %}
+                          
+<div class="relative border-2 rounded-lg shadow-lg">
+
+  <div class="lable font-medium px-4 py-2">Internship 2024</div>
+
+  <div class="zoom">
+
+   ![Image](event_1.png#mx-auto)
+
+  </div>
+
+</div>
+
+|||
+
+<div class="relative border-2 rounded-lg shadow-lg">
+
+  <div class="lable font-medium px-4 py-2">GUC Internship Event</div>
+
+  <div class="zoom">
+
+   ![Image](event_2.png#mx-auto)
+
+  </div>
+
+</div>
+
+|||
+
+<div class="relative border-2 rounded-lg shadow-lg">
+
+  <div class="lable font-medium px-4 py-2">Pyramids Event</div>
+
+  <div class="zoom">
+
+   ![Image](event_3.png#mx-auto)
+
+  </div>
+
+</div>
+
+{% end %}
+
+</div>
+</div>
+
+
 
 <!-- section 2 (logos) -->
 
 {% logo_slider() %}
 
-
 ## **logo**
 
 {% end %}
-
-<!-- section 5 (INCA) -->
-
-<div style="background-color:#F6F6F6">
-<div class="container mx-auto">
-
-{% row(style="margin") %}
-
-
-![Image](home_inca.png#mx-auto)
-
-
-|||
-
-
-#### <span class="green_text">THE NEXT CHAPTER</span>
-
-## **Ready for commercialization**
-
-For years, ThreeFold has been quietly and steadily developing its innovative technology, with a solid foundation of mature infrastructure that is now ready to take the next leap forward.
-
-<br>
-
-We are currently fundraising for the next stage of our project – major commercial expansion. This will involve the launch of the $INCA token on the Solana blockchain. If you are interested in learning more or taking part, please reach out.
-
-<br>
-
-<button class="blue_b">[Get in Touch](https://calendly.com/florian_threefold/30min)</button>
-
-{% end %}
-
-
-</div>
-</div>
-
-<!-- section 10 (news) -->
-
-
-<div class="rounded_img container mx-auto">
-
-
-{% row( style="mtop semiNarrow") %}
-
-
-## **Top Blogs**
-
-
-{% end %}
-
-
-{% row( style="mbottom semiNarrow") %}
-
-
-<div class="rounded_img">
-
-
-[![Image](ground_up.png)](/blog/ground-up-innovations/)
-
-
-<br>
-
-##### From the ground up: Three inventions that make ThreeFold possible
-
-</div>
-
-|||
-
-[![Image](evolution_of_the_internet.png)](/blog/evolution-of-the-internet)
-
-<br>
-
-##### The Evolution of the Internet: From free to controlled, and back again
-
-|||
-
-<div class="pl-12 road_border">
-<h3 class="mt-0 font-semibold">JOIN IN</h3>
-
-
- <div class="my-4">
- <a href="https://manual.grid.tf" target="_blank">
-    <h4 class="text-xl green_text font-normal my-0">Manuals</h4>
-    <p class="white-gray font-normal">Dive deeper into our technology</p>
-    </a>
-    </div>
-     <div class="my-4">
-     <a href="https://threefoldfaq.crisp.help/en/" target="_blank">
-    <h4 class="text-xl green_text font-normal my-0">Support</h4>
-    <p class="white-gray font-normal">Get assistance from our Support Team</p>
-    </a>
-    </div>
-      <div class="my-4">
-      <a href="/community" target="_blank">
-    <h4 class="text-xl green_text font-normal my-0">Community</h4>
-    <p class="white-gray font-normal">Be part of our journey and participate</p>
-    </a>
-    </div>
-
-
-</div>
-
-
-{% end %}
-
-
-</div>
-
-
-
-
-
 
 
 
@@ -248,9 +191,6 @@ We are currently fundraising for the next stage of our project – major commerc
 
 
 <style>
-
-
-
 
 .list ul {
 list-style-type: disclosure-closed;
@@ -263,11 +203,9 @@ font-size: 5rem
  height: 110px !important;
 }
 
-
 .rounded_img img {
  border-radius: 8px;
 }
-
 
 .white-gray{
   color: #9f9f9f;
@@ -279,7 +217,43 @@ font-size: 5rem
      border-left: 1px solid #cbcbcb;
 
 
-   }
+}
+
+.lable {
+  position:absolute;
+  background-color: rgba(75, 75, 75, 0.7);
+  top:10px;
+  right: 10px;
+  color: #fff;
+  z-index:10;
+  font-size:14px;
+  border-radius: 5px;
+}
+/* zoom images */
+
+.zoom {
+  position: relative;
+  overflow: hidden;
+  /* max-width: 300px; */
+  z-index: 1;
+}
+.zoom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #e5e5e5;
+  opacity: 0;
+  transition: .3s ease all;
+}
+img {transition: .3s ease all; width: 100%; object-fit:cover;}
+.zoom:hover img {
+  transform: scale(1.1);
+}
+
+.zoom:hover::after {opacity: 0.2;}
 
    @media (max-width: 480px) {
 
