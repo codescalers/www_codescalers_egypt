@@ -28,7 +28,7 @@ extra:
 
 <div data-aos="fade-right">
 
-<h1 class="value leading-none text-white font-extrabold">Our<br>Values</h1>
+<h2 class="value leading-none text-white font-extrabold">Our<br>Values</h2>
 
 </div>
 
@@ -62,7 +62,7 @@ extra:
 
 {% row( style="center mtop semiNarrow") %}
 
-<h1 class="blue font-bold">Our Services</h1>
+<h2 class="blue font-bold">Our Services</h2>
 
  <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #3399CC;">
 
@@ -136,7 +136,7 @@ extra:
 
 {% row( style="center mtop semiNarrow") %}
 
-<h1 class="text-white font-bold">Our Events</h1>
+<h2 class="text-white font-bold">Our Events</h2>
 
  <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #fff;">
 
@@ -205,14 +205,11 @@ extra:
 
 <!-- section 6 (join us) -->
 
-
-
-
 {% row( style="center margin" bgPath="/join_us_BG.png") %}
 
 <div class="container mx-auto join_section">
 
-<h1 class="text-white text-6xl font-bold">Join US</h1>
+<h1>Join US</h1>
 
  <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #fff;">
 
@@ -223,7 +220,7 @@ We're on the look out for talented individuals to join our rapidly growing techn
 </div>
 
 
-<button class="green">[Join Our Team](/careers)</button> 
+<button >[Join Our Team](/careers)</button> 
 
 </div>
 
@@ -234,10 +231,6 @@ We're on the look out for talented individuals to join our rapidly growing techn
 
 
 <style>
-
-.join_section h1{
-  font-size:4rem
-}
 
 .join_section p{
   max-width:48rem;

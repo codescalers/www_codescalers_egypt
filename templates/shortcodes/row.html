@@ -135,7 +135,7 @@ Parameters:
 {% set styles = ""  %}
 {% if bgPath %}
     {% set background_url = page.permalink ~ bgPath %}
-    {% set styles = "background: url('" ~ background_url ~ "'); background-size: cover; background-position: bottom;"  %}
+    {% set styles = "background: url('" ~ background_url ~ "'); background-size: cover; background-position: top;"  %}
     {% set row_class = row_class ~ "w-screen sm:-mx-12 md:-mx-16 lg:-mx-20" %}
 {% endif %}
 {% if bgColor %}

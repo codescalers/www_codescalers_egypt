@@ -209,12 +209,13 @@ a img:hover{
 
 
 @layer components {
+ 
   h1 {
-    @apply text-3xl lg:text-5xl;
+    @apply lg:text-7xl md:text-4xl text-white font-extrabold leading-none;
     font-family: "Montserrat", sans-serif !important;
   }
   h2 {
-    @apply text-3xl lg:text-4xl my-4 font-normal leading-none;
+    @apply text-3xl lg:text-5xl my-4 font-normal leading-none;
     color: #2b2b2b;
     font-family: "Montserrat", sans-serif !important;
   }
@@ -260,7 +261,6 @@ a img:hover{
     inline-block
     md:text-md
     text-sm
-    lg:mr-3
     py-3
     my-2
     border
