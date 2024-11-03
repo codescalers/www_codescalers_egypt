@@ -26,9 +26,15 @@ extra:
 
 {% row(style="margin semiNarrow") %}
 
+<div data-aos="fade-right">
+
 <h1 class="value leading-none text-white font-extrabold">Our<br>Values</h1>
 
+</div>
+
 |||
+
+<div data-aos="fade-left">
 
 <div class="leading-8 list">
 
@@ -38,6 +44,8 @@ extra:
 - **Development,** Investing in people is our most rewarding investment.
 - **Ownership,** What we promise is what we deliver.
 - **Home,** A comfortable and fun environment where you can be yourself.
+
+</div>
 
 </div>
 
@@ -62,7 +70,9 @@ extra:
 
 
 {% row( style="center semiNarrow mbottom") %}
-                          
+ 
+ <div data-aos="flip-left">
+
 <div class="rounded_img border-2 rounded-lg shadow-lge p-6" style="background-color:#292929; color:#fff">
 
 ![Image](services.png#small#mx-auto)
@@ -75,8 +85,11 @@ extra:
       
 </div>
 </div>
+</div> 
 
 |||
+
+<div data-aos="flip-up">
 
 <div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" style="background-color:#1CBBE6; color:#fff">
 
@@ -90,9 +103,11 @@ extra:
       
 </div>
 </div>
+</div>
 
 |||
 
+<div data-aos="flip-right">
 <div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" style="background-color:#F3F3F3; color:#fff">
 
 ![Image](delivering1.png#small#mx-auto)
@@ -103,6 +118,7 @@ extra:
 
 <p class="text-gray-700 text-sm font-medium">Our outsourcing project management services deliver customized solutions for backend, frontend, and operations projects. We handle planning, resource allocation, and execution to ensure on-time, high-quality results that align with your strategic goals.</p>
       
+</div>
 </div>
 </div>
 
@@ -128,8 +144,9 @@ extra:
 
 
 {% row( style="center semiNarrow mbottom") %}
-                          
-<div class="relative border-2 rounded-lg shadow-lg">
+
+                       
+<div class="relative border-2 rounded-lg shadow-lg" data-aos="zoom-in">
 
   <div class="lable font-medium px-4 py-2">Internship 2024</div>
 
@@ -143,7 +160,7 @@ extra:
 
 |||
 
-<div class="relative border-2 rounded-lg shadow-lg">
+<div class="relative border-2 rounded-lg shadow-lg" data-aos="zoom-in">
 
   <div class="lable font-medium px-4 py-2">GUC Internship Event</div>
 
@@ -157,7 +174,7 @@ extra:
 
 |||
 
-<div class="relative border-2 rounded-lg shadow-lg">
+<div class="relative border-2 rounded-lg shadow-lg" data-aos="zoom-in">
 
   <div class="lable font-medium px-4 py-2">Pyramids Event</div>
 
@@ -272,3 +289,10 @@ font-size: 5rem
 .zoom:hover::after {opacity: 0.2;}
 
  </style>
+
+
+<script>
+    AOS.init({
+        duration: 1000,
+      })
+</script>
