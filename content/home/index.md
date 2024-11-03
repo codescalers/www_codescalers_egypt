@@ -28,7 +28,7 @@ extra:
 
 <div data-aos="fade-right">
 
-<h2 class="value leading-none text-white font-extrabold">Our<br>Values</h2>
+<h1 class="text-center md:text-left">Our<br>Values</h1>
 
 </div>
 
@@ -82,6 +82,7 @@ extra:
 <h3 class="text-xl font-medium text-white">Managed Services</h3>
 
 <p class="text-white text-sm font-medium">Our subcontracting services provide complete IT solutions, covering backend and frontend development management. We ensure smooth operations with proactive monitoring, quick issue resolution, and continuous improvements, so you can focus on your core business goals.
+</p>
       
 </div>
 </div>

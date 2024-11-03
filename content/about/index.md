@@ -41,7 +41,7 @@ extra:
 
  <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #fff;">
 
-<div class="leading-8 py-4">
+<div class="leading-8 py-4 text-sm">
 
 We have been focused on helping companies, specially startups, to build and operate their datacenter, cloud architecture. To provide the best solutions, we always think out of the box and build groundbreaking disruptive technologies, which made us unique and cloud experts. Our team has developed cloud softwares, datacenter softwares as well as high end and mid market hosting solutions. From the experiences we gained over the years, we learnt that significant improvements for a cloud solution can only be achieved when the entire cloud ecosystem is looked at including Datacenter, Power Management, Physical infrastructure, Management Platform, User Interfaces.
 
@@ -50,4 +50,104 @@ We have been focused on helping companies, specially startups, to build and oper
 
 {% end %}
 
+</div>
+</div>
 
+
+<!-- section 3 (our partners) -->
+
+<div class="container mx-auto">
+
+{% row( style="center mtop semiNarrow") %}
+
+<h2 class="blue font-bold">Our Services</h2>
+
+ <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #3399CC;">
+
+{% end %}
+
+
+{% row( style="center between") %}
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6" data-aos="flip-up">
+
+![Image](tft_logo.png#mx-auto)
+
+</div>
+
+|||
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" data-aos="flip-up" >
+
+![Image](awingo_logo.png#mx-auto)
+
+</div>
+
+|||
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" data-aos="flip-up">
+
+![Image](gig_logo.png#mx-auto)
+
+</div>
+
+|||
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" data-aos="flip-up">
+
+![Image](bettertoken_logo.png#mx-auto)
+
+</div>
+
+{% end %}
+
+
+
+
+{% row( style="center between mbottom") %}
+ 
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" data-aos="flip-down">
+
+![Image](incubaid.png#mx-auto)
+
+</div>
+
+|||
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" data-aos="flip-down"  >
+
+![Image](racktivity.png#mx-auto)
+
+</div>
+
+
+|||
+
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" data-aos="flip-down">
+
+![Image](freeflow.png#mx-auto)
+
+</div>
+
+|||
+
+
+<div class="rounded_img border-2 rounded-lg shadow-lge p-6 lg:p-3" data-aos="flip-down">
+
+![Image](amplidata_logo.png#mx-auto)
+
+</div>
+
+
+{% end %}
+
+</div>
+
+
+<script>
+    AOS.init({
+        duration: 1000,
+      })
+</script>
