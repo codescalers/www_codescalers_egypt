@@ -8,7 +8,7 @@ extra:
 ---
 
 - [ABOUT]("/about")
-- [Careers]("/technology")
+- [Careers]("/careers")
 - [CS Academy]("/host")
 - [Community]("/deploy")
 - [Contact Us]("/utilization") 

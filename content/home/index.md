@@ -208,7 +208,7 @@ extra:
 
 {% row( style="center margin" bgPath="/join_us_BG.png") %}
 
-<div class="container mx-auto join_section">
+<div class="container mx-auto width_text">
 
 <h1>Join US</h1>
 
@@ -233,7 +233,7 @@ We're on the look out for talented individuals to join our rapidly growing techn
 
 <style>
 
-.join_section p{
+.width_text p{
   max-width:48rem;
   margin:auto
 }

@@ -147,11 +147,6 @@ a img:hover{
   width:200px
 }
 
-
-.blue{
-  color:#2E83FF
-}
-
 .nav p > a {
   display: flex;
   width: 100%;
@@ -259,8 +254,7 @@ a img:hover{
   button {
     @apply 
     inline-block
-    md:text-md
-    text-sm
+    text-md
     py-3
     my-2
     border
