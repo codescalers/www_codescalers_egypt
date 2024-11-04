@@ -23,7 +23,7 @@
   <div class="container mx-auto mt-16">
 
     <div>
-      <article class="article lg:w-4/6 mx-auto">
+      <article class="article mx-auto">
         <section class="post-header px-0 mb-4 border-b">
         <h2 class="md:text-4xl text-3xl font-medium mb-2 leading-none  text-gray-700">
           {{ page.title }}
@@ -68,11 +68,11 @@
             </div>
 
           </div>
-          <div class="my-2 sharethis-inline-share-buttons"></div>
+          {# <div class="my-2 sharethis-inline-share-buttons"></div> #}
         </section>
         {% set img_url = get_url(path='/' ~ page.relative_path | replace(from='_', to='-') | replace(from='index.md',
         to=page.extra.imgPath)) %}
-        <img class="mb-8 mx-auto" src={{img_url}} alt="{{page.title ~ 'Picture'}}">
+        {# <img class="mb-8 mx-auto" src={{img_url}} alt="{{page.title ~ 'Picture'}}"> #}
         <div>{{ content | safe }}</div>
         <section class="post-tags container relative py-10">
           {% for tag in page.taxonomies.tags %}

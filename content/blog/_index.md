@@ -16,3 +16,4 @@ page_template: "blogPage.html"
 extra:
   imgPath: blog.png
 ---
+
