@@ -1,0 +1,24 @@
+name: www3.codescalers.com
+on: 
+  push:
+    branches: [ development_2024 ]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: pushing latest change on www3.codescalers.com
+      uses: appleboy/ssh-action@master
+      with:
+        host: www3.codescalers.com
+        username: webuser
+        key: ${{ secrets.TF_SECRET }}
+        port: 34022
+        script: |
+          cd websites/www3/www_codescalers_egypt/
+          git log -1
+          git fetch
+          git reset --hard origin/development_2024
+          sed -i "s/https:\/\/www2.codescales.com/https:\/\/www3.codescalers.com/g" config.toml
+          ./build.sh
