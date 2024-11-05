@@ -5,7 +5,7 @@ description: Development Team
 taxonomies:
   people: [mahmoud_emad]
   memberships: [team]
-  categories: [foundation]
+  categories: []
 extra:
   imgPath: mahmoud_emad.jpg
   organizations: [threefold_tech]
