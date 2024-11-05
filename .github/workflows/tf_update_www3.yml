@@ -1,4 +1,4 @@
-name: www3.codescalers.com
+name: www3.codescalers-egypt.com
 on: 
   push:
     branches: [ development_2024 ]
@@ -8,10 +8,10 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: pushing latest change on www3.codescalers.com
+    - name: pushing latest change on www3.codescalers-egypt.com
       uses: appleboy/ssh-action@master
       with:
-        host: www3.codescalers.com
+        host: www3.codescalers-egypt.com
         username: webuser
         key: ${{ secrets.TF_SECRET }}
         port: 34022
@@ -20,5 +20,5 @@ jobs:
           git log -1
           git fetch
           git reset --hard origin/development_2024
-          sed -i "s/https:\/\/www2.codescales.com/https:\/\/www3.codescalers.com/g" config.toml
+          sed -i "s/https:\/\/www2.codescales-egypt.com/https:\/\/www3.codescalers-egypt.com/g" config.toml
           ./build.sh
