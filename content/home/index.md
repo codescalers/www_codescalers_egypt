@@ -26,15 +26,15 @@ extra:
 
 {% row(style="margin semiNarrow") %}
 
-<div data-aos="fade-right">
+
 
 <h1 class="text-center md:text-left">Our<br>Values</h1>
 
-</div>
+
 
 |||
 
-<div data-aos="fade-left">
+
 
 <div class="leading-8 list">
 
@@ -47,7 +47,6 @@ extra:
 
 </div>
 
-</div>
 
 {% end %}
 

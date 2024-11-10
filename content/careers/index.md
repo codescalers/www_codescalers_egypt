@@ -22,7 +22,7 @@ We're on the look out for talented individuals to join our rapidly growing techn
 
 </div>
 
-<button >[Join Our Team](#careers)</button>
+<button >[Join Our Team](#careers_opning)</button>
 
 </div>
 
@@ -42,7 +42,11 @@ We're on the look out for talented individuals to join our rapidly growing techn
 
 {% accordion() %}
 
+<div id="careers_opning">
+
 ## **careers**
+
+</div>
 
 {% end %}
 
