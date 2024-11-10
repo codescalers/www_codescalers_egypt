@@ -20,5 +20,5 @@ jobs:
           git log -1
           git fetch
           git reset --hard origin/development_2024
-          sed -i "s/https:\/\/www2.codescales-egypt.com/https:\/\/www3.codescalers-egypt.com/g" config.toml
+          sed -i "s/https:\/\/www2.codescalers-egypt.com/https:\/\/www3.codescalers-egypt.com/g" config.toml
           ./build.sh
