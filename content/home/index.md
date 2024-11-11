@@ -28,7 +28,7 @@ extra:
 
 
 
-<h1 class="text-center md:text-left">Our<br>Values</h1>
+<h1 class="">Our<br>Values</h1>
 
 
 

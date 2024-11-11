@@ -10,7 +10,7 @@ extra:
 - [ABOUT]("/about")
 - [Careers]("/careers")
 - [CS Academy]("/blog")
-- [Community]("/Community")
+- [Community]("/community")
 - [Contact Us]("/contact") 
 
 
