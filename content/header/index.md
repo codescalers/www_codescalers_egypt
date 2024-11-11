@@ -11,6 +11,6 @@ extra:
 - [Careers]("/careers")
 - [CS Academy]("/blog")
 - [Community]("/Community")
-- [Contact Us]("/utilization") 
+- [Contact Us]("/contact") 
 
 
