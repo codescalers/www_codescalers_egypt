@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://dev.threefold.io/sitemap.xml
+Sitemap: https://www2.codescalers-egypt.com/sitemap.xml
