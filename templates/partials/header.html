@@ -24,7 +24,7 @@
             <nav class="flex space-x-20 items-center">
               <div>
                 <a href="{{get_url(path='/')}}" class="flex">
-                    <img class="w-40 h-auto sm:w-15" style="max-width: none;" src="{{ get_url(path=section.extra.logoPath)}}" alt="ThreeFold Logo" />
+                    <img class="w-40 h-auto sm:w-15" style="max-width: none;" src="{{ get_url(path=section.extra.logoPath)}}" alt="CodeScaler Logo" />
                 </a>
             </div>
             {% for header_item in header_items %}
@@ -42,11 +42,11 @@
                         </a>
                         {% endif %}
                       {% elif current_url and current == current_url %}
-                          <a href="{{ get_url(path=link_path[1])}}" class="text-md py-3 leading-6 font-normal active hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                          <a href="{{ get_url(path=link_path[1])}}" class="text-sm py-3 uppercase leading-6 font-medium text-gray-600 hover:text-blue-300 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
                             {{link_label}}
                           </a>
                       {% else %}
-                        <a href="{{ get_url(path=link_path[1])}}" class="text-md py-3 leading-6 font-normal text-gray-900 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                        <a href="{{ get_url(path=link_path[1])}}" class="text-sm py-3 uppercase leading-6 font-medium text-gray-600 hover:text-blue-300 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
                           {{link_label}}
                         </a>
                       {% endif %}
