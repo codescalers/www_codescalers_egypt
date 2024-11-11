@@ -3,7 +3,7 @@ id: introduction_to_generics_go
 title: "Introduction To Generics In Go"
 image_caption: Go images
 description: Generics are a way to write code that is independent of the specific types it uses. They allow you to write a single piece of code that can work with multiple types, 
-date: 2024-02-10
+date: 2023-02-10
 taxonomies:
   #people: [sam_taggart]
   tags: [Go]
@@ -443,3 +443,17 @@ So now we have a generic code for a Box that works on int32, float32, int64, flo
 - [generics tutorial](https://go.dev/doc/tutorial/generics)
 - [generics proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
 - [ardanlabs generics series](https://www.ardanlabs.com/blog/2020/07/generics-01-basic-syntax.html)
+
+
+<style>
+	.gridsome-highlight {
+    padding: 16px;
+    overflow: auto;
+    font-size: 75%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    position: relative;
+	}
+</style>

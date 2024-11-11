@@ -16,13 +16,15 @@ extra:
 
 # Careers
 
+<hr class="border-3 border-white mx-auto round-md mb-4" style="width: 15%;">
+
 <div class="text-white width_text max-w-3xl my-10 font-medium">
 
 We're on the look out for talented individuals to join our rapidly growing technical and management teams. Working on massive scale projects for the biggest tech and media companies, with some of the best developers in Egypt.If you want to stay posted you can check our Linkedin page.
 
 </div>
 
-<button >[Join Our Team](#careers_opning)</button>
+<!-- <button >[Join Our Team](/careers/#careers_opning)</button> -->
 
 </div>
 
