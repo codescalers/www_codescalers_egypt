@@ -80,17 +80,21 @@
 
 <!--JAVASCRIPT CODE-->
 <script>
-    var swiper = new Swiper(".default-carousel", {
+  var swiper = new Swiper(".default-carousel", {
     loop: true,
+    speed: 800,
     pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-    });
+    lazy: {
+        loadPrevNext: true,
+    },
+});
     </script>
 
 
