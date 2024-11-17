@@ -53,12 +53,23 @@ module.exports = {
         },
         animation: {
           'infinite-scroll': 'infinite-scroll 25s linear infinite',
+          'slide-in-up': 'slideInUp 1.5s ease-out forwards',
+          'slide-out-up': 'slideOut 1.5s ease-in forwards',
       },
       keyframes: {
           'infinite-scroll': {
               from: { transform: 'translateX(0)' },
               to: { transform: 'translateX(-100%)' },
-          }
+          },
+
+          slideInUp: {
+            '0%': { transform: 'translateY(-100%)', opacity: '0' },
+            '100%': { transform: 'translateY(0)', opacity: '1' },
+          },
+          slideOut: {
+            '0%': { transform: 'translateY(0)', opacity: '1' },
+            '100%': { transform: 'translateY(-100%)', opacity: '0' },
+          },
       }                    
       },
   },

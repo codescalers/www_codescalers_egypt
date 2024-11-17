@@ -146,6 +146,25 @@ We have been focused on helping companies, specially startups, to build and oper
 </div>
 
 
+<style>
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animated-text {
+  animation: slidein 1s ease-out;
+}
+
+  </style>
+
 <script>
     AOS.init({
         duration: 1000,
