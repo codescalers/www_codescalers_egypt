@@ -5,7 +5,9 @@
     <div class="z-20 bg-white fixed w-full top-0">
         <div class="relative z-50 shadow">
         <div class="mx-auto flex z-50 shadow justify-between items-center px-6 sm:px-4 md:px-6 py-2 lg:px-5 lg:justify-start space-x-10 sm:space-x-4 ">
-            
+          <a href="{{get_url(path='/')}}" class="flex lg:hidden">
+            <img class="w-40 h-auto sm:w-15" style="max-width: none;" src="{{ get_url(path=section.extra.logoPath)}}" alt="CodeScaler Logo" />
+        </a>
             <div class="-mr-2 -my-2 lg:hidden">
                 <button id="hamburger-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                     <!-- Heroicon name: menu -->

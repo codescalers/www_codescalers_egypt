@@ -39,10 +39,9 @@
      </div>
     </div>
     <div class="flex items-center gap-8 lg:justify-start justify-center">
-     <button id="slider-button-left" class="swiper-button-prev ml-0 left-0 rounded-r-full" data-carousel-prev>
-     </button>
-     <button id="slider-button-right" class="swiper-button-next mr-0 right-0 rounded-l-full" data-carousel-next>
-     </button>
+      <button id="slider-button-left" class="swiper-button-prev ml-0 left-0 rounded-r-full" aria-label="Previous slide" data-carousel-prev></button>
+      <button id="slider-button-right" class="swiper-button-next mr-0 right-0 rounded-l-full" aria-label="Next slide" data-carousel-next></button>
+      
     </div>
     <div class="swiper-pagination"></div>
     </div>
@@ -75,7 +74,25 @@
     width: 12px;
     height: 12px;
     background: #ffffff;
-    }  
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #ffffff !important; /* Highlight active bullet */
+      transform: scale(1.2); /* Slightly enlarge active bullet */
+  }
+  
+    
+    @media (max-width: 768px) {
+      .swiper-wrapper {
+          height: 50vh !important;
+      }
+      .swiper-slide h1 {
+        font-size: 2rem; /* Adjusted for smaller screens */
+    }
+    .swiper-slide p {
+        font-size: 1rem;
+    }
+  }
 </style>
 
 <!--JAVASCRIPT CODE-->

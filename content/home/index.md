@@ -28,7 +28,8 @@ extra:
 
 
 
-<h1 class="">Our<br>Values</h1>
+
+<h1 class="value_text">Our<br>Values</h1>
 
 
 
@@ -281,8 +282,14 @@ font-size: 5rem
 
 .zoom:hover::after {opacity: 0.2;}
 
+@media (max-width: 768px) {
+      .value_text {
+          text-align:center !important;
+      }
+
  </style>
 
+ 
 
 <script>
     AOS.init({
