@@ -60,7 +60,7 @@ We have been focused on helping companies, specially startups, to build and oper
 
 {% row( style="center mtop semiNarrow") %}
 
-<h2 class="blue font-bold">Our Services</h2>
+<h2 class="blue font-bold">previous & currents clients</h2>
 
  <hr class="mb-4 mx-auto" style="border-width: 1px; width:15%; border-color: #3399CC;">
 
