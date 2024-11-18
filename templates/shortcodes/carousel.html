@@ -8,8 +8,15 @@
      <div class="swiper-slide w-full flex-shrink-0 flex items-center justify-center bg-cover bg-center" 
      style="background-image: url('images/hero_1.png');">
      <div class="flex flex-col text-center text-white px-4 justify-center items-center">
-        <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold leading-none" data-aos="zoom-in">Welcome To<br> CodeScalers Egypt</h1>
-        <hr class="border-3 border-white round-md mb-4" style="width: 35%;">
+      <div class="text-animation">
+        <div class="text">
+          <span class="lg:text-7xl md:text-4xl text-white font-extrabold leading-tight">Welcome To</span>
+        </div>
+        <div class="text">
+          <span class="lg:text-7xl md:text-4xl text-white font-extrabold leading-tight">Codescalers Egypt</span>
+        </div>
+      </div>
+        <hr class="border-3 border-white round-md my-4" style="width: 35%;">
         <p class="text-lg text-white max-w-lg font-semibold">
             We are an international software development house specialized in Cloud Computing, working with startups to help them achieve their goals.
         </p>
@@ -49,6 +56,34 @@
     
 
 <style>
+
+  .text-animation {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+  }
+  
+  .text {
+    overflow: hidden;
+    /* height: 100px; */
+    /* Adjust to fit text */
+  }
+  
+  .text span {
+    display: inline-block;
+    transform: translateY(-100%);
+    animation: slideIn 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation-delay: var(--delay, 0s);
+  }
+  
+  /* Keyframes for slide-in from top */
+  @keyframes slideIn {
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
   /* CSS Code */
   .swiper-button-next, .swiper-button-prev{
     background-color: rgba(255, 255, 255, 0.8);
@@ -100,14 +135,15 @@
 <!--JAVASCRIPT CODE-->
 <script>
 
+  document.querySelectorAll(".text span").forEach((element, index) => {
+    element.style.setProperty("--delay", `${index * 1}s`); // Add staggered animation delay
+  });
+
+
   var swiper = new Swiper(".default-carousel", {
     loop: true,
     speed: 700,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true, // Pause autoplay when the mouse enters the slider
-    },
+   
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
