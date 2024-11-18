@@ -13,7 +13,7 @@
           <span class="lg:text-7xl text-4xl text-white font-extrabold leading-tight">Welcome To</span>
         </div>
         <div class="text">
-          <span class="lg:text-7xl text-4xl text-white font-extrabold leading-tight lg:-mt-5 mt-0">Codescalers Egypt</span>
+          <span class="lg:text-7xl text-4xl text-white font-extrabold leading-tight lg:-mt-2 mt-0">Codescalers Egypt</span>
         </div>
       </div>
         <hr class="border-3 border-white round-md my-4" style="width: 35%;">
@@ -25,9 +25,15 @@
      <div class="swiper-slide w-full flex-shrink-0 flex items-center justify-center bg-cover bg-center" 
      style="background-image: url('images/slide2.png');">
      <div class="flex flex-col text-center text-white px-4 justify-center items-center">
-        <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold leading-none">Changing The Way
-          <br> Of Delivering IT</h1>
-        <hr class="border-3 border-white round-md mb-4" style="width: 35%;">
+          <div class="text-animation">
+            <div class="text">
+              <span class="lg:text-7xl text-4xl text-white font-extrabold leading-tight">Changing The Way</span>
+            </div>
+            <div class="text">
+              <span class="lg:text-7xl text-4xl text-white font-extrabold leading-tight lg:-mt-2 mt-0">Of Delivering IT</span>
+            </div>
+          </div>
+        <hr class="border-3 border-white round-md my-4" style="width: 35%;">
         <p class="text-lg text-white max-w-lg font-semibold">
           Our goal is to make IT as easy to use, reliable and scalable as electricity. We rechallenge existing technologies, we also try to solve the root cause of issues.
         </p>
@@ -36,9 +42,13 @@
      <div class="swiper-slide w-full flex-shrink-0 flex items-center justify-center bg-cover bg-center" 
      style="background-image: url('images/slide3.png');">
      <div class="flex flex-col text-center text-white px-4 justify-center items-center">
-        <h1 class="lg:text-7xl md:text-4xl text-white font-extrabold leading-none">Join us</h1>
+        <div class="text-animation">
+          <div class="text">
+            <span class="lg:text-7xl text-4xl text-white font-extrabold leading-tight">Join us</span>
+          </div>
+        </div>
         <hr class="border-3 border-white round-md mb-4" style="width: 35%;">
-        <p class="text-lg text-white max-w-lg font-semibold mb-4">
+        <p class="text-lg text-white max-w-lg font-semibold my-4">
           We are always looking for talented engineers, system administrators and developers to working with international customers.
         </p>
         <button class="py-3 my-2"><a href="/careers" class="text-sm md:text-md">Current opnings</a></button> 
@@ -136,7 +146,7 @@
 <script>
 
   document.querySelectorAll(".text span").forEach((element, index) => {
-    element.style.setProperty("--delay", `${index * 0.5}s`); // Add staggered animation delay
+    element.style.setProperty("--delay", `${index * 0.3}s`); // Add staggered animation delay
   });
 
 
