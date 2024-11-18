@@ -1,12 +1,12 @@
 ---
 title: "Home"
-description: "codescalers" # quotation marks to allow colons where used
+description: "codescalers-Egypt" # quotation marks to allow colons where used
 date: 2018-09-14T21:00:00-05:00
 updated: 2021-02-20T14:40:00-06:00
 draft: false
 extra:
  author: Your name here
- imgPath: home/autonomous.png
+ imgPath: home/slide1.png
 ---
 
 <!-- section 1 (carousel) -->
