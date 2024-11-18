@@ -153,7 +153,11 @@
   var swiper = new Swiper(".default-carousel", {
     loop: true,
     speed: 700,
-   
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true, // Pause autoplay when the mouse enters the slider
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
