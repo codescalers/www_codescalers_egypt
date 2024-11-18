@@ -10,10 +10,10 @@
      <div class="flex flex-col text-center text-white px-4 justify-center items-center">
       <div class="text-animation">
         <div class="text">
-          <span class="lg:text-7xl md:text-4xl text-white font-extrabold leading-tight">Welcome To</span>
+          <span class="lg:text-7xl text-4xl text-white font-extrabold leading-tight">Welcome To</span>
         </div>
         <div class="text">
-          <span class="lg:text-7xl md:text-4xl text-white font-extrabold leading-tight">Codescalers Egypt</span>
+          <span class="lg:text-7xl text-4xl text-white font-extrabold leading-tight lg:-mt-5 mt-0">Codescalers Egypt</span>
         </div>
       </div>
         <hr class="border-3 border-white round-md my-4" style="width: 35%;">
@@ -132,11 +132,11 @@
   }
 </style>
 
-<!--JAVASCRIPT CODE-->
+
 <script>
 
   document.querySelectorAll(".text span").forEach((element, index) => {
-    element.style.setProperty("--delay", `${index * 1}s`); // Add staggered animation delay
+    element.style.setProperty("--delay", `${index * 0.5}s`); // Add staggered animation delay
   });
 
 
