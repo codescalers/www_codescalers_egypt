@@ -26,11 +26,7 @@ extra:
 
 {% row(style="margin semiNarrow") %}
 
-
-
-
 <h1 class="value_text">Our<br>Values</h1>
-
 
 
 |||
@@ -39,12 +35,12 @@ extra:
 
 <div class="leading-8 list">
 
-- **Integrity,** What we say is what we do.
-- **Open Culture,** Respect and accept everyone.
-- **Flexibility,** The ability to adapt with the constant and quick changes.
-- **Development,** Investing in people is our most rewarding investment.
-- **Ownership,** What we promise is what we deliver.
-- **Home,** A comfortable and fun environment where you can be yourself.
+- <span class="blue">**Integrity,**</span> What we say is what we do.
+- <span class="blue">**Open Culture,**</span> Respect and accept everyone.
+- <span class="blue">**Flexibility,**</span> The ability to adapt with the constant and quick changes.
+- <span class="blue">**Development,**</span> Investing in people is our most rewarding investment.
+- <span class="blue">**Ownership,**</span> What we promise is what we deliver.
+- <span class="blue">**Home,**</span> A comfortable and fun environment where you can be yourself.
 
 </div>
 
@@ -241,6 +237,10 @@ We're on the look out for talented individuals to join our rapidly growing techn
 
 .list ul {
 list-style-type: disclosure-closed;
+}
+
+.list li {
+  margin-bottom: 10px
 }
 .value{
 font-size: 5rem
