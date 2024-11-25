@@ -24,23 +24,44 @@ We will be addressing generics gently in go, describing what have been used in t
 
 ## Create a new project
 
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
+
 ```bash
 mkdir golanggenrics && cd golanggenerics
 ```
 
+</code>
+</div>
+
+
+
 ## Initialize the project
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```bash
 golanggenerics ~> go mod init codescalers/golanggenerics
 go: creating new go.mod: module codescalers/golanggenerics
 
 ```
+</code>
+</div>
+
 
 ### printing a slice of ints
 
 What we want to do now is writing a simple function that only prints a slice of integers
 
 let's create a `main.go` file
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 package main
@@ -59,17 +80,38 @@ func main() {
 	printInts(ints)
 }
 ```
+</code>
+</div>
+
+<br>
 
 run it with `go run main.go` and the output should be something like
 
-```text
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
+
+```go
 value 1
 value 2
 value 3
 value 4
 ```
 
+</code>
+</div>
+
+<br>
+
 Very cool, so now we managed to write a function that prints the items in an int slice. What if we wanted to do the same for a slice of floats? We can write another function `printFloats` as follows
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 package main
@@ -97,12 +139,21 @@ func main() {
 
 }
 ```
+</code>
+</div>
 
-``
+<br>
 
 the output
 
-```text
+<br>
+
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
+
+```go
 printInts
 value 1
 value 2
@@ -114,10 +165,20 @@ value 2.1
 value 3.6
 value 4.21
 ```
+</code>
+</div>
+
+<br>
 
 so now we can print slices of ints and slices of floats! we managed to do so by some code duplication, code still simple, and maintainable,.. etc
 
 Is there another way we can make it work using just one function, instead of defining a function per type? Well.. we can move to interfaces and type assertions as follows
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 func printAnything(aslice interface{}) {
@@ -143,10 +204,20 @@ func main() {
 }
 
 ```
+</code>
+</div>
+
+<br>
 
 while this function now accepts the empty interface, we have embedded the code from `printInts` and `printFloats` into it and handled each type case
 
 the output will be
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 printAnything: ints
@@ -161,10 +232,20 @@ value: 3.29
 value: 4
 
 ```
+</code>
+</div>
+
+<br>
 
 At least now the API seems to be smaller, just one function `printAnything` can replace both `printInts` and `printFloats`
 
 Still one more problem though, we can pass other data types to `printAnything` function without providing the right implementation, at least when we had `printInts` or `printFloats` the user had an idea what is actually supported! Fine! let's add a panic to it.
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 func printAnything(aslice interface{}) {
@@ -182,8 +263,18 @@ func printAnything(aslice interface{}) {
 	}
 }
 ```
+</code>
+</div>
+
+<br>
 
 One problem with our current code is we literally embedded the code of `printInts` and `printFloats`, we can do another improvement here by using reflection in golang
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 func printAnything(aslice interface{}) {
@@ -205,12 +296,22 @@ func main() {
 }
 
 ```
+</code>
+</div>
+
+<br>
 
 Here we removed the code duplication of the cases of `[]int` and `[]float` and now it even works for any slice e.g including strings and `float32` as well, but will for any data type other than slices e.g `printAnything("hello")` will cause a panic.
 
 Output
 
-```text
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
+
+```go
 printAnything: ints
 value 1
 value 2
@@ -223,10 +324,21 @@ value 3.29
 value 4
 panic: what??
 ```
+</code>
+</div>
+
+<br>
 
 Always remember you are sacrificing the typesafety when using the empty interface, and reflections always comes with an overhead.
 
 There're other solutions including code generation, but it can get quite hairy
+
+<br>
+
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 func printGeneric[T any](slice []T) {
@@ -235,12 +347,22 @@ func printGeneric[T any](slice []T) {
 	}
 }
 ```
+</code>
+</div>
+
+<br>
 
 Here we defined a function `printGeneric` that takes a slice of type `T`, T is a type, that needs to be defined or your go project needs to know about, and here we immediately defined it after the function name between the brackets `[T any]`
 
 Hint:
 
 try removing the brackets and see go complaining with `undeclared name T`. Another way is defining T separately with
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 type T any
@@ -250,10 +372,20 @@ func printGeneric(slice []T) {
 	}
 }
 ```
+</code>
+</div>
+
+<br>
 
 However, for convenience we can define T immediately after the function name to be `func printGeneric[T any](slice []T)`
 
 update your `main.go` to be
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 package main
@@ -265,12 +397,22 @@ func main() {
 	printGeneric([]float32{4.11, 2.52, 3.29, 4.0})
 }
 ```
+</code>
+</div>
+
+<br>
 
 Now what happens if we decided to pass a string instead of the slice? (which was allowed in all of the previous versions)? the code won't compile
 
 ## Building a Box
 
 Imagine that we want to create a new type representing a container that has just one value. Let's call it `Box`. With what we learned so far we can build customized types `IntBox`, `FloatBox`, .. etc
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 
@@ -299,17 +441,37 @@ func main() {
 	fmt.Println(mybox3dot5.GetObject())
 }
 ```
+</code>
+</div>
+
+<br>
 
 Output
 
-```text
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
+
+```go
 {5}
 5
 {3.5}
 3.5
 ```
+</code>
+</div>
+
+<br>
 
 Still too much manual work that can be exhausting if you needed to support more types, we can go back to use the empty interface
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 package main
@@ -333,19 +495,40 @@ func main() {
 	fmt.Println(myboxHello.GetObject())
 }
 ```
+</code>
+</div>
+
+<br>
 
 Output
 
-```text
+<br>
+
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
+
+```go
 {5}
 5
 {hello}
 hello
 ```
+</code>
+</div>
+
+<br>
 
 Now our Box supports ints, floats and by luck also strings, that wasn't really intended. How can generics help us improving our code? and maybe adding some more constraints to make it work for certain types? e.g having NumberBox that can work for `int32`, `int64`, `float32`, `float64` only?
 
 Let's do the GenericBox first and then do the constraints
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 
@@ -369,18 +552,38 @@ func main() {
 }
 
 ```
+</code>
+</div>
+
+<br>
 
 It helps a lot to reason about `GenericBox` as a type awaiting an argument to construct a new type. So for instance in the case of `GenericBox[int32]{obj:5}` as if `GenericBox` was a function that generates a new type `GenericBoxInt32` that can have more parameters to initialize
 
 Output
 
-```text
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
+
+```go
 {5}
 {3.2}
 {hello}
 ```
+</code>
+</div>
+
+<br>
 
 Let's add the constraints for numbers box only `NumberBox`
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 type NumberBox[T Number] struct {
@@ -391,16 +594,36 @@ func (nb NumberBox[T]) GetObject() T {
 	return nb.obj
 }
 ```
+</code>
+</div>
+
+<br>
 
 but wait a second, where does that `Number` type come from? `Number` is an interface that we can declare as follows
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 type Number interface {
     int32 | int64 | float32 | float64
 }
 ```
+</code>
+</div>
+
+<br>
 
 Our main.go looks like this now
+
+<br>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    <code>
 
 ```go
 package main
@@ -435,6 +658,11 @@ func main() {
 }
 ```
 
+</code>
+</div>
+
+<br>
+
 So now we have a generic code for a Box that works on int32, float32, int64, float64 only, and if you try to make it work against `string`, you should see an error like `string does not implement Number`
 
 
@@ -444,16 +672,3 @@ So now we have a generic code for a Box that works on int32, float32, int64, flo
 - [generics proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
 - [ardanlabs generics series](https://www.ardanlabs.com/blog/2020/07/generics-01-basic-syntax.html)
 
-
-<style>
-	.gridsome-highlight {
-    padding: 16px;
-    overflow: auto;
-    font-size: 75%;
-    line-height: 1.45;
-    background-color: #f6f8fa;
-    border-radius: 6px;
-    margin-bottom: 16px;
-    position: relative;
-	}
-</style>

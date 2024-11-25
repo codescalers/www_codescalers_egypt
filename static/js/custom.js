@@ -191,3 +191,22 @@ function formatStatsData(stats) {
 readingTime();
 getStats();
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+function copyToClipboard(button) {
+  const codeBlock = button.nextElementSibling.querySelector('code');
+  if (codeBlock) {
+      const text = codeBlock.innerText || codeBlock.textContent;
+      navigator.clipboard.writeText(text).then(() => {
+          button.textContent = "Copied!";
+          setTimeout(() => {
+              button.textContent = "Copy";
+          }, 2000);
+      }).catch(err => {
+          console.error("Error copying text: ", err);
+          button.textContent = "Error";
+          setTimeout(() => {
+              button.textContent = "Copy";
+          }, 2000);
+      });
+  }
+}

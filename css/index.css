@@ -10,6 +10,42 @@
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.article{
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.code-container {
+  position: relative;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+pre{
+  overflow: hidden !important;
+ 
+}
+
+.copy-button {
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  background-color: #3399CC;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 0.8em;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #1f749e;
+}
+
+.copy-button:active {
+  background-color: #003f66;
+}
+
 
 /* Custom CSS for header partial */
 .backdrop-blur {
@@ -304,11 +340,11 @@ a img:hover{
   }
   
   .post-content-text a, .article a{
-    color: #4ec48f;
+    color: #0e9fd8;
   }
   
   .post-content-text a:hover, .article a:hover{
-    color: #2e9969;
+    color: #11aeec;
   }
 
   .article li{
