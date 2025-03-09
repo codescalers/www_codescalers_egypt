@@ -9,7 +9,7 @@ p {
 }
 
 .markdown h2 {
-    @apply text-3xl md:text-5xl mb-8 leading-tight text-center md:text-left blue font-bold tracking-tight
+    @apply text-3xl md:text-5xl mb-4 leading-tight text-center md:text-left blue font-bold tracking-tight
 }
 
 .markdown h3 {
