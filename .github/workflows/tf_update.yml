@@ -1,7 +1,7 @@
 name: Codescalers_egypt
 on:
   push:
-    branch: [ development_gridsome ]
+    branches: [ development_gridsome ]
 
 jobs:
   job_one:
@@ -18,5 +18,9 @@ jobs:
         script: |
           cd /home/webuser/websites/www2/www_codescalers_egypt/
           git log -1
+          node -v
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
           git pull
           gridsome build
