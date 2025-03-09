@@ -38,9 +38,8 @@ and techniques.
 ### Requirements:
 
 - Experience: 3+ years of full stack development, with proven expertise in Vue.js, TypeScript, and Golang.
-- Knowledge of Python.
 
-<li class="text-lg md:text-xl">Technical Mastery :</li>
+<li class="bullet text-lg md:text-xl"><span class="mr-2"></span>Technical Mastery :</li>
   <ul class="mx-8 nolist list-outside">
   <li class="text-lg">Deep knowledge of REST and GraphQL APIs for seamless integrations.</li>
   <li class="text-lg">Proficiency with SQL (e.g., PostgreSQL) and NoSQL (e.g., MongoDB) databases.</li>
@@ -64,5 +63,12 @@ and techniques.
 <style>
   .nolist{
     list-style-type: circle !important;
+  }
+
+  .bullet::marker {
+    margin:0px !important;
+     content: "●  ";
+     font-size: 0.8em;
+     color:#374151;
   }
 </style>
