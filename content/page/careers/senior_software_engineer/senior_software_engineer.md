@@ -23,6 +23,9 @@ The senior software engineer will design and develop cutting-edge, reliable dist
 - Validate quality, documentation, and design conformance.
 - Mentor and coach the team on effective technology utilization.
 
+<br>
+
+
 ### Requirements:
 
 - Bachelor's or Master's degree in Computer Science, Engineering, or equivalent experience.

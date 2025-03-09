@@ -21,7 +21,8 @@ p {
 }
 
 .markdown ul {
-    @apply list-disc list-inside px-5 text-base md:text-lg mb-10 py-2 border-l-2 border-blue-500
+    @apply list-disc list-inside px-5 text-base md:text-lg py-2
+    /* @apply list-disc list-inside px-5 text-base md:text-lg mb-10 py-2 border-l-2 border-blue-500 */
 }
 
 .blue {

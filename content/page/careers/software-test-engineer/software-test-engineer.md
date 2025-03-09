@@ -22,6 +22,7 @@ planning, and scheduling necessary to deliver a high quality
 product, including product feature validation, performance and
 scalability testing, and customer scenario-focused testing.
 
+
 ### Responsibilities:
 
 - Develop automated component and integration tests.
@@ -31,6 +32,8 @@ scalability testing, and customer scenario-focused testing.
 - Expand and maintain the testing tool chain.
 - Works in the Quality Engineering Team and reports to the team
   lead.
+
+<br>
 
 ### Requirements:
 

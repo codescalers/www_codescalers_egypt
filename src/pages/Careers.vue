@@ -38,7 +38,7 @@
 
     <!-- job section -->
 
-    <section class="py-4 bg-white">
+    <section class="px-0 lg:px-10 py-4 bg-white ">
       <div class="flex flex-row mx-auto justify-center my-4">
         <h2
           class="text-3xl md:text-5xl blue text-cente leading-tight mb-2 font-semibold"
