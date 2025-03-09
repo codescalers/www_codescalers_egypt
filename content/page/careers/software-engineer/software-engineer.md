@@ -12,7 +12,7 @@ apply_btnLink: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSeFLnNf4hHoNJuTCfKz
 ## Full Stack Engineer
 Location: Hybrid (Remote + Office in Cairo)
 
-The Software Engineer will work with the existing team on
+The Full Stack Engineer will work with the existing team on
 creating new cutting edge software systems using a variety of
 programming language and open-source frameworks.<br>
 The Software team is responsible for the software part of our
@@ -40,16 +40,11 @@ and techniques.
 - Experience: 3+ years of full stack development, with proven expertise in Vue.js, TypeScript, and Golang.
 - Knowledge of Python.
 
-<!-- - Technical Mastery:
-  - Deep knowledge of REST and GraphQL APIs for seamless integrations.
-  - Proficiency with SQL (e.g., PostgreSQL) and NoSQL (e.g., MongoDB) databases.
-  - Experience deploying on cloud platforms like AWS or GCP. -->
-
-<li class="list-disc list-inside px-5 text-base md:text-lg">Technical Mastery:</li>
-  <ul>
-  <li class="px-5 text-base md:text-lg">Deep knowledge of REST and GraphQL APIs for seamless integrations.</li>
-  <li class="px-5 text-base md:text-lg">Proficiency with SQL (e.g., PostgreSQL) and NoSQL (e.g., MongoDB) databases.</li>
-  <li class="px-5 text-base md:text-lg">Experience deploying on cloud platforms like AWS or GCP.</li>
+<li class="text-lg md:text-xl">Technical Mastery :</li>
+  <ul class="mx-8 nolist list-outside">
+  <li class="text-lg">Deep knowledge of REST and GraphQL APIs for seamless integrations.</li>
+  <li class="text-lg">Proficiency with SQL (e.g., PostgreSQL) and NoSQL (e.g., MongoDB) databases.</li>
+  <li class="text-lg">Experience deploying on cloud platforms like AWS or GCP.</li>
   </ul>
 
 - Design & Testing: Strong ability to architect software systems, write comprehensive unit and integration tests, and ensure maintainability.
@@ -65,3 +60,9 @@ and techniques.
 <a class="inline w-full py-3 px-5 leading-none text-center text-white bg-blue-500 hover:bg-blue-600 font-semibold rounded shadow" href="https://docs.google.com/forms/d/e/1FAIpQLSeFLnNf4hHoNJuTCfKzrcL4f8o938J0yHDjnHuk1b9rSEOqoQ/viewform" target="_blank">Apply For Full Stack Engineer
 </a>
 </div>
+
+<style>
+  .nolist{
+    list-style-type: circle !important;
+  }
+</style>

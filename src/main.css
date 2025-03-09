@@ -21,8 +21,12 @@ p {
 }
 
 .markdown ul {
-    @apply list-disc list-inside px-5 text-base md:text-lg py-2
+    @apply list-disc list-outside px-5 text-gray-700 text-lg md:text-xl py-2 font-normal
     /* @apply list-disc list-inside px-5 text-base md:text-lg mb-10 py-2 border-l-2 border-blue-500 */
+}
+
+.markdown ul {
+    font-family: 'Outfit', sans-serif;
 }
 
 .blue {
