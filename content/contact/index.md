@@ -85,32 +85,32 @@ extra:
                 ></textarea>
               </div>
 <!-- Recaptcha -->
-              <!-- <div
+              <div
                 id="recaptcha"
                 class="mb-5"
                 :data-callback="onRecaptchaSuccess"
                 :data-expired-callback="onRecaptchaResponseExpiry"
                 :data-error-callback="onRecaptchaError"
-              ></div> -->
+              ></div>
 
  <!-- Recaptcha Error -->
- <!-- <div
+ <div
                 id="recaptcha-form-error"
                 style="display: none;"
                 class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md"
               >
                 Please fill the recaptcha checkbox.
-</div> -->
+</div>
 
 <!-- Recaptcha Success -->
-<!-- <div
+<div
                 id="recaptcha-form-success"
                 style="display: none;"
                 class="bg-green-200 rounded py-1 px-2 text-sm sm:text-md"
               >
 Recaptcha validated Successfully..!
                 <a href="/" class="px-2 text-slate-800">Retry</a>
-</div> -->
+</div>
 
 <button type="submit" class="text-white apply w-full my-4" data-loading-text="Sending...">
 Send us an email
