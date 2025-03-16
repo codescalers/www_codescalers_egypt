@@ -95,5 +95,5 @@ feed = true
 paginate_by = 8
 paginate_path = "people/memberships"
 
-[extra]
-# Put all your custom variables here
+[extra.csp]
+script-src = ["'self'", "https://www.google.com", "https://www.gstatic.com"]
