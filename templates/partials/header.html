@@ -44,7 +44,7 @@
                         </a>
                         {% endif %}
                       {% elif current_url and current == current_url %}
-                          <a href="{{ get_url(path=link_path[1])}}" class="text-sm py-3 uppercase leading-6 font-medium text-gray-600 hover:text-blue-300 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                          <a href="{{ get_url(path=link_path[1])}}" class="text-sm py-3 uppercase leading-6 font-medium active  text-gray-600 hover:text-blue-300 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
                             {{link_label}}
                           </a>
                       {% else %}
@@ -218,3 +218,14 @@
 
 
 </header>
+
+<style>
+
+
+
+.active{
+  color: #3399cc !important;
+}
+
+
+</style>
