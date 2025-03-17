@@ -19,7 +19,7 @@ extra:
     <h2 class="blue font-bold">Contact Us</h2>
     <hr class="mb-4" style="border-width: 1px; width:40%; border-color: #3399CC;">
   
-    <form class="w-full mt-10 contact_form" method="POST" name="contact_form" action="https://formspree.io/f/mknykkel">
+  <form class="w-full mt-10 contact_form" method="POST" name="contact_form" action="https://formspree.io/f/mknykkel">
       <div class="alert" style="display: none;"></div>
       <input type="hidden" name="_next" value="/thanks" />
       <input type="hidden" name="smtp_key" value="None" />
@@ -28,26 +28,26 @@ extra:
       <input type="hidden" name="subject" value="About CodeScalers.com" />
       <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse" />
       
-      <div style="display: none;">
+  <div style="display: none;">
         <input type="text" id="honeypot" name="honeypot" />
-      </div>
+  </div>
       
-      <div class="form-group mb-6">
+   <div class="form-group mb-6">
         <input name="sender_name" required placeholder="Name" class="form-control input-lg w-full px-3 py-3 text-sm font-normal text-gray-700 bg-white border border-solid border-gray-300 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="text" />
       </div>
       
-      <div class="form-group mb-6">
+  <div class="form-group mb-6">
         <input name="sender_email" required placeholder="Email" class="form-control input-lg w-full px-3 py-3 text-sm font-normal text-gray-700 bg-white border border-solid border-gray-300 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="email" />
       </div>
       
-      <div class="form-group mb-6">
+  <div class="form-group mb-6">
         <textarea name="body" required rows="3" placeholder="Message" class="form-control input-lg w-full px-3 py-1.5 text-sm font-normal text-gray-700 bg-white border border-solid border-gray-300 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"></textarea>
       </div>
 
-      <!-- Google reCAPTCHA -->
-      <div class="g-recaptcha mb-5" id="recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+ <!-- Google reCAPTCHA -->
+  <div class="g-recaptcha mb-5" id="recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
       
-      <button type="submit" class="text-white apply w-full my-4" data-loading-text="Sending...">
+   <button type="submit" class="text-white apply w-full my-4" data-loading-text="Sending...">
         Send us an email
       </button>
     </form>
