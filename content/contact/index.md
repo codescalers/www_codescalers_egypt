@@ -62,7 +62,7 @@ extra:
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
   grecaptcha.ready(function () {
-    grecaptcha.execute("YOUR_RECAPTCHA_SITE_KEY", { action: "submit" }).then(function (token) {
+    grecaptcha.execute("6LeAPnoiAAAAABs17G2rCXwkr9mzYRbTy7hXVuUC", { action: "submit" }).then(function (token) {
       document.getElementById("recaptchaResponse").value = token;
       e.target.submit();
     });
