@@ -45,7 +45,7 @@ extra:
       </div>
 
  <!-- Google reCAPTCHA -->
-  <div class="g-recaptcha mb-5" id="recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+  <div class="g-recaptcha mb-5" id="recaptcha" data-sitekey="6LeAPnoiAAAAABs17G2rCXwkr9mzYRbTy7hXVuUC"></div>
       
    <button type="submit" class="text-white apply w-full my-4" data-loading-text="Sending...">
         Send us an email
