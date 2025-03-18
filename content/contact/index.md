@@ -55,25 +55,65 @@ extra:
 {% end %}
 </div>
 
+
+<!-- map section -->
+
+<div class="bg-gray-100">
+
+<div class="container mx-auto">
+
+{% row(style="margin semiNarrow") %}
+       
+ ![Image](logo-egypt.png) 
+
+ <br>        
+                   
+  <p class="text-gray-700 text-base mb-2">
+    <span class="fa fa-home color-lead blue mr-2 pb-3"></span> 9 Al
+    Waradi, Al Matar, El Nozha, Cairo, Egypt.
+  </p>
+  <p class="text-gray-700 text-base mb-2">
+    <span class="fa fa-envelope blue mr-2 pb-3.5"></span
+    >info@codescalers.com
+  </p>
+  <p class="text-gray-700 text-base mb-2">
+    <span class="fa fa-briefcase blue mr-2 pb-3.5"></span
+    >careers@codescalers.com
+  </p>
+  <p class="text-gray-700 text-base mb-2">
+    <span class="fa fa-phone-square blue mr-2 pb-3"></span>+202
+    21811532
+  </p>
+      
+|||
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.4368545850252!2d31.347373015452234!3d30.110310622412197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458156b095611a7%3A0x4fd95e1fe9c1546c!2sCodescalers%20Egypt!5e0!3m2!1sen!2seg!4v1605737214442!5m2!1sen!2seg"
+style="border: 0; width: 100%; height: 400px;">
+</iframe>
+          
+{% end %}
+
+</div>
+</div>
+
+
+
+
 <!-- Add Google reCAPTCHA Script -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <script>
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
-  var form = this;
-
   grecaptcha.ready(function () {
-    grecaptcha.execute("6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv", { action: "submit" })
-      .then(function (token) {
-        document.getElementById("recaptchaResponse").value = token;
-        form.submit(); // ✅ Correctly submitting the form now
-      })
-      .catch(function (error) {
-        console.error("reCAPTCHA Error:", error);
-      });
+    grecaptcha.execute("6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv", { action: "submit" }).then(function (token) {
+      document.getElementById("recaptchaResponse").value = token;
+      e.target.submit();
+    });
   });
 });
 </script>
-
 
 <style scoped>
   .apply {
