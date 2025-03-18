@@ -45,7 +45,7 @@ extra:
   </div>
 
   <!-- Google reCAPTCHA -->
-  <div class="g-recaptcha mb-5" data-sitekey="6LeAPnoiAAAAABs17G2rCXwkr9mzYRbTy7hXVuUC"></div>
+  <div class="g-recaptcha mb-5" data-sitekey="6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv"></div>
   
   <button type="submit" class="text-white apply w-full my-4" data-loading-text="Sending...">
     Send us an email
@@ -55,42 +55,19 @@ extra:
 {% end %}
 </div>
 
-<script>
-export default {
-  data() {
-    return {
-      sitekey: "6LeAPnoiAAAAABs17G2rCXwkr9mzYRbTy7hXVuUC",
-    };
-  },
-  methods: {
-    onRecaptchaSuccess(response) {
-      console.log("Success!");
-    },
-    onRecaptchaResponseExpiry() {
-      console.log("Expired");
-    },
-    onRecaptchaError() {
-      console.log("Error");
-    },
-    recaptchaCallback() {
-      console.log("recaptcha is ready"); // showing
-      grecaptcha.render("recaptcha", {
-        sitekey: this.sitekey,
-        callback() {
-          console.log("recaptcha callback");
-        },
-      });
-    },
-  },
-  mounted() {
+<!-- Add Google reCAPTCHA Script -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    var script = document.createElement("script");
-    script.src =
-    "https://www.google.com/recaptcha/api.js?onload=ReCaptchaLoaded";
-    document.head.appendChild(script);
-    window.ReCaptchaLoaded = this.recaptchaCallback();  
-  },
-};
+<script>
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  grecaptcha.ready(function () {
+    grecaptcha.execute("6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv", { action: "submit" }).then(function (token) {
+      document.getElementById("recaptchaResponse").value = token;
+      e.target.submit();
+    });
+  });
+});
 </script>
 
 <style scoped>
