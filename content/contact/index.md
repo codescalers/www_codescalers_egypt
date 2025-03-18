@@ -56,19 +56,24 @@ extra:
 </div>
 
 <!-- Add Google reCAPTCHA Script -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 <script>
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
+  var form = this;
+
   grecaptcha.ready(function () {
-    grecaptcha.execute("6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv", { action: "submit" }).then(function (token) {
-      document.getElementById("recaptchaResponse").value = token;
-      e.target.submit();
-    });
+    grecaptcha.execute("6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv", { action: "submit" })
+      .then(function (token) {
+        document.getElementById("recaptchaResponse").value = token;
+        form.submit(); // ✅ Correctly submitting the form now
+      })
+      .catch(function (error) {
+        console.error("reCAPTCHA Error:", error);
+      });
   });
 });
 </script>
+
 
 <style scoped>
   .apply {
