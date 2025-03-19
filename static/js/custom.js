@@ -160,6 +160,7 @@ function recaptchaCallback() {
 window.onload = function () {
   let elements = document.getElementsByTagName("button");
   let buttons = [...elements];
+  const filterBtn = document.getElementById("filter-btn");
 
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
@@ -167,10 +168,12 @@ window.onload = function () {
     });
   });
 
-  document.getElementById("filter-btn").addEventListener("click", toggleFilter);
-  document
-    .getElementById("mobile-learn-btn")
-    .addEventListener("click", toggleMenu);
+  if (filterBtn) {
+    filterBtn.addEventListener("click", toggleFilter);
+    document
+      .getElementById("mobile-learn-btn")
+      .addEventListener("click", toggleMenu);
+  }
 
   recaptchaCallback();
 };
@@ -216,7 +219,7 @@ function formatStatsData(stats) {
 }
 
 readingTime();
-getStats();
+// getStats();
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 function copyToClipboard(button) {
