@@ -38,16 +38,11 @@
     {%endif%}
     <meta name="twitter:card" content="summary">
     {% endblock title %}
-
-    
-  <!-- CSS/SCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS/SCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
-
-
-
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- **** BEGINNING, favicons **** -->
@@ -86,15 +81,20 @@
   }
     </style>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=62556aac80366d0019fc1af2&product=sop" async="async"></script>
-
-  <!-- RSS feed -->
-  {% block rss %}
-  <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="RSS"
-      href="{{ get_url(path='atom.xml', trailing_slash=false) }}"
-  >
-  {% endblock %}
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- RSS feed -->
+    {% block rss %}
+    <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="RSS"
+        href="{{ get_url(path='atom.xml', trailing_slash=false) }}"
+    >
+    {% endblock %}
+    <script type="text/javascript">
+    var onloadCallback = function() {
+      grecaptcha.render('g-recaptcha', {
+        'sitekey' : '6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv'
+      });
+    };
+    </script>
 </head>
