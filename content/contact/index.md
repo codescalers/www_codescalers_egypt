@@ -19,7 +19,7 @@ extra:
 <h2 class="blue font-bold">Contact Us</h2>
 <hr class="mb-4" style="border-width: 1px; width:40%; border-color: #3399CC;">
 
-<form class="w-full mt-10 contact_form" method="POST" name="contact_form" action="https://formspree.io/f/mknykkel">
+<form class="w-full mt-10 contact_form" method="POST" id="contact-form" name="contact_form" action="https://formspree.io/f/mknykkel">
   <div class="alert" style="display: none;"></div>
   <input type="hidden" name="_next" value="/thanks" />
   <input type="hidden" name="smtp_key" value="None" />
