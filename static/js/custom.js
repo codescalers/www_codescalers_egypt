@@ -132,6 +132,31 @@ function toggleFilter() {
     filterMenu.className = filterMenu.className + " hidden";
   }
 }
+
+function onRecaptchaSuccess() {
+  document.getElementById("recaptcha-form-success").style.display = "block";
+  document.getElementById("recaptcha-form-error").style.display = "none";
+}
+
+function onRecaptchaError() {
+  document.getElementById("recaptcha-form-error").style.display = "block";
+  document.getElementById("recaptcha-form-success").style.display = "none";
+}
+
+function onRecaptchaResponseExpiry() {
+  document.getElementById("recaptcha-form-error").style.display = "block";
+  document.getElementById("recaptcha-form-success").style.display = "none";
+}
+
+function recaptchaCallback() {
+  grecaptcha.render("recaptcha", {
+    sitekey: "6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv",
+    callback: onRecaptchaSuccess,
+    "expired-callback": onRecaptchaResponseExpiry,
+    "error-callback": onRecaptchaError,
+  });
+}
+
 window.onload = function () {
   let elements = document.getElementsByTagName("button");
   let buttons = [...elements];
@@ -146,6 +171,8 @@ window.onload = function () {
   document
     .getElementById("mobile-learn-btn")
     .addEventListener("click", toggleMenu);
+
+  recaptchaCallback();
 };
 
 function openInNewTab(url) {
@@ -193,20 +220,23 @@ getStats();
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 function copyToClipboard(button) {
-  const codeBlock = button.nextElementSibling.querySelector('code');
+  const codeBlock = button.nextElementSibling.querySelector("code");
   if (codeBlock) {
-      const text = codeBlock.innerText || codeBlock.textContent;
-      navigator.clipboard.writeText(text).then(() => {
-          button.textContent = "Copied!";
-          setTimeout(() => {
-              button.textContent = "Copy";
-          }, 2000);
-      }).catch(err => {
-          console.error("Error copying text: ", err);
-          button.textContent = "Error";
-          setTimeout(() => {
-              button.textContent = "Copy";
-          }, 2000);
+    const text = codeBlock.innerText || codeBlock.textContent;
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        button.textContent = "Copied!";
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 2000);
+      })
+      .catch((err) => {
+        console.error("Error copying text: ", err);
+        button.textContent = "Error";
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 2000);
       });
   }
 }
