@@ -45,8 +45,18 @@ extra:
   </div>
 
   <!-- Google reCAPTCHA -->
-  <div class="g-recaptcha mb-5" data-sitekey="6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv"></div>
-  
+  <!-- <div class="g-recaptcha mb-5" data-sitekey="6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv"></div> -->
+
+  <div id="recaptcha" class="mb-5"></div>
+  <div id="recaptcha-form-error" style="display: none;" class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md">
+    Please fill the recaptcha checkbox.
+  </div>
+
+  <div id="recaptcha-form-success" style="display: none;" class="bg-green-200 rounded py-1 px-2 text-sm sm:text-md">
+      Recaptcha validated Successfully..!
+  <a href="/" class="px-2 text-slate-800">Retry</a>
+  </div>
+
   <button type="submit" class="text-white apply w-full my-4" data-loading-text="Sending...">
     Send us an email
   </button>
@@ -54,7 +64,6 @@ extra:
 </div>
 {% end %}
 </div>
-
 
 <!-- map section -->
 
@@ -87,7 +96,6 @@ extra:
       
 |||
 
-
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.4368545850252!2d31.347373015452234!3d30.110310622412197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458156b095611a7%3A0x4fd95e1fe9c1546c!2sCodescalers%20Egypt!5e0!3m2!1sen!2seg!4v1605737214442!5m2!1sen!2seg"
 style="border: 0; width: 100%; height: 400px;">
 </iframe>
@@ -96,24 +104,6 @@ style="border: 0; width: 100%; height: 400px;">
 
 </div>
 </div>
-
-
-
-
-<!-- Add Google reCAPTCHA Script -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-<script>
-document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  grecaptcha.ready(function () {
-    grecaptcha.execute("6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv", { action: "submit" }).then(function (token) {
-      document.getElementById("recaptchaResponse").value = token;
-      e.target.submit();
-    });
-  });
-});
-</script>
 
 <style scoped>
   .apply {

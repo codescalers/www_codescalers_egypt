@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
-{% include "partials/head.html" %}
+    {% include "partials/head.html" %}
 {% include "partials/header.html" %}
-
-<body>
-
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- Twitter universal website tag code -->
-  <script>
+    <body>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- Twitter universal website tag code -->
+        <script>
     !function (e, t, n, s, u, a) {
       e.twq || (s = e.twq = function () {
         s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
@@ -27,6 +24,7 @@
         'www.codescalers.com',
         'codescalers.com',
         'www2.codescalers.com',
+        'www3.codescalers-egypt.com',
         'localhost',
         '127.0.0.1'
     ]
@@ -35,21 +33,18 @@
             links[i].target = '_blank';
         }
     }
-  </script>
-  <!-- End Twitter universal website tag code -->
-
-  {% include "partials/header.html" %}
-  <div id="content" class="pt-12 overflow-hidden">
-    {% block content %}{% endblock %}
-  </div>
-  <div>
-    {% include "partials/footer.html" %}
-  </div>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-  <script type="text/javascript" src="{{ get_url(path='js/custom.js')}}"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  
-</body>
-
+        </script>
+        <!-- End Twitter universal website tag code -->
+        {% include "partials/header.html" %}
+        <div id="content" class="pt-12 overflow-hidden">
+            {% block content %}{% endblock %}
+        </div>
+        <div>
+            {% include "partials/footer.html" %}
+        </div>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script type="text/javascript" src="{{ get_url(path='js/custom.js')}}"></script>
+    </body>
 </html>
