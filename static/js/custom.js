@@ -133,30 +133,6 @@ function toggleFilter() {
   }
 }
 
-function onRecaptchaSuccess() {
-  document.getElementById("recaptcha-form-success").style.display = "block";
-  document.getElementById("recaptcha-form-error").style.display = "none";
-}
-
-function onRecaptchaError() {
-  document.getElementById("recaptcha-form-error").style.display = "block";
-  document.getElementById("recaptcha-form-success").style.display = "none";
-}
-
-function onRecaptchaResponseExpiry() {
-  document.getElementById("recaptcha-form-error").style.display = "block";
-  document.getElementById("recaptcha-form-success").style.display = "none";
-}
-
-function recaptchaCallback() {
-  grecaptcha.render("recaptcha", {
-    sitekey: "6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv",
-    callback: onRecaptchaSuccess,
-    "expired-callback": onRecaptchaResponseExpiry,
-    "error-callback": onRecaptchaError,
-  });
-}
-
 window.onload = function () {
   let elements = document.getElementsByTagName("button");
   let buttons = [...elements];
@@ -175,7 +151,10 @@ window.onload = function () {
       .addEventListener("click", toggleMenu);
   }
 
-  recaptchaCallback();
+  var el = document.getElementById("g-recaptcha-response");
+  if (el) {
+    el.setAttribute("required", "required");
+  }
 };
 
 function openInNewTab(url) {

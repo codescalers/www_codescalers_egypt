@@ -45,17 +45,7 @@ extra:
   </div>
 
   <!-- Google reCAPTCHA -->
-  <!-- <div class="g-recaptcha mb-5" data-sitekey="6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv"></div> -->
-
-  <div id="recaptcha" class="mb-5"></div>
-  <div id="recaptcha-form-error" style="display: none;" class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md">
-    Please fill the recaptcha checkbox.
-  </div>
-
-  <div id="recaptcha-form-success" style="display: none;" class="bg-green-200 rounded py-1 px-2 text-sm sm:text-md">
-      Recaptcha validated Successfully..!
-  <a href="/" class="px-2 text-slate-800">Retry</a>
-  </div>
+  <div class="g-recaptcha" class="mb-5" data-sitekey="6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv"></div> 
 
   <button type="submit" class="text-white apply w-full my-4" data-loading-text="Sending...">
     Send us an email
@@ -113,4 +103,11 @@ style="border: 0; width: 100%; height: 400px;">
   .apply:hover {
     background-color: #54b0df !important;
   }
+#g-recaptcha-response {
+display: block !important;
+position: absolute;
+margin: -50px 0 0 0 !important;
+z-index: -999999;
+opacity: 0;
+}
 </style>
