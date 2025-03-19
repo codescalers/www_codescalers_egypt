@@ -222,3 +222,15 @@ function copyToClipboard(button) {
       });
   }
 }
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+  event.preventDefault(); 
+  var response = grecaptcha.getResponse();
+  if (response.length === 0) {
+      document.getElementById('recaptcha-form-error').classList.remove('hidden');
+      return;
+  } else {
+      document.getElementById('recaptcha-form-error').classList.add('hidden');
+  }
+  this.submit();
+});
