@@ -1,10 +1,10 @@
-name: www2.codescalers-egypt.com
-on: 
+name: Codescalers_egypt
+on:
   push:
-    branches: [ development_gridsome ]
+    branch: [ development ]
 
 jobs:
-  deploy:
+  job_one:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
@@ -19,5 +19,6 @@ jobs:
           cd websites/www2/www_codescalers_egypt/
           git log -1
           git fetch
-          git reset --hard origin/development_gridsome
+          git reset --hard origin/development
+          sed -i "s/https:\/\/www3.codescalers-egypt.com/https:\/\/www2.codescalers-egypt.com/g" config.toml
           ./build.sh

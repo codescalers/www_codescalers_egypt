@@ -1,0 +1,24 @@
+name: Codescalers_egypt
+on:
+  push:
+    branch: [ master ]
+
+jobs:
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: pushing latest change on www.codescalers-egypt.com
+      uses: appleboy/ssh-action@master
+      with:
+        host: www.codescalers-egypt.com
+        username: webuser
+        key: ${{ secrets.TF_SECRET }}
+        port: 34022
+        script: |
+          cd websites/www_codescalers_egypt/
+          git log -1
+          git fetch
+          git reset --hard origin/master
+          sed -i "s/https:\/\/www2.codescalers-egypt.com/https:\/\/www.codescalers-egypt.com/g" config.toml
+          ./build.sh
