@@ -1,7 +1,7 @@
 name: Codescalers_egypt
 on:
   push:
-    branch: [ development ]
+    branches: [ development ]
 
 jobs:
   job_one:
