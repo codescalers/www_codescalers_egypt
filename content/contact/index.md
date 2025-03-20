@@ -8,14 +8,17 @@ extra:
  imgPath: about/about_hero.png
 ---
 
+<div style="background-color:#3399cc">
 <div class="container mx-auto">
-{% row(style="margin semiNarrow") %}
+{% row(style="margin center semiNarrow") %}
 
-![Image](contact_hero.png#mx-auto)
+<h2 class="text-white font-bold">Contact Us</h2>
 
-|||
+<!-- ![Image](contact_hero.png#mx-auto) -->
 
-<div>
+{% end %}
+
+<!-- <div>
 <h2 class="blue font-bold">Contact Us</h2>
 <hr class="mb-4" style="border-width: 1px; width:40%; border-color: #3399CC;">
 
@@ -45,7 +48,7 @@ extra:
   </div>
 
   <!-- Google reCAPTCHA -->
-  <div class="g-recaptcha" class="mb-5" data-sitekey="6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv"></div> 
+  <!-- <div class="g-recaptcha" class="mb-5" data-sitekey="6LfcCvgqAAAAAGOkHnYk3LjljN5Qn3-xjQS1t9iv"></div> 
 
 
 <div id="recaptcha-form-error" class="hidden bg-red-200 rounded py-1 px-2 text-sm sm:text-md">
@@ -62,10 +65,12 @@ extra:
   </button>
 </form>
 </div>
-{% end %}
-</div>
+
+</div> -->
 
 <!-- map section -->
+</div>
+</div>
 
 <div class="bg-gray-100">
 
