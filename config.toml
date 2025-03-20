@@ -3,7 +3,7 @@ base_url = "https://www2.codescalers-egypt.com"
 # Change this to your own URL! Please note this variable **must** be uncommented .
 
 title = "Codescalers"
-description = "Our global digital backbone"
+description = "We are an international software development house specialized in Cloud Computing, working with startups to help them achieve their goals."
 
 # When set to "true", a feed is automatically generated.
 #generate_feed = true
