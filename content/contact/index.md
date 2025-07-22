@@ -95,8 +95,11 @@ extra:
     >careers@codescalers.com
   </p>
   <p class="text-gray-700 text-base mb-2">
-    <span class="fa fa-phone-square blue mr-2 pb-3"></span>+202
-    21811532
+    <span class="fa fa-phone-square blue mr-2 pb-3"></span>+202 21811532
+    
+  </p>
+  <p class="text-gray-700 text-base mb-2">
+    <span class="fa fa-phone blue mr-2 pb-3"></span>+20 10 2710 4477 
   </p>
       
 |||
