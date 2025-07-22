@@ -99,7 +99,8 @@ extra:
     
   </p>
   <p class="text-gray-700 text-base mb-2">
-    <span class="fa fa-phone blue mr-2 pb-3"></span>+20 10 2710 4477 
+    <span class="fa-solid fa-mobile-screen-button blue mr-2 pb-3"></span>+20 10 2710 4477 
+    
   </p>
       
 |||
