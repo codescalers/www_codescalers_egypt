@@ -2,8 +2,8 @@
   <!-- Accordion component -->
   <div class="divide-y divide-slate-200">
     
-      <!-- Accordion item -->
-     <div x-data="{ expanded: false }" class="py-2">
+      <!-- Senior Software Engineer -->
+     <!-- <div x-data="{ expanded: false }" class="py-2">
         <h2>
            <button
               id="faqs-title-03"
@@ -64,8 +64,73 @@
               </div>
            </div>
         </div>
-     </div>
-     <!-- Accordion item -->
+     </div> -->
+
+      <!-- Software Solution Developer -->
+     <div x-data="{ expanded: false }" class="py-2">
+        <h2>
+           <button
+              id="faqs-title-03"
+              type="button"
+              class="flex items-center justify-between w-full text-left text-xl p-4 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-2 focus:ring-gray-200  hover:bg-gray-100 gap-3"
+              @click="expanded = !expanded"
+              :aria-expanded="expanded"
+              aria-controls="faqs-text-03"
+              >
+              <span>Software Solution Developer</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                 <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                 <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+              </svg>
+           </button>
+        </h2>
+        <div
+           id="faqs-text-03"
+           role="region"
+           aria-labelledby="faqs-title-03"
+           class="grid text-sm text-slate-600 overflow-hidden transition-all duration-1000 ease-in-out"
+           :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+           >
+           <div class="overflow-hidden">
+              <div class="p-5 border border-b-0 border-gray-200">
+               <p class="mb-4 text-gray-700 fony-bold text-md">Location: Hybrid (Remote + Office in Cairo)
+                 </p>
+                 <p class="mb-2 text-gray-500 text-md">The Software Engineer will collaborate with our team to build cutting-edge software systems using diverse programming languages and open-source frameworks. They will ensure flawless product design, seamless upgrades, and robust documentation in partnership with the engineering team. This role demands exceptional technical skills, a strong academic foundation, and deep expertise in computer science concepts and algorithms.
+                 </p>
+                 <div>
+                    <h3 class="text-md font-semibold mb-2">Responsibilities:</h3>
+                    <ul class="text-gray-500 text-md">
+                       <li>Designing secure, decentralized content delivery network (CDN) technologies, implementing multicast routing protocols (PIM-SSM, IGMP, AMT), and working with infrastructure.</li>
+                       <li>Create and maintain robust backend services , focusing on reliability and efficiency for production systems.</li>
+                       <li>Enhance and troubleshoot CI/CD pipelines (e.g., GitHub Actions) and resolve complex, system-level technical issues.</li>
+                       <li>Guide junior engineers through mentorship, lead code reviews, and enforce high-quality coding standards across the team.</li>
+                    </ul>
+                 </div>
+                 <div>
+                    <h3 class="text-md font-semibold mb-2">Requirements:</h3>
+                    <ul class="text-gray-500 text-md">
+                    <li>3+ years of full stack development, proven expertise in Go, Python, C++, or Java. hands-on experience in Networking, Security, and Web3 technologies</li>
+                    <li>Deep knowledge in Switching/Routing, TCP/IP, UDP, HTTP, Websockets is a must.</li>
+                    <li>Knowledge of Video streaming  (HLS, DASH, WebRTC, MoQ), adversarial security vulnerability analysis, and multicast are huge plus.</li>
+                    <li>Deep knowledge of REST and GraphQL APIs for seamless integrations.</li>
+                    <li>Proficiency with SQL (e.g., PostgreSQL) and NoSQL (e.g., MongoDB) databases</li>
+                    <li>Experience deploying on cloud platforms like AWS or GCP.</li>
+                    <li>Strong ability to architect software systems and technical specifications.</li>
+                    <li>Write high quality testable code and produce comprehensive unit and integration tests, and ensure maintainability.</li>
+                    <li>Demonstrated skill in managing components end-to-end, from planning and development to deployment and monitoring</li>
+                    <li>Experience with  Kubernetes for container orchestration, microservices architecture, or infrastructure-as-code tools (e.g., Terraform, Ansible) is a plus. Hands-on  experience in scaling and optimizing distributed and embedded systems.</li>
+                    <li>Familiarity with monitoring and observability tools like Prometheus or Grafana for system health tracking is an advantage.</li>
+                    <li>Open for changes and continuous learning, can work under pressure.</li>
+                    <li>Good knowledge of spoken and written English.</li>
+                    <li>Team player, self motivated and passionate about technologies and innovation.</li>
+                 </div>
+                 <a class="text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSeFLnNf4hHoNJuTCfKzrcL4f8o938J0yHDjnHuk1b9rSEOqoQ/viewform" target="_blank"><button class="apply w-full my-4"> Apply</button></a>
+              </div>
+           </div>
+        </div>
+     </div> 
+
+     <!-- Full Stack Engineer -->
      <div x-data="{ expanded: false }" class="py-2">
         <h2>
            <button
@@ -115,7 +180,7 @@
                  <div>
                     <h3 class="text-md font-semibold mb-2">Requirements:</h3>
                     <ul class="text-gray-600 font-medium text-md">
-                       <li>Experience: 3+ years of full stack development, with proven expertise in Vue.js, TypeScript, and Golang.</li>
+                       <li>Experience: up to three years of full stack development, with proven expertise in Vue.js, TypeScript, and Golang.</li>
                        <li>Technical Mastery :
                            <ul class="text-gray-600 font-medium text-md" style="list-style-type: circle;">
                               <li>Deep knowledge of REST and GraphQL APIs for seamless integrations.</li>
