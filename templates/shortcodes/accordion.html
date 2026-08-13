@@ -1,7 +1,71 @@
 <div class="container mx-auto pb-24 px-4">
   <!-- Accordion component -->
   <div class="divide-y divide-slate-200">
-    
+
+     <!-- Senior Sales Executive - Technology & AI Solutions -->
+     <div x-data="{ expanded: false }" class="py-2">
+        <h2>
+           <button
+              id="faqs-title-04"
+              type="button"
+              class="flex items-center justify-between w-full text-left text-xl p-4 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-2 focus:ring-gray-200  hover:bg-gray-100 gap-3"
+              @click="expanded = !expanded"
+              :aria-expanded="expanded"
+              aria-controls="faqs-text-04"
+              >
+              <span>Senior Sales Executive - Technology & AI Solutions</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                 <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                 <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+              </svg>
+           </button>
+        </h2>
+        <div
+           id="faqs-text-04"
+           role="region"
+           aria-labelledby="faqs-title-04"
+           class="grid text-sm text-slate-600 overflow-hidden transition-all duration-1000 ease-in-out"
+           :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+           >
+           <div class="overflow-hidden">
+              <div class="p-5 border border-b-0 border-gray-200">
+                 <p class="mb-2 text-gray-500 text-md">We are seeking a highly motivated and results-driven Senior Sales Executive with 8+ years of proven experience in the technology industry. The ideal candidate has a strong track record of selling software, IT services, SaaS, cloud solutions, or digital transformation projects to enterprise and mid-market clients, and is passionate about helping clients understand and adopt AI-powered solutions that drive measurable business value.
+                 </p>
+                 <div>
+                    <h3 class="text-md font-semibold mb-2">Responsibilities:</h3>
+                    <ul class="text-gray-500 text-md">
+                       <li>Develop and execute strategic sales plans to achieve revenue targets.</li>
+                       <li>Generate new business opportunities through networking, referrals, and outbound prospecting.</li>
+                       <li>Build and maintain long-term relationships with clients and key decision-makers.</li>
+                       <li>Understand customer business challenges and position appropriate technology solutions.</li>
+                       <li>Present software, AI, and digital transformation solutions to executive stakeholders.</li>
+                       <li>Prepare proposals, quotations, and commercial offers.</li>
+                       <li>Lead negotiations and successfully close new business opportunities.</li>
+                       <li>Collaborate closely with technical teams to design winning solutions.</li>
+                       <li>Maintain an accurate sales pipeline and forecast using CRM tools.</li>
+                       <li>Monitor industry trends, competitors, and emerging technologies.</li>
+                       <li>Represent the company at conferences, networking events, and industry exhibitions.</li>
+                    </ul>
+                 </div>
+                 <div>
+                    <h3 class="text-md font-semibold mb-2">Requirements:</h3>
+                    <ul class="text-gray-500 text-md">
+                    <li>Minimum 8 years of experience in B2B technology sales, with demonstrated success in achieving and exceeding sales targets.</li>
+                    <li>Experience selling one or more of: Software Development Services, SaaS Solutions, Cloud Services, Enterprise Software, AI Solutions, Digital Transformation Services, or IT Consulting.</li>
+                    <li>Experience working with enterprise accounts and executive-level stakeholders. Previous experience in a software development outsourcing company is highly preferred.</li>
+                    <li>Strong skills in enterprise sales, consultative and solution selling, account management, negotiation, strategic prospecting, pipeline management, contract negotiation, and revenue forecasting.</li>
+                    <li>AI enthusiast who actively follows AI developments, uses AI tools to improve productivity and sales effectiveness, understands the business value of AI, and can identify opportunities where AI solves customer challenges.</li>
+                    <li>Outstanding communication and presentation skills, strong business acumen, and excellent relationship-building abilities.</li>
+                    <li>Self-motivated, highly organized, results-oriented, and a strategic thinker with strong problem-solving skills.</li>
+                    <li>Ability to thrive in a fast-paced environment with strong collaboration and leadership capabilities.</li>
+                    <li>Bachelor's degree in Business, Marketing, Computer Science, Engineering, or a related field. MBA, sales certifications, and AI-related certifications or coursework are a plus.</li>
+                 </div>
+                 <a class="text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSeFLnNf4hHoNJuTCfKzrcL4f8o938J0yHDjnHuk1b9rSEOqoQ/viewform" target="_blank"><button class="apply w-full my-4"> Apply</button></a>
+              </div>
+           </div>
+        </div>
+     </div>
+
       <!-- Senior Software Engineer -->
      <!-- <div x-data="{ expanded: false }" class="py-2">
         <h2>

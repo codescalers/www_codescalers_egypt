@@ -132,9 +132,11 @@ function toggleFilter() {
     filterMenu.className = filterMenu.className + " hidden";
   }
 }
+
 window.onload = function () {
   let elements = document.getElementsByTagName("button");
   let buttons = [...elements];
+  const filterBtn = document.getElementById("filter-btn");
 
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
@@ -142,10 +144,17 @@ window.onload = function () {
     });
   });
 
-  document.getElementById("filter-btn").addEventListener("click", toggleFilter);
-  document
-    .getElementById("mobile-learn-btn")
-    .addEventListener("click", toggleMenu);
+  if (filterBtn) {
+    filterBtn.addEventListener("click", toggleFilter);
+    document
+      .getElementById("mobile-learn-btn")
+      .addEventListener("click", toggleMenu);
+  }
+
+  var el = document.getElementById("g-recaptcha-response");
+  if (el) {
+    el.setAttribute("required", "required");
+  }
 };
 
 function openInNewTab(url) {
@@ -189,5 +198,39 @@ function formatStatsData(stats) {
 }
 
 readingTime();
-getStats();
+// getStats();
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+function copyToClipboard(button) {
+  const codeBlock = button.nextElementSibling.querySelector("code");
+  if (codeBlock) {
+    const text = codeBlock.innerText || codeBlock.textContent;
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        button.textContent = "Copied!";
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 2000);
+      })
+      .catch((err) => {
+        console.error("Error copying text: ", err);
+        button.textContent = "Error";
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 2000);
+      });
+  }
+}
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+  event.preventDefault(); 
+  var response = grecaptcha.getResponse();
+  if (response.length === 0) {
+      document.getElementById('recaptcha-form-error').classList.remove('hidden');
+      return;
+  } else {
+      document.getElementById('recaptcha-form-error').classList.add('hidden');
+  }
+  this.submit();
+});
